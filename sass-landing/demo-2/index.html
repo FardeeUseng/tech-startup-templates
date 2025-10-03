@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Demo 2 - SaaS Landing Page</title>
+
+    <!-- ============ Favicon ============ -->
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+
+    <!-- ============ Fonts ============ -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+
+    <!-- ============ Tailwind CSS ============ -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./tailwind-config.js"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .bg-gradient-accent {
+          @apply bg-gradient-to-r from-gradient-start to-gradient-end;
+        }
+        .text-gradient-accent {
+          @apply bg-gradient-accent bg-clip-text text-transparent;
+        }
+      }
+    </style>
+
+    <!-- ============ Custom CSS ============ -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-white font-sans text-slate-800 antialiased">
+    <div class="relative min-h-screen w-full flex flex-col">
+      <header
+        class="
+          sticky top-0 z-50 
+          bg-white/80 backdrop-blur-sm 
+          border-b border-slate-100
+        "
+      >
+        <div 
+          class="
+            container mx-auto px-4 sm:px-6 lg:px-8
+            flex items-center justify-between h-20
+          "
+        >
+          <a class="flex items-center gap-2" href="#">
+            <svg
+              class="h-8 w-8 text-gradient-start"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path
+                d="
+                  M12 14l6.16-3.422a12.083 12.083 0 01.665 
+                  6.479A11.952 11.952 0 0112 20.055a11.952 
+                  11.952 0 01-6.824-2.998 12.078 12.078 0 
+                  01.665-6.479L12 14z
+                "
+              ></path>
+              <path
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0v6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+            <span class="text-2xl font-bold text-slate-900">Acme</span>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="
+                text-base font-medium 
+                text-slate-600 hover:text-gradient-start transition-colors
+              "
+              href="#features"
+            >
+              Features
+            </a>
+            <a
+              class="
+                text-base font-medium 
+                text-slate-600 hover:text-gradient-start transition-colors
+              "
+              href="#use-cases"
+            >
+              Use Cases
+            </a>
+            <a
+              class="
+                text-base font-medium 
+                text-slate-600 hover:text-gradient-start transition-colors
+              "
+              href="#pricing"
+            >
+              Pricing
+            </a>
+            <a
+              class="
+                text-base font-medium 
+                text-slate-600 hover:text-gradient-start transition-colors
+              "
+              href="#testimonials"
+            >
+              Testimonials
+            </a>
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <a
+              class="
+                hidden sm:inline-block 
+                text-base font-medium text-slate-600 
+                hover:text-gradient-start transition-colors
+              "
+              href="#"
+            >
+              Log In
+            </a>
+            <a
+              class="
+                bg-gradient-accent text-white 
+                text-base font-semibold 
+                px-6 py-3 rounded-full 
+                hover:opacity-90 transition-opacity shadow-soft
+              "
+              href="#"
+            >
+              Get Started Free
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-grow">
+        <section class="py-24 sm:py-32 lg:py-40">
+          <div 
+            class="
+              container mx-auto px-4 sm:px-6 lg:px-8
+              grid lg:grid-cols-2 gap-16 items-center
+            "
+          >
+            <div class="text-center lg:text-left">
+              <h1
+                class="
+                  text-4xl sm:text-5xl lg:text-6xl 
+                  font-extrabold tracking-tight text-slate-900
+                "
+              >
+                The Ultimate Platform to
+                <span class="text-gradient-accent">
+                  Accelerate Your 
+                </span>
+              </h1>
+              <p class="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                Empower your team to build, ship, and scale faster with a
+                unified development environment.
+              </p>
+              <div class="mt-10 flex gap-4 justify-center lg:justify-start">
+                <a
+                  class="
+                    bg-gradient-accent 
+                    text-white text-lg font-semibold 
+                    px-8 py-4 rounded-full hover:opacity-90 
+                    transition-opacity shadow-soft-lg
+                  "
+                  href="#"
+                >
+                  Start a Demo
+                </a>
+                <a
+                  class="
+                    px-8 py-4 
+                    bg-white hover:bg-slate-50 ring-1 ring-slate-200
+                    text-slate-700 text-lg font-semibold 
+                    rounded-full transition-colors shadow-soft-lg
+                  "
+                  href="#"
+                >
+                  Book a Call
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="
+                relative w-full h-auto aspect-video 
+                rounded-xl shadow-soft-lg overflow-hidden group
+              "
+            >
+              <div class="absolute inset-0 bg-slate-100 animate-pulse"></div>
+              <img
+                alt="Animated dashboard illustration"
+                class="
+                  absolute inset-0 w-full h-full object-cover 
+                  transition-transform duration-500 group-hover:scale-105
+                "
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaktbvKwZCotc1b4vHJsApbG2zqxFYesrhAGIIexl53N2Zl5hnAlax0T47-LBlx1MlZG4nscFmjiJwj8dFsT4XGmRW8BqiN6ybcvP3SyKhLQS2ylX5BU7iHIVYLXJ1E1lGEJO4bYmvma-cQeOa4-AEfFVGBwAnyXl1lAtYK-2t1SrMsfAsy6qJS2QvouMTCNWeNwWcQvrIBSIFgoriZ9EYQbys0xjqTk4Iy8R_2CLwjsmHzjeNdIU_sKPEi33-1LmsbKBJmwd8bxQ"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="screenshots" class="py-20 sm:py-24 bg-slate-50" >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2
+                class="
+                  text-3xl sm:text-4xl 
+                  font-bold tracking-tight text-slate-900
+                "
+              >
+                See It In Action
+              </h2>
+              <p class="mt-4 text-lg text-slate-600">
+                Explore our platform across all your devices.
+              </p>
+            </div>
+
+            <div class="relative screenshots-scroll-container rounded-lg overflow-hidden">
+              <div class="screenshots-scroll-content">
+                <!-- First set of screenshots -->
+                <div class="screenshot-item">
+                  <img
+                    alt="Desktop mockup"
+                    class="w-full rounded-xl shadow-2xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVYtC9Hssta1xO_ery5OPLVgtxNup2V8lVw04bN1G_QRD9OnPDx39gWN7WktqqnJ1RH7kGApowRyUcrDx_Y0f1qLphCtP-Vg52c9TzXFp0pzDCSV3bwFpI2Qv6ntO5GL1eNhFehePQ1DXEIAqT_f60P1hJ0WVOg1Lbj89d8YyO4yKTwSIiQKSUneKQCF55y5r1JfLGPbh50s78-DlwUQ4Y2qtcDHMET_YVSfnMs6qJmB3uFYK9ULszjlNwRHKivIL-8q3aEsBME44"
+                  />
+                </div>
+
+                <div class="screenshot-item">
+                  <img
+                    alt="Tablet mockup"
+                    class="w-full rounded-xl shadow-2xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqu0K6fyQGLfp-XzgO1RPiLl3LFptyrZoLcABKe-6a4JKDypHbV5SnJbXt3LAU-UT3lq7FSDeXsfKlgsPjGzcte9RX-lnHS7JlnWOqTNpSMi9hgGOaBzZ5vS33hkUlb1_OcSNWSUBZtonbrQxfaxJtJPqZutr-eojQqjL7twKkjI2bhw7PEWMHozJaDH0yee94W9NZk5_pbKMRptPmsUHohi5O-pfTYIH8ekfcb_HOxMMX9tS2AsREdzXLrZoyGbpjC2ayggnX3fQ"
+                  />
+                </div>
+
+                <div class="screenshot-item">
+                  <img
+                    alt="Mobile mockup"
+                    class="w-full rounded-xl shadow-2xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPKBu8eCj_beQjsJT9GOrzEVEUu_gBq5ypL8ou25326x5x0rPcyBQea7ctBOYB0ocgsw7ko1dv60RNxDqAep3g5LHh4rJIqv2MLj1_da3dLJPG2YAuP3sDqsAqeIE9g0I5DbrbVP0FB4aDaUOk0sSFRY830_4adCB5RTRo25A8sr1YeYHTDYURyYSJrnMUFkpdWr5a9soEVALboLzw98meNlddVTUNwDI5zuNPaFheM7DVte3O1OR0g2UeNCXC5cLr-BG8g4RPUDs"
+                  />
+                </div>
+
+                <div class="screenshot-item">
+                  <img
+                    alt="Multi-device mockup"
+                    class="w-full rounded-xl shadow-2xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaABzddFK4DOKuBxjJd1zchyoHEBhGXXQGRKKU3gTuaE3Gv9CrmYVrdyD62ykFMp3epkjMCP48pwvKl6is3m46Zad2686HB2J5dwbYbk7CsMsEwGAdHetRDHKE30XR-WUkAFwSt7wERprt00PqsuRGCa10Yyvz_FQov7YOAtphODgRenvQpKmDg9WaIAy7eTai8BmTrFUXVtpB-QHYb2ia-QJomyAw9EuwPu2CTRvwollVt1IPZqNDpMyEcbrFDSEEU0vSqUWeDkQ"
+                  />
+                </div>
+
+                <!-- Duplicate set for seamless loop -->
+                <div class="screenshot-item">
+                  <img
+                    alt="Desktop mockup"
+                    class="w-full rounded-xl shadow-2xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVYtC9Hssta1xO_ery5OPLVgtxNup2V8lVw04bN1G_QRD9OnPDx39gWN7WktqqnJ1RH7kGApowRyUcrDx_Y0f1qLphCtP-Vg52c9TzXFp0pzDCSV3bwFpI2Qv6ntO5GL1eNhFehePQ1DXEIAqT_f60P1hJ0WVOg1Lbj89d8YyO4yKTwSIiQKSUneKQCF55y5r1JfLGPbh50s78-DlwUQ4Y2qtcDHMET_YVSfnMs6qJmB3uFYK9ULszjlNwRHKivIL-8q3aEsBME44"
+                  />
+                </div>
+
+                <div class="screenshot-item">
+                  <img
+                    alt="Tablet mockup"
+                    class="w-full rounded-xl shadow-2xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqu0K6fyQGLfp-XzgO1RPiLl3LFptyrZoLcABKe-6a4JKDypHbV5SnJbXt3LAU-UT3lq7FSDeXsfKlgsPjGzcte9RX-lnHS7JlnWOqTNpSMi9hgGOaBzZ5vS33hkUlb1_OcSNWSUBZtonbrQxfaxJtJPqZutr-eojQqjL7twKkjI2bhw7PEWMHozJaDH0yee94W9NZk5_pbKMRptPmsUHohi5O-pfTYIH8ekfcb_HOxMMX9tS2AsREdzXLrZoyGbpjC2ayggnX3fQ"
+                  />
+                </div>
+
+                <div class="screenshot-item">
+                  <img
+                    alt="Mobile mockup"
+                    class="w-full rounded-xl shadow-2xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPKBu8eCj_beQjsJT9GOrzEVEUu_gBq5ypL8ou25326x5x0rPcyBQea7ctBOYB0ocgsw7ko1dv60RNxDqAep3g5LHh4rJIqv2MLj1_da3dLJPG2YAuP3sDqsAqeIE9g0I5DbrbVP0FB4aDaUOk0sSFRY830_4adCB5RTRo25A8sr1YeYHTDYURyYSJrnMUFkpdWr5a9soEVALboLzw98meNlddVTUNwDI5zuNPaFheM7DVte3O1OR0g2UeNCXC5cLr-BG8g4RPUDs"
+                  />
+                </div>
+
+                <div class="screenshot-item">
+                  <img
+                    alt="Multi-device mockup"
+                    class="w-full rounded-xl shadow-2xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaABzddFK4DOKuBxjJd1zchyoHEBhGXXQGRKKU3gTuaE3Gv9CrmYVrdyD62ykFMp3epkjMCP48pwvKl6is3m46Zad2686HB2J5dwbYbk7CsMsEwGAdHetRDHKE30XR-WUkAFwSt7wERprt00PqsuRGCa10Yyvz_FQov7YOAtphODgRenvQpKmDg9WaIAy7eTai8BmTrFUXVtpB-QHYb2ia-QJomyAw9EuwPu2CTRvwollVt1IPZqNDpMyEcbrFDSEEU0vSqUWeDkQ"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="py-20 sm:py-24" >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+              <h2
+                class="
+                  text-3xl sm:text-4xl font-bold 
+                  tracking-tight text-slate-900
+                "
+              >
+                Powerful Features, Effortless Control
+              </h2>
+              <p class="mt-4 text-lg text-slate-600">
+                Everything you need to manage your projects, collaborate with
+                your team, and ship better products faster.
+              </p>
+            </div>
+
+            <div
+              class="
+                mt-16 grid gap-8
+                grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+              "
+            >
+              <div
+                class="
+                  bg-white p-8 rounded-xl shadow-soft hover:shadow-lg
+                  flex flex-col items-center text-center
+                "
+              >
+                <div 
+                  class="
+                    flex justify-center items-center
+                    bg-gradient-accent text-white 
+                    rounded-full w-16 h-16
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">
+                    dashboard
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                  Customizable Dashboard
+                </h3>
+                <p class="mt-2 text-slate-600">
+                  Tailor your workspace to see what matters most to you.
+                </p>
+              </div>
+
+              <div
+                class="
+                  bg-white p-8 rounded-xl shadow-soft hover:shadow-lg
+                  flex flex-col items-center text-center
+                "
+              >
+                <div 
+                  class="
+                    flex justify-center items-center
+                    bg-gradient-accent text-white 
+                    rounded-full w-16 h-16
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">sync</span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                  Real-Time Sync
+                </h3>
+                <p class="mt-2 text-slate-600">
+                  Keep your team aligned with instant data synchronization.
+                </p>
+              </div>
+
+              <div
+                class="
+                  bg-white p-8 rounded-xl shadow-soft hover:shadow-lg
+                  flex flex-col items-center text-center
+                "
+              >
+                <div 
+                  class="
+                    flex justify-center items-center
+                    bg-gradient-accent text-white 
+                    rounded-full w-16 h-16
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">bolt</span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                  Automated Workflows
+                </h3>
+                <p class="mt-2 text-slate-600">
+                  Save time by automating repetitive tasks and processes.
+                </p>
+              </div>
+
+              <div
+                class="
+                  bg-white p-8 rounded-xl shadow-soft hover:shadow-lg
+                  flex flex-col items-center text-center
+                "
+              >
+                <div 
+                  class="
+                    flex justify-center items-center
+                    bg-gradient-accent text-white 
+                    rounded-full w-16 h-16
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">
+                    insights
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                  Advanced Analytics
+                </h3>
+                <p class="mt-2 text-slate-600">
+                  Make data-driven decisions with powerful reporting.
+                </p>
+              </div>
+
+              <div
+                class="
+                  bg-white p-8 rounded-xl shadow-soft hover:shadow-lg
+                  flex flex-col items-center text-center
+                "
+              >
+                <div 
+                  class="
+                    flex justify-center items-center
+                    bg-gradient-accent text-white 
+                    rounded-full w-16 h-16
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">
+                    integration_instructions
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                  Seamless Integrations
+                </h3>
+                <p class="mt-2 text-slate-600">
+                  Connect with your favorite tools and services effortlessly.
+                </p>
+              </div>
+
+              <div
+                class="
+                  bg-white p-8 rounded-xl shadow-soft hover:shadow-lg
+                  flex flex-col items-center text-center
+                "
+              >
+                <div 
+                  class="
+                    flex justify-center items-center
+                    bg-gradient-accent text-white 
+                    rounded-full w-16 h-16
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">lock</span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                  Enterprise-Grade Security
+                </h3>
+                <p class="mt-2 text-slate-600">
+                  Your data is safe with our robust security protocols.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="use-cases" class="py-20 sm:py-24 bg-slate-50">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+              <h2
+                class="
+                  text-3xl sm:text-4xl font-bold 
+                  tracking-tight text-slate-900
+                "
+              >
+                Built For Every Team
+              </h2>
+              <p class="mt-4 text-lg text-slate-600">
+                From startups to enterprises, Acme is designed to fit your
+                unique needs.
+              </p>
+            </div>
+
+            <div
+              class="
+                mt-16 grid gap-8 
+                grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+              "
+            >
+              <div class="bg-white rounded-xl shadow-soft hover:shadow-lg overflow-hidden">
+                <img
+                  alt="Engineering team"
+                  class="w-full h-48 object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMPVRvMei5-AmKKN0N6LRhB2r189GyXgpzuEEn1D7yqEuy6oYHZgFaUF85HT6Ni4_hmi7VijSUecgLVJSxw4OQhQbLYbGaa9cMkrK7L9u4MH_44O445LNUe8RtCf0C9ypNFxZMR5lPKmJ6OzCz4r-IWMReL8aYinaKpRT8A7at0KhNDc3zguu3hgbO3qu8Z3FEm2J1m5Mr0NYWC3_O6IlGO1rbrQtac9HhFAcr1al0sfCdRQesdN_08qaBQFus05am7Qc1mFD25rs"
+                />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold text-slate-900">
+                    Engineering Teams
+                  </h3>
+                  <p class="mt-2 text-slate-600">
+                    Ship code faster, manage sprints, and track bugs with our
+                    integrated project management tools.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-soft hover:shadow-lg overflow-hidden">
+                <img
+                  alt="Design team"
+                  class="w-full h-48 object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV6fRIEsfMrxZ6L5rrKazeoWVi3Yw4gDiq3TLQKPFzV_qVV5DhABggUZdYWztQSz2-AH_0ge5kuqsMUFSzYTerzJjYEYdAafcV-JJbGblaQxGkqv4UnFvf3hdMbvc8HVVMyL-w0NkA5rxDvUthKaFWqOAL_ocO7cW1FyvEtk3wG3D5lpLSk5Fg1LTP5JuhOSxBhJCH933yQ_F9XiSc4NztPv83Li668MglPo0qA48uwQ9vSApUT-t7hmu9Uxjcl8h4S0GM8okkovc"
+                />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold text-slate-900">
+                    Design Teams
+                  </h3>
+                  <p class="mt-2 text-slate-600">
+                    Collaborate on mockups, share design assets, and get
+                    feedback in one central place.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-soft hover:shadow-lg overflow-hidden">
+                <img
+                  alt="Marketing team"
+                  class="w-full h-48 object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPlW-OO6wzUzlfAGygj6oviYPPDyLJoemgi7sdkav7xPfeOtCa49QeNVomGEFuU5oSiHQvazmuzZ6Bm2VW0UvYxWJbpuMi7q7TCC4wx9fvxj4XwUAtydGZFtoKYlGRsLw6xobIOZm3bSbBMdnWsA4NwfREX0eUl5a0b5o_K3nZk1PsHNOQgESZ0R_zQKDnhmdBnNlii40Tp09d7by1Tig-rwmPRnXzcDZxvWbyP71LigkJLvaqbxPAaJItcuqvZ5sHxqm0iy51UUY"
+                />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold text-slate-900">
+                    Marketing Teams
+                  </h3>
+                  <p class="mt-2 text-slate-600">
+                    Plan campaigns, manage content calendars, and track
+                    performance with ease.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20 sm:py-24">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-semibold text-slate-600 text-center">
+              Trusted by the world's most innovative companies
+            </h2>
+            
+            <div class="mt-12 scroll-container">
+              <div class="scroll-content">
+                <!-- First set of logos -->
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 1"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvaIRwuVop7XCnUlaRmXQ4UfgBgo49TnnQwzC_oPWHfSU5tIDlZ77FJuYue4cByASA73pKvCu73QrY0liJnF15ndoZ4tS0tZMHmT7aFTPmr1mROQ59DLAmOzWR2euLkQUo96iKLZyv0UcopkQGcRBseok5MIcgJT8t0Oa54xH_34vvcHKHol4u_I5wUhHhRSE6ht0pFSve-ESqRc43PWrLbxx8TsQ0ewb1KT1vD-twZpcsgYZSxoZnTg1p6iGmgHTgBJU7pLB9_yI"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 2"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf-5RSfGhvGq8HgIrrZicfsLaDWtC67IWIe0xuEX9jchp6jtfP0YF2vlDSMy1rqihzGpf3dtWTicBDoUWGyLXsXRGJ_DB1ZONttrRAFs2xUE4IKqAuHto5WoRncOFlzN_juLaHnVnwMk9OzMn_mAjcIFG7pVUR6BMMKhBJFsDUZ2ZyxCwqhB9WI2_-No12llLSrRhZylCjcnFSv0N4wePqWoPeXTjh8aSFIf0TyluYHiH1fLA3UhooReKAnAdBqDU1Z55FcddsPcM"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 3"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmcqlyPkEo6uvynENJP9tjeXfwC8uiT9USnfgFmd3mvLP_w7spepb2xLQwFZfOjhqOi5ZNAsdRMr13KBRRk8Ol26bxGsxzomp1NhS87rydej5fGds_sMwXW1HUBI3tldxRoQ8MYxPXX6MX4FtfnhrcrmtlAHK7kxcazcvJ4OZXVZR8hEdyjmdS178qV9xqejAquHZWdzJYVVMJyEZNoBTpsFjqpRf5RW2wzo85avzlizUS415A9gMUNky8LKm_X3eECnSkkE5Fn3M"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 4"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBp0tveSp3tLz1atJhsO297OGifGQcTWYESvs-fda_1NbF56NQUMk4dXLDQsIG-EPzqSiJZWhfXWEsE8zwltaURHl9uGzCOSFsz0lPoo4IejZtfS7G-usFjf0xJQhL4S9GhVSDPlDaxu7KGrJPqpfo-dn1DmDANHD4kv2M_wB_6MIPMrDiu3pqXnh3uH-QRXjfXjrZ0kskd17usgQR8rbt5DlzZV0amfHeI0GlE481NceM-zkYLeajddDiYkZ-FIbnzXEjafv1dpk"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 5"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWBdMPrzyuqmN9Ss74i5_iGqYn1fbplwlZYRe2a0Kv7ZgBhG74V_6fcB5t2kH-Iu61-WtlNeTac4Rstb0kY82rogjh-K7OYAaBy3vD1si9roRZ-Dj5FSML1kC-M-3ltxRang_tyfQ5RnUCSPOql8eNHzrcX8LeMm14j2UiscY6izH4VTK1qYPoavw7r33-i2pHgQNambylU-Ol8x5_hcQiVCwT7QaZQvrYaImBm01mlKYUP2Taph0F8Q8QMAxNNIzMzbwmTQlhrk8"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 6"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcELXyhNm8nVhcwqSSMkAyOz12dkYLlwuM2UoLZqTnqA_JDRKGt88-wsdmp6qscyFt1RReoo-_gK9RiBGKTcaxlCeRiJjn_tUGaq5DxXPGKa3oNbu-1ZMamdOysZn6lTnZGD9pB-X6EjkhkFFg6Zt35DLczyGUohATP1WHIgYWYptPNaqcvbP3SCD23navBiNqwdm1GmgSQwx_P1jr2wlSDfw12iqh0w9jsYcHFakLU6QhQk0pgobifGOoxSS2UeMEXZ-gsesoyC8"
+                  />
+                </div>
+                
+                <!-- Duplicate set for seamless loop -->
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 1"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvaIRwuVop7XCnUlaRmXQ4UfgBgo49TnnQwzC_oPWHfSU5tIDlZ77FJuYue4cByASA73pKvCu73QrY0liJnF15ndoZ4tS0tZMHmT7aFTPmr1mROQ59DLAmOzWR2euLkQUo96iKLZyv0UcopkQGcRBseok5MIcgJT8t0Oa54xH_34vvcHKHol4u_I5wUhHhRSE6ht0pFSve-ESqRc43PWrLbxx8TsQ0ewb1KT1vD-twZpcsgYZSxoZnTg1p6iGmgHTgBJU7pLB9_yI"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 2"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf-5RSfGhvGq8HgIrrZicfsLaDWtC67IWIe0xuEX9jchp6jtfP0YF2vlDSMy1rqihzGpf3dtWTicBDoUWGyLXsXRGJ_DB1ZONttrRAFs2xUE4IKqAuHto5WoRncOFlzN_juLaHnVnwMk9OzMn_mAjcIFG7pVUR6BMMKhBJFsDUZ2ZyxCwqhB9WI2_-No12llLSrRhZylCjcnFSv0N4wePqWoPeXTjh8aSFIf0TyluYHiH1fLA3UhooReKAnAdBqDU1Z55FcddsPcM"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 3"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmcqlyPkEo6uvynENJP9tjeXfwC8uiT9USnfgFmd3mvLP_w7spepb2xLQwFZfOjhqOi5ZNAsdRMr13KBRRk8Ol26bxGsxzomp1NhS87rydej5fGds_sMwXW1HUBI3tldxRoQ8MYxPXX6MX4FtfnhrcrmtlAHK7kxcazcvJ4OZXVZR8hEdyjmdS178qV9xqejAquHZWdzJYVVMJyEZNoBTpsFjqpRf5RW2wzo85avzlizUS415A9gMUNky8LKm_X3eECnSkkE5Fn3M"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 4"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBp0tveSp3tLz1atJhsO297OGifGQcTWYESvs-fda_1NbF56NQUMk4dXLDQsIG-EPzqSiJZWhfXWEsE8zwltaURHl9uGzCOSFsz0lPoo4IejZtfS7G-usFjf0xJQhL4S9GhVSDPlDaxu7KGrJPqpfo-dn1DmDANHD4kv2M_wB_6MIPMrDiu3pqXnh3uH-QRXjfXjrZ0kskd17usgQR8rbt5DlzZV0amfHeI0GlE481NceM-zkYLeajddDiYkZ-FIbnzXEjafv1dpk"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 5"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWBdMPrzyuqmN9Ss74i5_iGqYn1fbplwlZYRe2a0Kv7ZgBhG74V_6fcB5t2kH-Iu61-WtlNeTac4Rstb0kY82rogjh-K7OYAaBy3vD1si9roRZ-Dj5FSML1kC-M-3ltxRang_tyfQ5RnUCSPOql8eNHzrcX8LeMm14j2UiscY6izH4VTK1qYPoavw7r33-i2pHgQNambylU-Ol8x5_hcQiVCwT7QaZQvrYaImBm01mlKYUP2Taph0F8Q8QMAxNNIzMzbwmTQlhrk8"
+                  />
+                </div>
+                <div class="logo-item">
+                  <img
+                    alt="Partner logo 6"
+                    class="max-h-16 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcELXyhNm8nVhcwqSSMkAyOz12dkYLlwuM2UoLZqTnqA_JDRKGt88-wsdmp6qscyFt1RReoo-_gK9RiBGKTcaxlCeRiJjn_tUGaq5DxXPGKa3oNbu-1ZMamdOysZn6lTnZGD9pB-X6EjkhkFFg6Zt35DLczyGUohATP1WHIgYWYptPNaqcvbP3SCD23navBiNqwdm1GmgSQwx_P1jr2wlSDfw12iqh0w9jsYcHFakLU6QhQk0pgobifGOoxSS2UeMEXZ-gsesoyC8"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonials" class="py-20 sm:py-24 bg-slate-50" >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+              <h2
+                class="
+                  text-3xl sm:text-4xl font-bold 
+                  tracking-tight text-slate-900
+                "
+              >
+                What Our Customers Are Saying
+              </h2>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div class="bg-white p-8 rounded-xl shadow-soft hover:shadow-lg">
+                <p class="text-slate-700 text-lg">
+                  "Acme has completely transformed how our team works. The
+                  real-time collaboration is a game-changer."
+                </p>
+                <div class="mt-6 flex items-center gap-4">
+                  <img
+                    alt="Avatar of Sarah L."
+                    class="w-14 h-14 rounded-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD6t22G7_Y_GYpEPmT8bgPD9BMgjdUhEt9u3nrEN8UfVYTPB2TY2m5BlTEcqJb9Ywob3d_2c51JVxSP220yCkMCPYO15-9nQyywsoTQaHPB2-Gv6RxkqIk64QziX7NjTqjqpFZ65ybzeSX780Ey1DCHTnrx_HG62PrswYIaLM_9i0aAMwzhKPUkiMxQNbW8v9y0yU3VJM7UuZFxd3U9b50yz9vjnRrmpzgJGKybWfBEqj_gBtxyNeNI9AYDI4rBo_CvbaaCC_FbmQ"
+                  />
+                  <div>
+                    <p class="font-semibold text-slate-900">Sarah L.</p>
+                    <p class="text-sm text-slate-500">CTO, Innovate Co.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white p-8 rounded-xl shadow-soft hover:shadow-lg">
+                <p class="text-slate-700 text-lg">
+                  "The platform is incredibly intuitive and easy to use. We were
+                  up and running in minutes, not days."
+                </p>
+                <div class="mt-6 flex items-center gap-4">
+                  <img
+                    alt="Avatar of Michael B."
+                    class="w-14 h-14 rounded-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD6t22G7_Y_GYpEPmT8bgPD9BMgjdUhEt9u3nrEN8UfVYTPB2TY2m5BlTEcqJb9Ywob3d_2c51JVxSP220yCkMCPYO15-9nQyywsoTQaHPB2-Gv6RxkqIk64QziX7NjTqjqpFZ65ybzeSX780Ey1DCHTnrx_HG62PrswYIaLM_9i0aAMwzhKPUkiMxQNbW8v9y0yU3VJM7UuZFxd3U9b50yz9vjnRrmpzgJGKybWfBEqj_gBtxyNeNI9AYDI4rBo_CvbaaCC_FbmQ"
+                  />
+                  <div>
+                    <p class="font-semibold text-slate-900">Michael B.</p>
+                    <p class="text-sm text-slate-500">
+                      Product Manager, TechFlow
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white p-8 rounded-xl shadow-soft hover:shadow-lg">
+                <p class="text-slate-700 text-lg">
+                  "The level of support we've received from the Acme team has
+                  been outstanding. They truly care about their customers."
+                </p>
+                <div class="mt-6 flex items-center gap-4">
+                  <img
+                    alt="Avatar of Jessica W."
+                    class="w-14 h-14 rounded-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD6t22G7_Y_GYpEPmT8bgPD9BMgjdUhEt9u3nrEN8UfVYTPB2TY2m5BlTEcqJb9Ywob3d_2c51JVxSP220yCkMCPYO15-9nQyywsoTQaHPB2-Gv6RxkqIk64QziX7NjTqjqpFZ65ybzeSX780Ey1DCHTnrx_HG62PrswYIaLM_9i0aAMwzhKPUkiMxQNbW8v9y0yU3VJM7UuZFxd3U9b50yz9vjnRrmpzgJGKybWfBEqj_gBtxyNeNI9AYDI4rBo_CvbaaCC_FbmQ"
+                  />
+                  <div>
+                    <p class="font-semibold text-slate-900">Jessica W.</p>
+                    <p class="text-sm text-slate-500">
+                      Head of Design, Creative Solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pricing" class="py-20 sm:py-24" >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+              <h2
+                class="
+                  text-3xl sm:text-4xl font-bold 
+                  tracking-tight text-slate-900
+                "
+              >
+                Simple, Transparent Pricing
+              </h2>
+              <p class="mt-4 text-lg text-slate-600">
+                Choose the plan that's right for your team. No hidden fees,
+                ever.
+              </p>
+            </div>
+
+            <div
+              class="
+                mt-16 max-w-5xl mx-auto
+                grid gap-8 grid-cols-1 lg:grid-cols-3
+              "
+            >
+              <div
+                class="
+                  flex flex-col p-8 shadow-soft hover:shadow-lg
+                  bg-white border border-slate-100 rounded-xl 
+                "
+              >
+                <h3 class="text-2xl font-semibold text-slate-900">Starter</h3>
+                <p class="mt-2 text-slate-500">
+                  For individuals and small teams
+                </p>
+                <p class="mt-8 text-5xl font-extrabold text-slate-900">
+                  $29<span class="text-lg font-medium text-slate-500">/mo</span>
+                </p>
+                <a
+                  class="
+                    mt-8 py-3 w-full 
+                    text-center text-gradient-start font-semibold hover:text-white
+                    bg-white hover:bg-gradient-start rounded-full 
+                    ring-1 ring-gradient-start transition-colors
+                  "
+                  href="#"
+                >
+                  Get Started
+                </a>
+
+                <ul class="mt-10 space-y-4 text-slate-600 flex-grow">
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    5 Projects
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    10 GB Storage
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    Basic Analytics
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    Email Support
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="
+                  relative flex flex-col 
+                  border-2 border-gradient-start bg-white p-8
+                  rounded-xl shadow-soft-lg hover:shadow-lg
+                "
+              >
+                <div
+                  class="
+                    absolute top-0 left-1/2 
+                    -translate-y-1/2 -translate-x-1/2
+                  "
+                >
+                  <span
+                    class="
+                      px-4 py-1 
+                      bg-gradient-accent rounded-full tracking-wider
+                      text-white text-xs font-semibold uppercase
+                    "
+                  >
+                    Most Popular
+                  </span>
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-900">Pro</h3>
+                <p class="mt-2 text-slate-500">
+                  For growing teams and businesses
+                </p>
+                <p class="mt-8 text-5xl font-extrabold text-slate-900">
+                  $79<span class="text-lg font-medium text-slate-500">/mo</span>
+                </p>
+                <a
+                  class="
+                    mt-8 w-full py-3 
+                    text-center text-white font-semibold 
+                    bg-gradient-accent rounded-full hover:opacity-90 transition-opacity
+                  "
+                  href="#"
+                >
+                  Choose Plan
+                </a>
+                <ul class="mt-10 space-y-4 text-slate-600 flex-grow">
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    Unlimited Projects
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    100 GB Storage
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    Advanced Analytics &amp; Reporting
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    Priority Email &amp; Chat Support
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="
+                  flex flex-col border border-slate-100
+                  bg-white p-8 rounded-xl shadow-soft hover:shadow-lg
+                "
+              >
+                <h3 class="text-2xl font-semibold text-slate-900">
+                  Enterprise
+                </h3>
+                <p class="mt-2 text-slate-500">For large organizations</p>
+                <p class="mt-8 text-5xl font-extrabold text-slate-900">
+                  Custom
+                </p>
+                <a
+                  class="
+                    mt-8 w-full py-3 
+                    text-center text-gradient-start font-semibold hover:text-white
+                    bg-white rounded-full hover:bg-gradient-start 
+                    ring-1 ring-gradient-start transition-colors
+                  "
+                  href="#"
+                >
+                  Contact Sales
+                </a>
+                <ul class="mt-10 space-y-4 text-slate-600 flex-grow">
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    Everything in Pro, plus:
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    Dedicated Account Manager
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    Single Sign-On (SSO)
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gradient-start">
+                      check_circle
+                    </span>
+                    Enterprise-grade security &amp; compliance
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="py-20 sm:py-24 bg-slate-50" >
+          <div 
+            class="
+              container mx-auto px-4 sm:px-6 lg:px-8
+              grid lg:grid-cols-3 gap-16
+            "
+          >
+            <div class="lg:col-span-1">
+              <h2
+                class="
+                  text-3xl sm:text-4xl font-bold 
+                  tracking-tight text-slate-900
+                "
+              >
+                Frequently Asked Questions
+              </h2>
+              <p class="mt-4 text-lg text-slate-600">
+                Can't find the answer you're looking for? Reach out to our
+                support team.
+              </p>
+            </div>
+
+            <div class="lg:col-span-2">
+              <div class="space-y-6">
+                <details class="bg-white p-6 rounded-lg shadow-soft group">
+                  <summary
+                    class="
+                      flex justify-between items-center 
+                      cursor-pointer list-none
+                    "
+                  >
+                    <span class="text-lg font-medium text-slate-800">
+                      What is Acme and how does it work?
+                    </span>
+                    <span
+                      class="
+                        material-symbols-outlined transition-transform 
+                        duration-300 group-open:rotate-180
+                      "
+                    >
+                      expand_more
+                    </span>
+                  </summary>
+                  <p class="mt-4 text-slate-600">
+                    Acme is a unified development platform designed to
+                    accelerate your workflow. It provides a customizable
+                    dashboard, real-time sync, and automated workflows to help
+                    your team build, ship, and scale faster. You simply
+                    connect your tools, and we handle the rest.
+                  </p>
+                </details>
+
+                <details class="bg-white p-6 rounded-lg shadow-soft group">
+                  <summary
+                    class="
+                      flex justify-between items-center 
+                      cursor-pointer list-none
+                    "
+                  >
+                    <span class="text-lg font-medium text-slate-800">
+                      Can I integrate Acme with my existing tools?
+                    </span>
+                    <span
+                      class="
+                        material-symbols-outlined 
+                        transition-transform duration-300 group-open:rotate-180
+                      "
+                    >
+                      expand_more
+                    </span>
+                  </summary>
+                  <p class="mt-4 text-slate-600">
+                    Yes, our platform supports seamless integrations with a
+                    wide range of popular tools and services. From project
+                    management software to code repositories, you can connect
+                    your favorite tools to create a unified workflow.
+                  </p>
+                </details>
+
+                <details class="bg-white p-6 rounded-lg shadow-soft group">
+                  <summary
+                    class="
+                      flex justify-between items-center 
+                      cursor-pointer list-none
+                    "
+                  >
+                    <span class="text-lg font-medium text-slate-800">
+                      What kind of security measures are in place?
+                    </span>
+                    <span
+                      class="
+                        material-symbols-outlined 
+                        transition-transform duration-300 group-open:rotate-180
+                      "
+                    >
+                      expand_more
+                    </span>
+                  </summary>
+                  <p class="mt-4 text-slate-600">
+                    We take security very seriously. Acme employs
+                    enterprise-grade security protocols, including data
+                    encryption, regular security audits, and compliance with
+                    industry standards, to ensure your data is always safe and
+                    secure.
+                  </p>
+                </details>
+
+                <details class="bg-white p-6 rounded-lg shadow-soft group">
+                  <summary
+                    class="
+                      flex justify-between items-center 
+                      cursor-pointer list-none
+                    "
+                  >
+                    <span class="text-lg font-medium text-slate-800">
+                      Is there a free trial available?
+                    </span>
+                    <span
+                      class="
+                        material-symbols-outlined 
+                        transition-transform duration-300 group-open:rotate-180
+                      "
+                    >
+                      expand_more
+                    </span>
+                  </summary>
+                  <p class="mt-4 text-slate-600">
+                    Absolutely! You can get started with a free demo to
+                    explore all the features of Acme. This allows you to see
+                    the platform in action and decide which plan is the best
+                    fit for your team's needs.
+                  </p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="py-20 sm:py-24" >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto">
+              <div class="text-center">
+                <h2
+                  class="
+                    text-3xl sm:text-4xl font-bold 
+                    tracking-tight text-slate-900
+                  "
+                >
+                  Get in Touch
+                </h2>
+                <p class="mt-4 text-lg text-slate-600">
+                  Have a question or want to learn more? Drop us a line.
+                </p>
+              </div>
+
+              <div class="mt-12 bg-white p-8 sm:p-12 rounded-xl shadow-soft">
+                <form action="#" class="space-y-6" method="POST">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-sm font-medium text-slate-700"
+                    >
+                      Name
+                    </label>
+                    <div class="mt-1">
+                      <input
+                        id="name"
+                        class="
+                          block w-full rounded-md shadow-sm 
+                          border-slate-300 focus:border-gradient-start 
+                          focus:ring-gradient-start sm:text-sm
+                        "
+                        name="name"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-slate-700"
+                    >
+                      Email
+                    </label>
+                    <div class="mt-1">
+                      <input
+                        id="email"
+                        class="
+                          block w-full rounded-md shadow-sm
+                          border-slate-300 focus:border-gradient-start 
+                          focus:ring-gradient-start sm:text-sm
+                        "
+                        name="email"
+                        type="email"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label
+                      for="message"
+                      class="block text-sm font-medium text-slate-700"
+                    >
+                      Message
+                    </label>
+                    <div class="mt-1">
+                      <textarea
+                        id="message"
+                        class="
+                          block w-full rounded-md shadow-sm 
+                          border-slate-300 focus:border-gradient-start 
+                          focus:ring-gradient-start sm:text-sm
+                        "
+                        name="message"
+                        rows="4"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div>
+                    <button
+                      class="
+                        w-full py-3 px-6 
+                        bg-gradient-accent rounded-full
+                        text-white font-semibold 
+                        hover:opacity-90 transition-opacity shadow-soft
+                      "
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-gradient-accent">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+            <div class="max-w-3xl mx-auto text-center">
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                Start Building Better, Today.
+              </h2>
+              <p class="mt-4 text-lg text-white/80">
+                Join thousands of teams who are already building faster and
+                better. Get started with your free demo.
+              </p>
+              <form
+                class="
+                  mt-8 gap-4 mx-auto
+                  flex flex-col sm:flex-row
+                "
+              >
+                <label class="sr-only" for="email-cta">Email address</label>
+                <input
+                  id="email-cta"
+                  class="
+                    w-full rounded-full p-4 
+                    border-white/50 bg-white/20 
+                    text-white placeholder-white/70 
+                    focus:ring-2 focus:ring-white focus:border-transparent
+                  "
+                  name="email"
+                  placeholder="Enter your email"
+                  type="email"
+                />
+                <button
+                  class="
+                    bg-white px-8 py-4 
+                    text-gradient-start text-lg font-semibold 
+                    rounded-full hover:opacity-90 
+                    transition-opacity shadow-soft-lg shrink-0
+                  "
+                  type="submit"
+                >
+                  Request a Demo
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-white border-t border-slate-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div
+            class="
+              flex flex-col md:flex-row gap-8
+              justify-between items-center
+            "
+          >
+            <div class="flex items-center gap-4">
+              <a class="flex items-center gap-2" href="#">
+                <svg
+                  class="h-8 w-8 text-gradient-start"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path
+                    d="
+                      M12 14l6.16-3.422a12.083 12.083 0 01.665 
+                      6.479A11.952 11.952 0 0112 20.055a11.952 
+                      11.952 0 01-6.824-2.998 12.078 12.078 0 
+                      01.665-6.479L12 14z
+                    "
+                  ></path>
+                  <path
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0v6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+                <span class="text-2xl font-bold text-slate-900">Acme</span>
+              </a>
+            </div>
+
+            <p class="text-base text-slate-500">
+              © 2024 Acme Inc. All rights reserved.
+            </p>
+            <div class="flex gap-6">
+              <a
+                class="text-slate-500 hover:text-gradient-start transition-colors"
+                href="#"
+              >
+                Twitter
+              </a>
+              <a
+                class="text-slate-500 hover:text-gradient-start transition-colors"
+                href="#"
+              >
+                LinkedIn
+              </a>
+              <a
+                class="text-slate-500 hover:text-gradient-start transition-colors"
+                href="#"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

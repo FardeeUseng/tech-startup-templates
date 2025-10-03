@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Demo 1 - SaaS Landing Page</title>
+
+    <!-- ============ Favicon ============ -->
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+  
+    <!-- ============ Fonts ============ -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- ============ Tailwind CSS ============ -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./tailwind-config.js"></script>
+
+    <!-- ============ Custom CSS ============ -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body
+    class="
+      bg-background-light dark:bg-background-dark 
+      font-display text-slate-800 dark:text-slate-200
+    "
+  >
+    <div class="relative min-h-screen w-full flex flex-col">
+      <header
+        class="
+          sticky top-0 z-50 
+          bg-background-light/80 dark:bg-background-dark/80 
+          backdrop-blur-sm border-b border-slate-200 dark:border-slate-800
+        "
+      >
+        <div 
+          class="
+            container mx-auto px-4 sm:px-6 lg:px-8
+            flex items-center justify-between h-16
+          "
+        >
+          <div class="flex items-center gap-4">
+            <div class="text-primary">
+              <svg
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_6_319)">
+                  <path
+                    d="
+                      M8.57829 8.57829C5.52816 11.6284 3.451 
+                      15.5145 2.60947 19.7452C1.76794 23.9758 
+                      2.19984 28.361 3.85056 32.3462C5.50128 
+                      36.3314 8.29667 39.7376 11.8832 42.134C15.4698 
+                      44.5305 19.6865 45.8096 24 45.8096C28.3135 
+                      45.8096 32.5302 44.5305 36.1168 42.134C39.7033 
+                      39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 
+                      28.361 46.2321 23.9758 45.3905 19.7452C44.549 
+                      15.5145 42.4718 11.6284 39.4217 8.57829L24 
+                      24L8.57829 8.57829Z
+                    "
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_319">
+                    <rect fill="white" height="48" width="48"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 
+              class="
+                text-xl font-bold 
+                text-slate-900 dark:text-white
+              "
+            >
+              Acme Co
+            </h2>
+          </div>
+
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              href="#hero"
+              class="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Home
+            </a>
+            <a
+              href="#features"
+              class="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Features
+            </a>
+            <a
+              href="#how-it-works"
+              class="text-sm font-medium hover:text-primary transition-colors"
+            >
+              How it works
+            </a>
+            <a
+              href="#pricing"
+              class="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Pricing
+            </a>
+            <a
+              href="#testimonials"
+              class="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Testimonials
+            </a>
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <a
+              href="#"
+              class="
+                hidden sm:inline-block transition-colors
+                text-sm font-medium hover:text-primary
+              "
+            >
+              Log In
+            </a>
+            <a
+              href="#"
+              class="
+                bg-primary 
+                text-white text-sm font-medium 
+                px-4 py-2 rounded-lg hover:opacity-90 transition-opacity
+              "
+            >
+              Start Free Trial
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-grow">
+        <section id="hero" class="py-20 sm:py-24 lg:py-32">
+          <div 
+            class="
+              container mx-auto px-4 sm:px-6 lg:px-8
+              grid lg:grid-cols-2 gap-12 items-center
+            "
+          >
+            <div class="text-center lg:text-left">
+              <h1
+                class="
+                  text-4xl sm:text-5xl lg:text-6xl 
+                  font-extrabold tracking-tight text-slate-900 dark:text-white
+                "
+              >
+                Streamline your workflow with our intuitive platform
+              </h1>
+
+              <p
+                class="
+                  mt-6 max-w-2xl mx-auto lg:mx-0
+                  text-lg text-slate-600 dark:text-slate-400 
+                "
+              >
+                Boost productivity and collaboration with our powerful suite
+                of tools designed for modern teams.
+              </p>
+
+              <div 
+                class="
+                  mt-8 gap-4 
+                  flex justify-center lg:justify-start
+                "
+              >
+                <a
+                  class="
+                    bg-primary px-6 py-3 
+                    text-white text-base font-semibold 
+                    rounded-lg hover:opacity-90 transition-opacity shadow-lg
+                  "
+                  href="#"
+                >
+                  Start Free Trial
+                </a>
+                <a
+                  class="
+                    bg-background-light dark:bg-background-dark 
+                    text-slate-900 dark:text-white 
+                    ring-1 ring-slate-200 dark:ring-slate-800 
+                    text-base font-semibold 
+                    px-6 py-3 rounded-lg 
+                    hover:bg-slate-100 dark:hover:bg-slate-900 
+                    transition-colors shadow-lg
+                  "
+                  href="#"
+                >
+                  Watch Demo
+                </a>
+              </div>
+            </div>
+
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvjmqeHxLAw4eIKqxYA7VvSBfilPFyYWJczFPAgVwBAMSEqf6c-W0udJ644-7-zUfYUwGWp1AaJXddz2AqXeeOMixf0krO4FvpP81_KE9Zn7lTVDjNMShxXvcB28_MDlf_yupQT0pe_LIlB9LhS6pMw7psRyA99uBnWKucIDiNVYYclBAF548oKkj9Xd_8RiHjPXveu2bPnX9MiSn4HOkwetTtwmediXaVZl_KIWjUvelX2j5gulvEe3kHC3k-80IJQL5dUNUcQ3U"
+              alt="Preview image"
+              class="w-full h-auto aspect-[4/3] object-cover rounded-xl shadow-2xl"
+            />
+          </div>
+        </section>
+
+        <section
+          id="features"
+          class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/50"
+        >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+              <h2
+                class="
+                  text-3xl font-bold 
+                  tracking-tight text-slate-900 dark:text-white
+                "
+              >
+                Key Features
+              </h2>
+              <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                Everything you need to be more productive.
+              </p>
+            </div>
+
+            <div
+              class="
+                mt-12 gap-8
+                grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
+              "
+            >
+              <div
+                class="
+                  shadow-md hover:shadow-lg
+                  bg-background-light dark:bg-background-dark 
+                  rounded-lg flex items-start gap-4 p-6 
+                "
+              >
+                <div
+                  class="
+                    bg-primary/10 dark:bg-primary/20 
+                    text-primary p-3 rounded-lg
+                  "
+                >
+                  <span class="material-symbols-outlined">analytics</span>
+                </div>
+
+                <div>
+                  <h3
+                    class="
+                      text-lg font-semibold text-slate-900 dark:text-white
+                    "
+                  >
+                    Data-Driven Insights
+                  </h3>
+                  <p class="mt-1 text-slate-600 dark:text-slate-400">
+                    Gain valuable insights with our advanced analytics.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="
+                  shadow-md hover:shadow-lg
+                  bg-background-light dark:bg-background-dark 
+                  rounded-lg flex items-start gap-4 p-6 
+                "
+              >
+                <div
+                  class="
+                    bg-primary/10 dark:bg-primary/20 
+                    text-primary p-3 rounded-lg
+                  "
+                >
+                  <span class="material-symbols-outlined">groups</span>
+                </div>
+                <div>
+                  <h3
+                    class="text-lg font-semibold text-slate-900 dark:text-white"
+                  >
+                    Team Collaboration
+                  </h3>
+                  <p class="mt-1 text-slate-600 dark:text-slate-400">
+                    Work together seamlessly in real-time.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="
+                  shadow-md hover:shadow-lg
+                  bg-background-light dark:bg-background-dark 
+                  rounded-lg flex items-start gap-4 p-6
+                "
+              >
+                <div
+                  class="
+                    bg-primary/10 dark:bg-primary/20 
+                    text-primary p-3 rounded-lg
+                  "
+                >
+                  <span class="material-symbols-outlined">security</span>
+                </div>
+                <div>
+                  <h3
+                    class="text-lg font-semibold text-slate-900 dark:text-white"
+                  >
+                    Secure and Reliable
+                  </h3>
+                  <p class="mt-1 text-slate-600 dark:text-slate-400">
+                    Your data is safe with our enterprise-grade security.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="how-it-works" class="py-16 sm:py-20" >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+              <h2
+                class="
+                  text-3xl font-bold tracking-tight 
+                  text-slate-900 dark:text-white
+                "
+              >
+                How It Works
+              </h2>
+              <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                Get up and running in just a few simple steps.
+              </p>
+            </div>
+
+            <div class="relative mt-12 max-w-2xl mx-auto">
+              <div
+                aria-hidden="true"
+                class="
+                  absolute left-6 top-0 bottom-0 w-0.5 
+                  bg-slate-200 dark:bg-slate-800 -z-10
+                "
+              ></div>
+              <div class="space-y-12">
+                <div class="flex items-start gap-6">
+                  <div
+                    class="
+                      w-12 h-12 
+                      flex-shrink-0 flex items-center justify-center 
+                      bg-background-light dark:bg-background-dark 
+                      rounded-full border-2 border-primary
+                    "
+                  >
+                    <span class="text-lg font-bold text-primary">1</span>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">
+                      Sign Up
+                    </h3>
+                    <p class="mt-1 text-slate-600 dark:text-slate-400">
+                      Create your account in minutes. It's quick, easy, and
+                      requires no commitment.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-6">
+                  <div
+                    class="
+                      w-12 h-12 
+                      flex-shrink-0 flex items-center justify-center 
+                      bg-background-light dark:bg-background-dark 
+                      rounded-full border-2 border-primary
+                    "
+                  >
+                    <span class="text-lg font-bold text-primary">2</span>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">
+                      Customize Your Workspace
+                    </h3>
+                    <p class="mt-1 text-slate-600 dark:text-slate-400">
+                      Tailor the platform to your specific needs and
+                      preferences for a personalized experience.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-6">
+                  <div
+                    class="
+                      w-12 h-12 
+                      flex-shrink-0 flex items-center justify-center 
+                      bg-background-light dark:bg-background-dark 
+                      rounded-full border-2 border-primary
+                    "
+                  >
+                    <span class="text-lg font-bold text-primary">3</span>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">
+                      Start Collaborating
+                    </h3>
+                    <p class="mt-1 text-slate-600 dark:text-slate-400">
+                      Invite your team and start working together seamlessly
+                      on projects and tasks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="pricing"
+          class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/50"
+        >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+              <h2
+                class="
+                  text-3xl font-bold tracking-tight 
+                  text-slate-900 dark:text-white
+                "
+              >
+                Pricing Plans
+              </h2>
+              <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                Choose the plan that's right for you.
+              </p>
+            </div>
+
+            <div
+              class="
+                mt-12 max-w-4xl mx-auto
+                grid grid-cols-1 lg:grid-cols-3 gap-8
+              "
+            >
+              <div
+                class="
+                  shadow-lg hover:shadow-xl
+                  bg-background-light dark:bg-background-dark 
+                  p-8 rounded-lg flex flex-col
+                "
+              >
+                <h3
+                  class="text-lg font-semibold text-slate-900 dark:text-white"
+                >
+                  Starter
+                </h3>
+                <p
+                  class="
+                    mt-4 text-4xl font-extrabold 
+                    text-slate-900 dark:text-white
+                  "
+                >
+                  Free
+                </p>
+                <a
+                  class="
+                    mt-6 w-full py-2 
+                    text-center text-primary font-semibold
+                    bg-primary/20 dark:bg-primary/30 
+                    rounded-lg hover:bg-primary/30 dark:hover:bg-primary/40 
+                    transition-colors
+                  "
+                  href="#"
+                >
+                  Get Started
+                </a>
+
+                <ul
+                  class="
+                    mt-8 space-y-4 flex-grow
+                    text-sm text-slate-600 dark:text-slate-400
+                  "
+                >
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">
+                      check
+                    </span>
+                    Basic features
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">
+                      check
+                    </span>
+                    Limited users
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">
+                      check
+                    </span>
+                    Community support
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="
+                  relative overflow-hidden 
+                  text-white p-8 rounded-lg bg-primary
+                  flex flex-col shadow-2xl hover:shadow-xl
+                "
+              >
+                <span
+                  class="
+                    absolute top-0 right-0 px-3 py-1 
+                    bg-white/20 rounded-bl-lg
+                    text-white text-xs font-semibold
+                  "
+                >
+                  Most Popular
+                </span>
+                <h3 class="text-lg font-semibold">Pro</h3>
+                <p class="mt-4 flex items-baseline gap-1">
+                  <span class="text-4xl font-extrabold">$19</span>
+                  <span class="font-semibold">/month</span>
+                </p>
+                <a
+                  class="
+                    mt-6 w-full 
+                    text-center text-primary font-semibold 
+                    bg-white py-2 rounded-lg hover:opacity-90 transition-opacity
+                  "
+                  href="#"
+                >
+                  Choose Plan
+                </a>
+                <ul class="mt-8 space-y-4 text-sm flex-grow">
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined">check</span> All
+                    starter features
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined">check</span>
+                    Unlimited users
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined">check</span>
+                    Priority support
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="
+                  flex flex-col
+                  p-8 rounded-lg shadow-lg hover:shadow-xl
+                  bg-background-light dark:bg-background-dark 
+                "
+              >
+                <h3
+                  class="text-lg font-semibold text-slate-900 dark:text-white"
+                >
+                  Enterprise
+                </h3>
+                <p
+                  class="
+                    mt-4 
+                    text-4xl font-extrabold 
+                    text-slate-900 dark:text-white
+                  "
+                >
+                  Contact Us
+                </p>
+                <a
+                  class="
+                    mt-6 w-full py-2 
+                    text-center text-primary font-semibold 
+                    bg-primary/20 dark:bg-primary/30 
+                    rounded-lg hover:bg-primary/30 dark:hover:bg-primary/40 
+                    transition-colors
+                  "
+                  href="#"
+                >
+                  Contact Sales
+                </a>
+                <ul
+                  class="
+                    mt-8 space-y-4 flex-grow
+                    text-sm text-slate-600 dark:text-slate-400
+                  "
+                >
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">
+                      check
+                    </span>
+                    Custom features
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">
+                      check
+                    </span>
+                    Dedicated support
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">
+                      check
+                    </span>
+                    Scalable solutions
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonials" class="py-16 sm:py-20" >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+              class="
+                text-3xl font-bold tracking-tight text-center
+                text-slate-900 dark:text-white
+              "
+            >
+              Loved by teams worldwide
+            </h2>
+
+            <div
+              class="
+                mt-12 grid gap-8
+                grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+              "
+            >
+              <div
+                class="
+                  bg-background-light dark:bg-background-dark 
+                  p-6 rounded-lg shadow-md hover:shadow-lg
+                "
+              >
+                <p class="text-slate-600 dark:text-slate-400">
+                  "This platform has revolutionized our workflow. We're more
+                  efficient and organized than ever before."
+                </p>
+                <div class="mt-4 flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-cover"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCD6t22G7_Y_GYpEPmT8bgPD9BMgjdUhEt9u3nrEN8UfVYTPB2TY2m5BlTEcqJb9Ywob3d_2c51JVxSP220yCkMCPYO15-9nQyywsoTQaHPB2-Gv6RxkqIk64QziX7NjTqjqpFZ65ybzeSX780Ey1DCHTnrx_HG62PrswYIaLM_9i0aAMwzhKPUkiMxQNbW8v9y0yU3VJM7UuZFxd3U9b50yz9vjnRrmpzgJGKybWfBEqj_gBtxyNeNI9AYDI4rBo_CvbaaCC_FbmQ');
+                    "
+                  ></div>
+                  <div>
+                    <p class="font-semibold text-slate-900 dark:text-white">
+                      Sarah Chen
+                    </p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      Marketing Manager
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="
+                  bg-background-light dark:bg-background-dark 
+                  p-6 rounded-lg shadow-md hover:shadow-lg
+                "
+              >
+                <p class="text-slate-600 dark:text-slate-400">
+                  "The customer support is exceptional. They're always quick to
+                  respond and resolve any issues."
+                </p>
+                <div class="mt-4 flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-cover"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCD6t22G7_Y_GYpEPmT8bgPD9BMgjdUhEt9u3nrEN8UfVYTPB2TY2m5BlTEcqJb9Ywob3d_2c51JVxSP220yCkMCPYO15-9nQyywsoTQaHPB2-Gv6RxkqIk64QziX7NjTqjqpFZ65ybzeSX780Ey1DCHTnrx_HG62PrswYIaLM_9i0aAMwzhKPUkiMxQNbW8v9y0yU3VJM7UuZFxd3U9b50yz9vjnRrmpzgJGKybWfBEqj_gBtxyNeNI9AYDI4rBo_CvbaaCC_FbmQ');
+                    "
+                  ></div>
+                  <div>
+                    <p class="font-semibold text-slate-900 dark:text-white">
+                      David Lee
+                    </p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      Project Lead
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="
+                  bg-background-light dark:bg-background-dark 
+                  p-6 rounded-lg shadow-md hover:shadow-lg
+                "
+              >
+                <p class="text-slate-600 dark:text-slate-400">
+                  "The intuitive interface made it easy for our team to adopt
+                  the platform quickly."
+                </p>
+                <div class="mt-4 flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-cover"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCD6t22G7_Y_GYpEPmT8bgPD9BMgjdUhEt9u3nrEN8UfVYTPB2TY2m5BlTEcqJb9Ywob3d_2c51JVxSP220yCkMCPYO15-9nQyywsoTQaHPB2-Gv6RxkqIk64QziX7NjTqjqpFZ65ybzeSX780Ey1DCHTnrx_HG62PrswYIaLM_9i0aAMwzhKPUkiMxQNbW8v9y0yU3VJM7UuZFxd3U9b50yz9vjnRrmpzgJGKybWfBEqj_gBtxyNeNI9AYDI4rBo_CvbaaCC_FbmQ');
+                    "
+                  ></div>
+                  <div>
+                    <p class="font-semibold text-slate-900 dark:text-white">
+                      Emily Wong
+                    </p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      Operations Director
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="faq"
+          class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/50"
+        >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-12">
+              <div class="lg:col-span-1">
+                <h2
+                  class="
+                    text-3xl font-bold tracking-tight 
+                    text-slate-900 dark:text-white
+                  "
+                >
+                  Frequently Asked Questions
+                </h2>
+                <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                  Find answers to common questions about our platform.
+                </p>
+              </div>
+
+              <div class="lg:col-span-2">
+                <div class="mb-8">
+                  <div class="relative">
+                    <span
+                      class="
+                        absolute inset-y-0 left-0 pl-3 
+                        flex items-center text-slate-500 dark:text-slate-400
+                      "
+                    >
+                      <span class="material-symbols-outlined">search</span>
+                    </span>
+                    <input
+                      class="
+                        w-full p-3 pl-10 
+                        text-sm focus:ring-primary 
+                        border-slate-200 dark:border-slate-800 focus:border-primary
+                        bg-background-light dark:bg-background-dark rounded-lg
+                      "
+                      placeholder="Search questions..."
+                      type="search"
+                    />
+                  </div>
+                </div>
+                <div class="space-y-4">
+                  <details
+                    class="
+                      group p-6 rounded-lg shadow-md
+                      bg-background-light dark:bg-background-dark 
+                    "
+                  >
+                    <summary
+                      class="
+                        flex items-center justify-between 
+                        cursor-pointer
+                      "
+                    >
+                      <h3
+                        class="text-lg font-semibold text-slate-900 dark:text-white"
+                      >
+                        How do I get started with the free trial?
+                      </h3>
+                      <span
+                        class="
+                          material-symbols-outlined 
+                          transition-transform duration-300 group-open:rotate-180
+                        "
+                      >
+                        expand_more
+                      </span>
+                    </summary>
+                    <div class="mt-4 text-slate-600 dark:text-slate-400">
+                      <p>
+                        Starting your free trial is easy. Simply click on the
+                        "Start Free Trial" button on our homepage, fill out the
+                        registration form, and you'll get instant access to all
+                        Pro features for 14 days. No credit card required.
+                      </p>
+                    </div>
+                  </details>
+
+                  <details
+                    class="
+                      group bg-background-light dark:bg-background-dark 
+                      p-6 rounded-lg shadow-md
+                    "
+                  >
+                    <summary
+                      class="flex items-center justify-between cursor-pointer"
+                    >
+                      <h3
+                        class="text-lg font-semibold text-slate-900 dark:text-white"
+                      >
+                        Can I change my plan later?
+                      </h3>
+                      <span
+                        class="
+                          material-symbols-outlined 
+                          transition-transform duration-300 group-open:rotate-180
+                        "
+                      >
+                        expand_more
+                      </span>
+                    </summary>
+
+                    <div class="mt-4 text-slate-600 dark:text-slate-400">
+                      <p>
+                        Yes, you can upgrade, downgrade, or cancel your plan at
+                        any time from your account settings. Changes to your
+                        plan will be reflected in your next billing cycle.
+                      </p>
+                    </div>
+                  </details>
+
+                  <details
+                    class="
+                      group p-6 rounded-lg shadow-md
+                      bg-background-light dark:bg-background-dark
+                    "
+                  >
+                    <summary
+                      class="flex items-center justify-between cursor-pointer"
+                    >
+                      <h3
+                        class="text-lg font-semibold text-slate-900 dark:text-white"
+                      >
+                        What is your refund policy?
+                      </h3>
+                      <span
+                        class="
+                          material-symbols-outlined 
+                          transition-transform duration-300 group-open:rotate-180
+                        "
+                      >
+                        expand_more
+                      </span>
+                    </summary>
+                    <div class="mt-4 text-slate-600 dark:text-slate-400">
+                      <p>
+                        We offer a 30-day money-back guarantee on all our paid
+                        plans. If you're not satisfied with our service, you can
+                        request a full refund within 30 days of your purchase.
+                      </p>
+                    </div>
+                  </details>
+
+                  <details
+                    class="
+                      group p-6 rounded-lg shadow-md
+                      bg-background-light dark:bg-background-dark 
+                    "
+                  >
+                    <summary
+                      class="flex items-center justify-between cursor-pointer"
+                    >
+                      <h3
+                        class="text-lg font-semibold text-slate-900 dark:text-white"
+                      >
+                        Is my data secure?
+                      </h3>
+                      <span
+                        class="
+                          material-symbols-outlined 
+                          transition-transform duration-300 group-open:rotate-180
+                        "
+                      >
+                        expand_more
+                      </span>
+                    </summary>
+                    <div class="mt-4 text-slate-600 dark:text-slate-400">
+                      <p>
+                        We take data security very seriously. All data is
+                        encrypted in transit and at rest. Our platform is built
+                        with enterprise-grade security features to ensure your
+                        data is always protected.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-16 max-w-3xl mx-auto">
+              <div class="text-center">
+                <h3
+                  class="
+                    text-2xl font-bold tracking-tight 
+                    text-slate-900 dark:text-white
+                  "
+                >
+                  Still have questions?
+                </h3>
+                <p class="mt-2 text-lg text-slate-600 dark:text-slate-400">
+                  Can't find the answer you're looking for? Please reach out to
+                  our friendly team.
+                </p>
+              </div>
+
+              <form class="mt-8 space-y-4">
+                <div>
+                  <label class="sr-only" for="name">Name</label>
+                  <input
+                    id="name"
+                    class="
+                      w-full p-3 rounded-lg text-sm
+                      border-slate-200 dark:border-slate-800 focus:border-primary
+                      bg-background-light dark:bg-background-dark focus:ring-primary
+                    "
+                    placeholder="Name"
+                    type="text"
+                  />
+                </div>
+
+                <div>
+                  <label class="sr-only" for="email">Email</label>
+                  <input
+                    id="email"
+                    class="
+                      w-full rounded-lg p-3 text-sm
+                      border-slate-200 dark:border-slate-800 
+                      bg-background-light dark:bg-background-dark
+                      focus:ring-primary focus:border-primary
+                    "
+                    placeholder="Email address"
+                    type="email"
+                  />
+                </div>
+                <div>
+                  <label class="sr-only" for="message">Message</label>
+                  <textarea
+                    id="message"
+                    class="
+                      w-full p-3 rounded-lg text-sm 
+                      border-slate-200 dark:border-slate-800 
+                      bg-background-light dark:bg-background-dark 
+                      focus:ring-primary focus:border-primary
+                    "
+                    placeholder="Your question..."
+                    rows="6"
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button
+                    class="
+                      bg-primary px-6 py-3 rounded-lg 
+                      text-white text-base font-semibold 
+                      hover:opacity-90 transition-opacity shadow-md
+                    "
+                    type="submit"
+                  >
+                    Submit Question
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-primary">
+          <div
+            class="
+              container mx-auto text-center
+              px-4 sm:px-6 lg:px-8 py-16 sm:py-20
+            "
+          >
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+              Ready to get started?
+            </h2>
+            <p class="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
+              Join thousands of teams who are already building faster and
+              better.
+            </p>
+            <div class="mt-8">
+              <a
+                class="
+                  bg-white px-8 py-3
+                  text-primary text-base font-semibold 
+                  rounded-lg hover:opacity-90 transition-opacity shadow-lg
+                "
+                href="#"
+              >
+                Start Free Trial
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer
+        class="
+          bg-background-light dark:bg-background-dark 
+          border-t border-slate-200 dark:border-slate-800
+        "
+      >
+        <div 
+          class="
+            container mx-auto px-4 sm:px-6 lg:px-8 py-8
+            flex justify-between items-center
+          "
+        >
+          <p class="text-sm text-slate-500 dark:text-slate-400">
+            © 2024 Acme Co. All rights reserved.
+          </p>
+          <div class="flex gap-4">
+            <a
+              class="
+                text-slate-500 hover:text-primary 
+                dark:text-slate-400 dark:hover:text-primary 
+                transition-colors
+              "
+              href="#"
+            >
+              Twitter
+            </a>
+            <a
+              class="
+                text-slate-500 hover:text-primary 
+                dark:text-slate-400 dark:hover:text-primary 
+                transition-colors
+              "
+              href="#"
+            >
+              LinkedIn
+            </a>
+            <a
+              class="
+                text-slate-500 hover:text-primary 
+                dark:text-slate-400 dark:hover:text-primary 
+                transition-colors
+              "
+              href="#"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
