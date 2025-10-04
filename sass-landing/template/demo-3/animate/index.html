@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head >
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Demo 3 - SaaS Landing Page (Animate)</title>
+
+    <!-- ============ Favicon ============ -->
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+
+    <!-- ============ Fonts ============ -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+
+    <!-- ============ Tailwind CSS ============ -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./tailwind-config.js"></script>
+
+    <!-- ============ Custom CSS ============ -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ============ Animations ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
+  </head>
+  <body class="bg-white font-sans text-text-primary antialiased">
+    <div class="relative min-h-screen w-full flex flex-col">
+      <header
+        class="
+          sticky top-0 z-50 
+          bg-white/95 backdrop-blur-sm 
+          border-b border-slate-100
+        "
+      >
+        <div 
+          class="
+            container mx-auto px-4 sm:px-6 lg:px-8
+            flex items-center justify-between h-20
+          "
+        >
+          <div class="flex items-center gap-4">
+            <a class="flex items-center gap-2" href="#">
+              <svg
+                class="h-8 w-8 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2L3 7v10l9 5 9-5V7l-9-5z"
+                  stroke="#3B82F6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+                <path
+                  d="M3 7l9 5l9-5"
+                  stroke="#3B82F6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+                <path
+                  d="M12 12v10"
+                  stroke="#3B82F6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+              <span class="text-2xl font-bold text-text-primary">
+                Acme
+              </span>
+            </a>
+          </div>
+
+          <nav class="hidden md:flex items-center gap-2 lg:gap-8">
+            <a
+              class="
+                text-base font-medium text-text-secondary 
+                hover:text-primary transition-colors
+              "
+              href="#features"
+            >
+              Features
+            </a>
+            <a
+              class="
+                text-base font-medium text-text-secondary 
+                hover:text-primary transition-colors
+              "
+              href="#about"
+            >
+              About Us
+            </a>
+            <a
+              class="
+                text-base font-medium text-text-secondary 
+                hover:text-primary transition-colors
+              "
+              href="#case-studies"
+            >
+              Case Studies
+            </a>
+            <a
+              class="
+                text-base font-medium text-text-secondary 
+                hover:text-primary transition-colors
+              "
+              href="#testimonials"
+            >
+              Testimonials
+            </a>
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <a
+              class="
+                hidden sm:inline-block 
+                text-base font-medium text-text-secondary 
+                hover:text-primary transition-colors
+              "
+              href="#"
+            >
+              Sign In
+            </a>
+            <a
+              class="
+                px-6 py-3 transition-colors
+                text-white text-base font-semibold 
+                bg-primary hover:bg-primary-hover rounded-md shadow-sm
+              "
+              href="#contact"
+            >
+              Contact Sales
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-grow">
+        <section class="py-24 sm:py-32 lg:py-40 bg-light-gray">
+          <div 
+            class="
+              container mx-auto px-4 sm:px-6 lg:px-8
+              grid lg:grid-cols-2 gap-16 items-center
+            "
+          >
+            <div class="text-center lg:text-left">
+              <h1
+                class="
+                  animate__animated
+                  text-4xl sm:text-5xl lg:text-6xl 
+                  font-extrabold tracking-tight text-text-primary
+                "
+                data-animate="animate__flash"
+              >
+                Scalable Solutions for the Modern Enterprise
+              </h1>
+              <p
+                class="
+                  animate__animated
+                  mt-6 max-w-xl mx-auto lg:mx-0
+                  text-lg text-text-secondary 
+                "
+                data-animate="animate__fadeInUp"
+              >
+                Drive efficiency, security, and growth with a platform
+                designed for the unique demands of large-scale organizations.
+              </p>
+              <div 
+                class="
+                  animate__animated mt-10 
+                  flex gap-4 justify-center lg:justify-start
+                " 
+                data-animate="animate__fadeInUp"
+              >
+                <a
+                  class="
+                    bg-primary hover:bg-primary-hover 
+                    text-white text-lg font-semibold 
+                    px-8 py-4 rounded-md transition-colors shadow-sm
+                  "
+                  href="#contact"
+                >
+                  Contact Sales
+                </a>
+                <a
+                  class="
+                    px-8 py-4 
+                    bg-white hover:bg-slate-50 shadow-sm
+                    text-primary text-lg font-semibold 
+                    ring-1 ring-medium-gray rounded-md transition-colors
+                  "
+                  href="#case-studies"
+                >
+                  View Case Studies
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="
+                animate__animated
+                relative w-full h-auto aspect-video 
+                rounded-xl shadow-soft-lg overflow-hidden group
+              "
+              data-animate="animate__jackInTheBox"
+            >
+              <div class="absolute inset-0 bg-slate-100 animate-pulse"></div>
+              <img
+                alt="Animated dashboard illustration"
+                class="
+                  absolute inset-0 w-full h-full object-cover 
+                  transition-transform duration-500 group-hover:scale-105
+                "
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaktbvKwZCotc1b4vHJsApbG2zqxFYesrhAGIIexl53N2Zl5hnAlax0T47-LBlx1MlZG4nscFmjiJwj8dFsT4XGmRW8BqiN6ybcvP3SyKhLQS2ylX5BU7iHIVYLXJ1E1lGEJO4bYmvma-cQeOa4-AEfFVGBwAnyXl1lAtYK-2t1SrMsfAsy6qJS2QvouMTCNWeNwWcQvrIBSIFgoriZ9EYQbys0xjqTk4Iy8R_2CLwjsmHzjeNdIU_sKPEi33-1LmsbKBJmwd8bxQ"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20 sm:py-24">
+          <div 
+            class="
+              animate__animated container 
+              mx-auto px-4 sm:px-6 lg:px-8
+            " 
+            data-animate="animate__fadeInUp"
+          >
+            <div class="text-center">
+              <h2
+                class="
+                  text-base font-semibold 
+                  text-text-secondary uppercase tracking-wider
+                "
+              >
+                Trusted by Leading Global Enterprises
+              </h2>
+            </div>
+            <div class="mt-12 scroll-container">
+              <div id="logos-container" class="scroll-content">
+                <!-- logos will be dynamically added here by JavaScript (script.js) -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="py-20 sm:py-24 bg-light-gray">
+          <div 
+            class="
+              animate__animated container 
+              mx-auto px-4 sm:px-6 lg:px-8
+            " 
+            data-animate="animate__fadeInUp"
+          >
+            <div class="text-center max-w-3xl mx-auto">
+              <h2
+                class="
+                  text-3xl sm:text-4xl font-bold 
+                  tracking-tight text-text-primary
+                "
+              >
+                Enterprise-Grade Features &amp; Benefits
+              </h2>
+              <p class="mt-4 text-lg text-text-secondary">
+                Our platform provides the security, control, and performance
+                your organization requires.
+              </p>
+            </div>
+
+            <div
+              class="
+                mt-16 grid gap-8
+                grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+              "
+            >
+              <div
+                class="
+                  flex flex-col hover:shadow-lg
+                  bg-white p-8 rounded-lg 
+                  border border-medium-gray 
+                "
+              >
+                <div
+                  class="
+                    w-16 h-16 flex justify-center items-center
+                    bg-blue-100 text-primary rounded-full
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">lock</span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-text-primary">
+                  Advanced Security &amp; Compliance
+                </h3>
+                <p class="mt-2 text-text-secondary">
+                  SSO, SCIM, and audit logs to meet your stringent security and
+                  compliance requirements.
+                </p>
+              </div>
+
+              <div
+                class="
+                  flex flex-col hover:shadow-lg
+                  bg-white p-8 rounded-lg 
+                  border border-medium-gray 
+                "
+              >
+                <div
+                  class="
+                    w-16 h-16 flex justify-center items-center
+                    bg-blue-100 text-primary rounded-full
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">
+                    apartment
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-text-primary">
+                  Scalable Infrastructure
+                </h3>
+                <p class="mt-2 text-text-secondary">
+                  Reliable performance for thousands of users with dedicated
+                  infrastructure and 99.9% uptime SLA.
+                </p>
+              </div>
+
+              <div
+                class="
+                  flex flex-col hover:shadow-lg
+                  bg-white p-8 rounded-lg 
+                  border border-medium-gray 
+                "
+              >
+                <div
+                  class="
+                    w-16 h-16 flex justify-center items-center
+                    bg-blue-100 text-primary rounded-full
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">
+                    support_agent
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-text-primary">
+                  Dedicated Support
+                </h3>
+                <p class="mt-2 text-text-secondary">
+                  Priority support with a dedicated account manager and
+                  customized onboarding for your teams.
+                </p>
+              </div>
+
+              <div
+                class="
+                  flex flex-col hover:shadow-lg
+                  bg-white p-8 rounded-lg 
+                  border border-medium-gray 
+                "
+              >
+                <div
+                  class="
+                    w-16 h-16 flex justify-center items-center
+                    bg-blue-100 text-primary rounded-full
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">
+                    admin_panel_settings
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-text-primary">
+                  Granular Admin Controls
+                </h3>
+                <p class="mt-2 text-text-secondary">
+                  Manage user permissions, roles, and access across your entire
+                  organization with ease.
+                </p>
+              </div>
+
+              <div
+                class="
+                  flex flex-col hover:shadow-lg
+                  bg-white p-8 rounded-lg 
+                  border border-medium-gray 
+                "
+              >
+                <div
+                  class="
+                    w-16 h-16 flex justify-center items-center
+                    bg-blue-100 text-primary rounded-full
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">api</span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-text-primary">
+                  Robust API &amp; Integrations
+                </h3>
+                <p class="mt-2 text-text-secondary">
+                  Build custom workflows and integrate with your existing
+                  enterprise systems via our extensive API.
+                </p>
+              </div>
+
+              <div
+                class="
+                  flex flex-col hover:shadow-lg
+                  bg-white p-8 rounded-lg 
+                  border border-medium-gray 
+                "
+              >
+                <div
+                  class="
+                    w-16 h-16 flex justify-center items-center
+                    bg-blue-100 text-primary rounded-full
+                  "
+                >
+                  <span class="material-symbols-outlined text-3xl">
+                    analytics
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-text-primary">
+                  In-Depth Analytics
+                </h3>
+                <p class="mt-2 text-text-secondary">
+                  Gain deep insights into usage, adoption, and ROI with our
+                  comprehensive reporting dashboard.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="py-20 sm:py-24" >
+          <div 
+            class="
+              animate__animated container 
+              mx-auto px-4 sm:px-6 lg:px-8
+            " 
+            data-animate="animate__fadeInUp"
+          >
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+              <div class="order-2 lg:order-1">
+                <h2
+                  class="
+                    text-3xl sm:text-4xl font-bold 
+                    tracking-tight text-text-primary
+                  "
+                >
+                  Our Story: Building the Future of Enterprise Software
+                </h2>
+                <p class="mt-6 text-lg text-text-secondary">
+                  Founded in 2010, Acme Inc. started with a simple mission: to
+                  empower large organizations with tools that are powerful,
+                  secure, and intuitive. We saw a gap in the market for
+                  enterprise solutions that didn't compromise on user
+                  experience. From our humble beginnings in a small garage,
+                  we've grown into a globally recognized leader, driven by our
+                  core values of innovation, customer-centricity, and integrity.
+                </p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <h3
+                      class="
+                        text-xl font-semibold text-text-primary f
+                        lex items-center gap-2
+                      "
+                    >
+                      <span class="material-symbols-outlined text-primary">
+                        rocket_launch
+                      </span>
+                      Our Mission
+                    </h3>
+                    <p class="mt-2 text-text-secondary">
+                      To provide scalable and secure software that drives
+                      measurable growth and efficiency for our enterprise
+                      clients.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3
+                      class="
+                        text-xl font-semibold text-text-primary 
+                        flex items-center gap-2
+                      "
+                    >
+                      <span class="material-symbols-outlined text-primary">
+                        visibility
+                      </span>
+                      Our Vision
+                    </h3>
+                    <p class="mt-2 text-text-secondary">
+                      To be the most trusted partner for enterprises seeking to
+                      transform their digital operations and unlock their full
+                      potential.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-1 lg:order-2">
+                <img
+                  alt="A diverse team of professionals collaborating in a modern office"
+                  class="
+                    w-full h-auto object-cover rounded-lg 
+                    shadow-md border border-medium-gray
+                  "
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWwPIWk2JHsJBuGd5vBrwzfiQiWS6jat1vofIr73DBUwlESFeEzrcYf3yyUr8s-NWMMr4wIYFf93hNP-arX3I_B8ZjkNGM7XTkJCjls8iov4R9edAPJxRcW85bZny89zH9eMbOwRYESzuFD9GMknGqh-4E4UP5pf0M1yKmA0lr6sOjO-wYWLv_4GkK6BLqkrRO7kYAd477jLrrNyVlsE64ayfZyM1qHvZSgfa2muu1rnwgLssubpfC2oqZA_kRfjQnqNAi6hINOxs"
+                />
+              </div>
+            </div>
+
+            <div class="mt-20">
+              <div class="text-center max-w-3xl mx-auto">
+                <h2
+                  class="
+                    text-3xl sm:text-4xl font-bold 
+                    tracking-tight text-text-primary
+                  "
+                >
+                  Meet Our Leadership Team
+                </h2>
+                <p class="mt-4 text-lg text-text-secondary">
+                  The architects of our success, guiding Acme with experience
+                  and a shared passion for excellence.
+                </p>
+              </div>
+
+              <div
+                class="
+                  mt-16 grid gap-8
+                  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+                "
+              >
+                <div class="text-center">
+                  <img
+                    alt="Portrait of Michael Chen"
+                    class="w-32 h-32 rounded-full mx-auto object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3cBQFMW7YmJM41CnLY5Im9TbsLltMIEhfvO1BUu4qtGiH_4hB9PEbTFNC5D43mOyQnKpBmmwlghvkDSF5_ikk48vrmEc2VZ8fyt9UwcgeZkspyRvKkhRjmLGTotxq2fNgqTqs9LyvLIuU1TtCdfIUrGq6tyx0w9zfPTGv8dqdBeCjibLzmuo1wuH9RLUTKzBJ6cMqchbCH5KuA0RJODM7KjCFlWwFlS1xXi_0PtYu3c60TcgIqbCmWLQiCNofO0ZPDbrOHGUp4Y4"
+                  />
+                  <h3 class="mt-4 text-xl font-semibold text-text-primary">
+                    Michael Chen
+                  </h3>
+                  <p class="text-text-secondary">Founder &amp; CEO</p>
+                </div>
+
+                <div class="text-center">
+                  <img
+                    alt="Portrait of Sarah Rodriguez"
+                    class="w-32 h-32 rounded-full mx-auto object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Lo_X1UivkS6hRQGb7nNj4cSZAkUv20q0gQH70GVqW0dOwdfSkS9FSmLti2_sY3oBnYPYxITeneydKaK5aL0CdpTXt2g1z_3DlXa_Ti8ykjjCGuFSw7crCPc18n-dZA1rnHC_Z0sgp1dNSw1mqiNpymP-El5I8RkXVWKrrlaeN2uoPCPr8lCp5PPlBIb7_Q7w1WJpqPYAwrlx8yFGJdjR-0MKeg9LVIZOT70FS04gQZy0SHmrd-dGRTWUWL3wMJfKG857_VdKw7w"
+                  />
+                  <h3 class="mt-4 text-xl font-semibold text-text-primary">
+                    Sarah Rodriguez
+                  </h3>
+                  <p class="text-text-secondary">Chief Technology Officer</p>
+                </div>
+
+                <div class="text-center">
+                  <img
+                    alt="Portrait of David Lee"
+                    class="w-32 h-32 rounded-full mx-auto object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJnHGkf_4I_1cxflQpfy5UtlMa6uthjavaudRfNF9FQpiy78w5VNWHLHhQ1Ly5KTmaZ1oMA6BLoKNbLXG4mTYxRiJpZScuXHjJHMa748zkYnAeb1ZvdtNTwU9csQAlI9gimx5r-tm5k8ugnvltoddRasMwfv_0IH_sxMSlBt41-QhLNxg_zKNltkOCXZclRq1HJ0YKvvLItm04x-0hkQ0_Rh6yK5prWPQiNzlDlj-7bYibOOpHgFZvQDDRgcN0gYRzPGTuy6AKIX8"
+                  />
+                  <h3 class="mt-4 text-xl font-semibold text-text-primary">
+                    David Lee
+                  </h3>
+                  <p class="text-text-secondary">Chief Operating Officer</p>
+                </div>
+
+                <div class="text-center">
+                  <img
+                    alt="Portrait of Jessica Williams"
+                    class="w-32 h-32 rounded-full mx-auto object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3XojKTJah0lu0FjkMjvO3pQK7ZJ1Uql8P3H0n208rbyWuaa5Sil3icx1tmBvb8O4ELdFLd6tjCWNdNYzOe1Gl5X5y8--M1PrGK8NJSqCCibisN9dJEnyYKRLSR30c6UN0gv6LnGypHXEIqYd8k0dkaOEeJddjLvpQxcm7a_9gFPQLhAEw9wtDxX37b7__oIerOBnxOGSYBRfWJEPd85d_21DbOzaDkhc2o_YVs7Qzo3we-0SCaICW93zvzgYogYmZlsV-mMH_nV4"
+                  />
+                  <h3 class="mt-4 text-xl font-semibold text-text-primary">
+                    Jessica Williams
+                  </h3>
+                  <p class="text-text-secondary">VP of Sales &amp; Marketing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="case-studies" class="py-20 sm:py-24 bg-light-gray" >
+          <div 
+            class="
+              animate__animated container 
+              mx-auto px-4 sm:px-6 lg:px-8
+            "
+            data-animate="animate__fadeInUp"
+          >
+            <div class="text-center max-w-3xl mx-auto">
+              <h2
+                class="
+                  text-3xl sm:text-4xl font-bold 
+                  tracking-tight text-text-primary
+                "
+              >
+                Customer Success in Focus
+              </h2>
+              <p class="mt-4 text-lg text-text-secondary">
+                Explore how industry leaders partner with Acme to solve complex
+                challenges and drive transformative results.
+              </p>
+            </div>
+            
+            <div class="mt-16 space-y-20">
+              <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="order-1">
+                  <img
+                    alt="Global Finance Corp team in a meeting room"
+                    class="
+                      w-full h-auto object-cover rounded-lg 
+                      shadow-md border border-medium-gray
+                    "
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMPVRvMei5-AmKKN0N6LRhB2r189GyXgpzuEEn1D7yqEuy6oYHZgFaUF85HT6Ni4_hmi7VijSUecgLVJSxw4OQhQbLYbGaa9cMkrK7L9u4MH_44O445LNUe8RtCf0C9ypNFxZMR5lPKmJ6OzCz4r-IWMReL8aYinaKpRT8A7at0KhNDc3zguu3hgbO3qu8Z3FEm2J1m5Mr0NYWC3_O6IlGO1rbrQtac9HhFAcr1al0sfCdRQesdN_08qaBQFus05am7Qc1mFD25rs"
+                  />
+                </div>
+
+                <div class="order-2">
+                  <img
+                    alt="Global Finance Corp logo"
+                    class="h-10 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvaIRwuVop7XCnUlaRmXQ4UfgBgo49TnnQwzC_oPWHfSU5tIDlZ77FJuYue4cByASA73pKvCu73QrY0liJnF15ndoZ4tS0tZMHmT7aFTPmr1mROQ59DLAmOzWR2euLkQUo96iKLZyv0UcopkQGcRBseok5MIcgJT8t0Oa54xH_34vvcHKHol4u_I5wUhHhRSE6ht0pFSve-ESqRc43PWrLbxx8TsQ0ewb1KT1vD-twZpcsgYZSxoZnTg1p6iGmgHTgBJU7pLB9_yI"
+                  />
+
+                  <blockquote class="mt-6">
+                    <p
+                      class="text-2xl font-semibold text-text-primary leading-snug"
+                    >
+                      "Acme's platform was a game-changer for our operational
+                      efficiency. The ability to automate and streamline our
+                      processes across departments has been instrumental."
+                    </p>
+                  </blockquote>
+
+                  <div class="mt-6 border-l-4 border-primary pl-6">
+                    <p class="text-text-secondary">
+                      By implementing Acme's solution, Global Finance Corp
+                      automated over 20 key workflows, which led to a
+                      significant reduction in manual data entry and human
+                      error. Their teams can now focus on high-value strategic
+                      initiatives instead of repetitive administrative tasks.
+                    </p>
+                  </div>
+
+                  <div class="mt-8 grid grid-cols-2 gap-6 text-center">
+                    <div>
+                      <p 
+                        class="animate_counter text-4xl font-bold text-primary" 
+                        data-target="40"
+                      >
+                        0%
+                      </p>
+                      <p class="mt-1 text-text-secondary">
+                        Increase in Productivity
+                      </p>
+                    </div>
+                    <div>
+                      <p 
+                        class="animate_counter text-4xl font-bold text-primary" 
+                        data-target="25"
+                      >
+                        0%
+                      </p>
+                      <p class="mt-1 text-text-secondary">
+                        Reduction in Project Timelines
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-8 flex gap-x-1 text-primary">
+                    <a
+                      class="
+                        flex items-center
+                        font-semibold hover:underline 
+                      "
+                      href="#"
+                    >
+                      Read the full case study
+                    </a>
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                  <img
+                    alt="Innovate Tech Solutions logo"
+                    class="h-10 w-auto"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf-5RSfGhvGq8HgIrrZicfsLaDWtC67IWIe0xuEX9jchp6jtfP0YF2vlDSMy1rqihzGpf3dtWTicBDoUWGyLXsXRGJ_DB1ZONttrRAFs2xUE4IKqAuHto5WoRncOFlzN_juLaHnVnwMk9OzMn_mAjcIFG7pVUR6BMMKhBJFsDUZ2ZyxCwqhB9WI2_-No12llLSrRhZylCjcnFSv0N4wePqWoPeXTjh8aSFIf0TyluYHiH1fLA3UhooReKAnAdBqDU1Z55FcddsPcM"
+                  />
+                  
+                  <blockquote class="mt-6">
+                    <p class="text-2xl font-semibold text-text-primary leading-snug">
+                      "The security and compliance features of Acme are
+                      unparalleled. We were able to consolidate our security
+                      stack and meet stringent industry regulations with one
+                      platform."
+                    </p>
+                  </blockquote>
+
+                  <div class="mt-6 border-l-4 border-primary pl-6">
+                    <p class="text-text-secondary">
+                      Innovate Tech Solutions faced complex compliance demands.
+                      Acme's robust security features, including advanced audit
+                      logs and SSO, enabled them to pass security audits with
+                      ease and build greater trust with their enterprise
+                      customers.
+                    </p>
+                  </div>
+
+                  <div class="mt-8 grid grid-cols-2 gap-6 text-center">
+                    <div>
+                      <p 
+                        class="animate_counter text-4xl font-bold text-primary" 
+                        data-target="100"
+                      >
+                        0%
+                      </p>
+                      <p class="mt-1 text-text-secondary">
+                        Compliance with GDPR &amp; SOC 2
+                      </p>
+                    </div>
+                    <div>
+                      <p 
+                        class="animate_counter text-4xl font-bold text-primary" 
+                        data-target="50"
+                      >
+                        0%
+                      </p>
+                      <p class="mt-1 text-text-secondary">
+                        Reduction in Security Incidents
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-8 flex gap-x-1 text-primary">
+                    <a
+                      class="font-semibold hover:underline flex items-center"
+                      href="#"
+                    >
+                      Read the full case study
+                    </a>
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                  <img
+                    alt="Innovate Tech Solutions server room with a technician"
+                    class="
+                      w-full h-auto object-cover rounded-lg 
+                      shadow-md border border-medium-gray
+                    "
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV6fRIEsfMrxZ6L5rrKazeoWVi3Yw4gDiq3TLQKPFzV_qVV5DhABggUZdYWztQSz2-AH_0ge5kuqsMUFSzYTerzJjYEYdAafcV-JJbGblaQxGkqv4UnFvf3hdMbvc8HVVMyL-w0NkA5rxDvUthKaFWqOAL_ocO7cW1FyvEtk3wG3D5lpLSk5Fg1LTP5JuhOSxBhJCH933yQ_F9XiSc4NztPv83Li668MglPo0qA48uwQ9vSApUT-t7hmu9Uxjcl8h4S0GM8okkovc"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="press" class="py-20 sm:py-24" >
+          <div 
+            class="
+              animate__animated container 
+              mx-auto px-4 sm:px-6 lg:px-8
+            " 
+            data-animate="animate__fadeInUp"
+          >
+            <div class="text-center max-w-3xl mx-auto">
+              <h2
+                class="
+                  text-3xl sm:text-4xl font-bold 
+                  tracking-tight text-text-primary
+                "
+              >
+                Press &amp; Media Mentions
+              </h2>
+              <p class="mt-4 text-lg text-text-secondary">
+                We are honored to be recognized by leading publications in the
+                technology and business world.
+              </p>
+            </div>
+
+            <div
+              class="
+                mt-16 grid gap-8 
+                grid-cols-2 md:grid-cols-4 
+                items-center justify-items-center
+              "
+            >
+              <a class="group" href="#">
+                <img
+                  alt="Tech Journal logo"
+                  class="h-16 w-auto"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPNvR3Nj8wyM8CK_XV5x__One5tCpQJjsrE4p9vC3kkBaabCTb_a-06oB_dcnWdQ7y2rZqh5wjv_kOVjA3wt6LtQkP183nQFJgZKLYouFSea_8BBZHh3K9Rs5LFsqnUj-KnC3X3cjvb1osFxePIxtnLLzcUzUP57z9M_6fscZDW7kM4GAMMdmQHyhKThA1MXTvhGtts9bb6rzzbVJ-SSVIsJdqh4f8EyZBWF4BIVERVNBAUVJ_WU3LYW0ZYAxoftDfekU-JWhJV9c"
+                />
+              </a>
+              <a class="group" href="#">
+                <img
+                  alt="Enterprise Weekly logo"
+                  class="h-16 w-auto"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUgVGg0XHDs6QBdYB8uE_qhVT3EAyvVKV9pOTJk55h9DlvuLRsaBPZ5pyVfa_wZJXuZRDDVBZPq48yTv_eQ_v6YRd5h0kUuqNFci_qfNjoTiGKc_u3WBnIyoyX3F3s077jNHxCITRVcrBnkBT3zTNCYRLoToys7c6epBvud1yWSBeCh8Uz4XFRUhYFtValv1bHQUxRg3vPfDQJmvflm7oixa1JXlg__MM4QRzAMkuMGs_muXNLTEjZrfQORNP6k92-NnwLCmXg4l0"
+                />
+              </a>
+              <a class="group" href="#">
+                <img
+                  alt="Innovation Today logo"
+                  class="h-16 w-auto"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlXwEJ-oHUj6O5hm3VtZ1VodPpjVs5ylSRTekb3LJ4wFK9blyQpVEWjNL0t7ror5X1GUxg-EH0zIyTsnrksQUsDNSD_eCO2seSGikOI1Shxh2qazP4uOflrR0OWRLKhI98WsIWESfqViJhM2beOT5PgQZMtvi4ULgWi_fL5mT_bVc-h37cQadQ0UynliDbSCqMs_xWHDLSxImw7uiFjsicDgMrJKV09dGvPd3caWnOkj7On3KTbb-RX72VEWbxmxMIVid4TZDnX0o"
+                />
+              </a>
+              <a class="group" href="#">
+                <img
+                  alt="Business Forward logo"
+                  class="h-16 w-auto"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhhpZ7PV_ZQZGVXC5DXmoD8CYf8rhaCkHQWZi6TU54Ju_mDttuRZvrjuVzlHEEhA6hdmK8sYwNxoOLeDLFQ5kZPUSvSkUNmBFF6_c1Ni0eQu93OvibsejEpjbfwvIip4xRIH0S3rUufJSM1jY2tUSl5OAZCu87ix8GOTdpeDaDimGQsxeABnZdg6F3k_rx_eqdkizclBPIxBBnh77V_Emoo9wqU7_hPZpeaIhgJlS2ab7sbPuEEyzq9jEoX-EDcS_LFyC2PhfCm9I"
+                />
+              </a>
+            </div>
+
+            <div class="mt-12 max-w-4xl mx-auto space-y-8">
+              <div
+                class="
+                bg-white p-6 rounded-lg 
+                border border-medium-gray 
+                flex flex-col sm:flex-row items-start gap-6
+              "
+              >
+                <img
+                  alt="Tech Journal logo"
+                  class="h-8 w-auto flex-shrink-0"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaLlNHucF50g-V-EQiaPGN3rEHoYnsHAhq45Yr9clS7Hacz-Kem0LudKUpWoz478nav2jklH5tRpCkL4Od2saF2GK_eQIxb_cw0EpAQywXcHYF85cnKeKs_olA22X81XpMYjl8jaGIuhtQDZWDXXWmLePAx8TtjfsNsJnW4N7yNH3vxlnJFv2APon0OtuvfkIa_w6LIAK_ukoiVQwaoKGDSDWbnGZrWJPJJrUVUVG6fFe9zoD8oCyUZkAaM-fyIA_Zov9SojJyiIQ"
+                />
+                <div>
+                  <p class="text-text-secondary">
+                    "Acme Enterprise is fundamentally changing how large
+                    organizations approach workflow automation, setting a new
+                    industry standard."
+                  </p>
+                  <a
+                    class="mt-2 inline-flex items-center font-semibold text-primary hover:underline"
+                    href="#"
+                  >
+                    Read Article
+                    <span class="material-symbols-outlined text-sm ml-1">
+                      open_in_new
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="
+                  bg-white p-6 rounded-lg 
+                  border border-medium-gray 
+                  flex flex-col sm:flex-row items-start gap-6
+                "
+              >
+                <img
+                  alt="Enterprise Weekly logo"
+                  class="h-8 w-auto flex-shrink-0"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjptX0L5hPet6mwpziNY_z7KxDI9Z3pCkDujj6q6yMc4ruV_Z2kfVsqzdX7iQtGFSrNqHdOaWbbtJ83_9cWXVNt6JVHd1jXkEi5QVQFQTN42cZm1M3Tbm1zFQ75GIocZQSlssLGV6LPD4l1hd8tZj-BzrjrBct056asb6fy7C6fmvPTI5ioKihdgM_5-SBLvgphsUi83kRJGQS7a5qTdiu6g2hPP6qgCADYuCHmql2gYqnHF8aBvaw40-OfjPYvMA7mgGxrjny2Yg"
+                />
+                <div>
+                  <p class="text-text-secondary">
+                    "In our latest report, Acme's security architecture was
+                    highlighted as a top-tier solution for enterprises concerned
+                    with data integrity and compliance."
+                  </p>
+                  <a
+                    class="
+                      mt-2 inline-flex items-center 
+                      font-semibold text-primary hover:underline
+                    "
+                    href="#"
+                  >
+                    See the Report
+                    <span class="material-symbols-outlined text-sm ml-1">
+                      open_in_new
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonials" class="py-20 sm:py-24 bg-light-gray" >
+          <div 
+            class="
+              animate__animated container 
+              mx-auto px-4 sm:px-6 lg:px-8
+            " 
+            data-animate="animate__fadeInUp"
+          >
+            <h2
+              class="
+                text-3xl sm:text-4xl font-bold 
+                tracking-tight text-text-primary text-center
+              "
+            >
+              Endorsed by Industry Leaders
+            </h2>
+
+            <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div class="bg-white p-8 rounded-lg border border-medium-gray hover:shadow-lg">
+                <p class="text-text-secondary text-lg">
+                  "Acme's enterprise platform provided the scalability and
+                  security we needed to support our global team. The dedicated
+                  support has been instrumental in our success."
+                </p>
+                <div class="mt-6 flex items-center gap-4">
+                  <img
+                    alt="Avatar of Johnathan Doe"
+                    class="w-14 h-14 rounded-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD6t22G7_Y_GYpEPmT8bgPD9BMgjdUhEt9u3nrEN8UfVYTPB2TY2m5BlTEcqJb9Ywob3d_2c51JVxSP220yCkMCPYO15-9nQyywsoTQaHPB2-Gv6RxkqIk64QziX7NjTqjqpFZ65ybzeSX780Ey1DCHTnrx_HG62PrswYIaLM_9i0aAMwzhKPUkiMxQNbW8v9y0yU3VJM7UuZFxd3U9b50yz9vjnRrmpzgJGKybWfBEqj_gBtxyNeNI9AYDI4rBo_CvbaaCC_FbmQ"
+                  />
+                  <div>
+                    <p class="font-semibold text-text-primary">Johnathan Doe</p>
+                    <p class="text-sm text-text-secondary">
+                      VP of Engineering, Global Finance Corp
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white p-8 rounded-lg border border-medium-gray hover:shadow-lg">
+                <p class="text-text-secondary text-lg">
+                  "The ability to enforce granular permissions and integrate
+                  with our existing tools was a key factor in our decision. Acme
+                  has exceeded our expectations."
+                </p>
+                <div class="mt-6 flex items-center gap-4">
+                  <img
+                    alt="Avatar of Jane Smith"
+                    class="w-14 h-14 rounded-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD6t22G7_Y_GYpEPmT8bgPD9BMgjdUhEt9u3nrEN8UfVYTPB2TY2m5BlTEcqJb9Ywob3d_2c51JVxSP220yCkMCPYO15-9nQyywsoTQaHPB2-Gv6RxkqIk64QziX7NjTqjqpFZ65ybzeSX780Ey1DCHTnrx_HG62PrswYIaLM_9i0aAMwzhKPUkiMxQNbW8v9y0yU3VJM7UuZFxd3U9b50yz9vjnRrmpzgJGKybWfBEqj_gBtxyNeNI9AYDI4rBo_CvbaaCC_FbmQ"
+                  />
+                  <div>
+                    <p class="font-semibold text-text-primary">Jane Smith</p>
+                    <p class="text-sm text-text-secondary">
+                      Director of IT, Innovate Tech Solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white p-8 rounded-lg border border-medium-gray hover:shadow-lg">
+                <p class="text-text-secondary text-lg">
+                  "From onboarding to ongoing support, the Acme team has been a
+                  true partner. Their platform is robust, reliable, and has
+                  become essential to our operations."
+                </p>
+                <div class="mt-6 flex items-center gap-4">
+                  <img
+                    alt="Avatar of Emily White"
+                    class="w-14 h-14 rounded-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD6t22G7_Y_GYpEPmT8bgPD9BMgjdUhEt9u3nrEN8UfVYTPB2TY2m5BlTEcqJb9Ywob3d_2c51JVxSP220yCkMCPYO15-9nQyywsoTQaHPB2-Gv6RxkqIk64QziX7NjTqjqpFZ65ybzeSX780Ey1DCHTnrx_HG62PrswYIaLM_9i0aAMwzhKPUkiMxQNbW8v9y0yU3VJM7UuZFxd3U9b50yz9vjnRrmpzgJGKybWfBEqj_gBtxyNeNI9AYDI4rBo_CvbaaCC_FbmQ"
+                  />
+                  <div>
+                    <p class="font-semibold text-text-primary">Emily White</p>
+                    <p class="text-sm text-text-secondary">
+                      Chief Operating Officer, Enterprise Logistics
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq-contact" class="py-20 sm:py-24" >
+          <div 
+            class="
+              animate__animated container 
+              mx-auto px-4 sm:px-6 lg:px-8
+              grid lg:grid-cols-2 gap-16
+            " 
+              data-animate="animate__fadeInUp"
+            >
+            <div>
+              <div class="max-w-xl">
+                <h2
+                  class="
+                    text-3xl sm:text-4xl font-bold 
+                    tracking-tight text-text-primary
+                  "
+                >
+                  Frequently Asked Questions
+                </h2>
+                <p class="mt-4 text-lg text-text-secondary">
+                  Find answers to common questions about our platform,
+                  security, and enterprise plans.
+                </p>
+              </div>
+
+              <div class="mt-8 space-y-4">
+                <details class="group border-b border-medium-gray pb-4">
+                  <summary
+                    class="
+                      flex justify-between items-center 
+                      cursor-pointer list-none
+                    "
+                  >
+                    <span class="text-lg font-medium text-text-primary">
+                      What kind of security features do you offer?
+                    </span>
+                    <span
+                      class="
+                        text-primary transform transition-transform 
+                        duration-300 group-open:rotate-45
+                      "
+                    >
+                      <span class="material-symbols-outlined">add</span>
+                    </span>
+                  </summary>
+                  <p class="mt-4 text-text-secondary">
+                    Our platform includes enterprise-grade security features
+                    such as Single Sign-On (SSO), SCIM user provisioning,
+                    multi-factor authentication (MFA), and detailed audit
+                    logs. We are compliant with major standards like SOC 2 and
+                    GDPR.
+                  </p>
+                </details>
+
+                <details class="group border-b border-medium-gray pb-4">
+                  <summary
+                    class="
+                      flex justify-between items-center 
+                      cursor-pointer list-none
+                    "
+                  >
+                    <span class="text-lg font-medium text-text-primary">
+                      How do you handle data privacy and compliance?
+                    </span>
+                    <span
+                      class="
+                        text-primary transform transition-transform 
+                        duration-300 group-open:rotate-45
+                      "
+                    >
+                      <span class="material-symbols-outlined">add</span>
+                    </span>
+                  </summary>
+                  <p class="mt-4 text-text-secondary">
+                    Data privacy is a top priority. We adhere to strict data
+                    protection protocols and are fully compliant with GDPR,
+                    CCPA, and other regional regulations. Our infrastructure
+                    is hosted on secure, certified cloud providers, and data
+                    is encrypted both in transit and at rest.
+                  </p>
+                </details>
+
+                <details class="group border-b border-medium-gray pb-4">
+                  <summary
+                    class="
+                      flex justify-between items-center 
+                      cursor-pointer list-none
+                    "
+                  >
+                    <span class="text-lg font-medium text-text-primary">
+                      Can Acme integrate with our existing tools?
+                    </span>
+                    <span
+                      class="
+                        text-primary transform transition-transform 
+                        duration-300 group-open:rotate-45
+                      "
+                    >
+                      <span class="material-symbols-outlined">add</span>
+                    </span>
+                  </summary>
+                  <p class="mt-4 text-text-secondary">
+                    Yes. We offer a robust API and have pre-built integrations
+                    with many popular enterprise systems, including CRMs,
+                    ERPs, and identity providers. Our professional services
+                    team can also assist with custom integration projects.
+                  </p>
+                </details>
+
+                <details class="group border-b border-medium-gray pb-4">
+                  <summary
+                    class="
+                      flex justify-between items-center 
+                      cursor-pointer list-none
+                    "
+                  >
+                    <span class="text-lg font-medium text-text-primary">
+                      What does the implementation process look like?
+                    </span>
+                    <span
+                      class="
+                        text-primary transform transition-transform 
+                        duration-300 group-open:rotate-45
+                      "
+                    >
+                      <span class="material-symbols-outlined">add</span>
+                    </span>
+                  </summary>
+                  <p class="mt-4 text-text-secondary">
+                    Each enterprise client is assigned a dedicated account
+                    manager and an onboarding specialist. We work with you to
+                    develop a customized implementation plan, which includes
+                    configuration, data migration, team training, and go-live
+                    support to ensure a smooth transition.
+                  </p>
+                </details>
+              </div>
+            </div>
+
+            <div
+              id="contact"
+              class="
+                p-8 sm:p-12 rounded-lg 
+                bg-light-gray border border-medium-gray
+              "
+            >
+              <h2 class="text-3xl font-bold tracking-tight text-text-primary">
+                Contact Us
+              </h2>
+              <p class="mt-4 text-lg text-text-secondary">
+                Have more questions? Fill out the form below and a member of
+                our team will get back to you shortly.
+              </p>
+              <form action="#" class="mt-8 space-y-6" method="POST">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-text-primary mb-1"
+                  >
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    class="
+                      sm:text-sm
+                      block w-full rounded-md border-medium-gray 
+                      shadow-sm focus:border-primary focus:ring-primary
+                    "
+                    name="name"
+                    placeholder="Your Name"
+                    type="text"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-text-primary mb-1"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    class="
+                      sm:text-sm
+                      block w-full rounded-md border-medium-gray 
+                      shadow-sm focus:border-primary focus:ring-primary
+                    "
+                    name="email"
+                    placeholder="you@company.com"
+                    type="email"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-text-primary mb-1"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    class="
+                      sm:text-sm
+                      block w-full rounded-md border-medium-gray 
+                      shadow-sm focus:border-primary focus:ring-primary 
+                    "
+                    name="message"
+                    placeholder="How can we help you?"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div>
+                  <button
+                    class="
+                      w-full bg-primary py-3 px-6 
+                      text-white font-semibold rounded-md 
+                      hover:bg-primary-hover transition-colors shadow-sm
+                    "
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-blue-600">
+          <div 
+            class="
+              animate__animated container 
+              mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24
+              max-w-3xl text-center
+            " 
+            data-animate="animate__fadeInUp"
+          >
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+              Ready to Elevate Your Business?
+            </h2>
+            <p class="mt-4 text-lg text-blue-100">
+              Schedule a personalized demo to see how Acme can transform your
+              enterprise operations.
+            </p>
+            <div class="mt-8">
+              <a
+                class="
+                  bg-white hover:bg-blue-50 shadow-md
+                  text-primary text-lg font-semibold 
+                  px-8 py-4 rounded-md transition-colors
+                "
+                href="#contact"
+              >
+                Request a Demo
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-light-gray border-t border-medium-gray">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="lg:col-span-4">
+              <a class="flex items-center gap-2" href="#">
+                <svg
+                  class="h-8 w-8 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2L3 7v10l9 5 9-5V7l-9-5z"
+                    stroke="#3B82F6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                  <path
+                    d="M3 7l9 5l9-5"
+                    stroke="#3B82F6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                  <path
+                    d="M12 12v10"
+                    stroke="#3B82F6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+                <span class="text-2xl font-bold text-text-primary">
+                  Acme Enterprise
+                </span>
+              </a>
+              <p class="mt-4 text-text-secondary">
+                The leading platform for enterprise workflow automation and
+                collaboration.
+              </p>
+              <div class="mt-6 flex gap-4">
+                <a
+                  class="text-text-secondary hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="sr-only">Twitter</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="
+                        M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 
+                        0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 
+                        8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 
+                        8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 
+                        11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 
+                        5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 
+                        003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 
+                        0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 
+                        0 006.29 1.84
+                      "
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <div class="lg:col-span-2">
+              <h3 class="font-semibold text-text-primary">Product</h3>
+              <ul class="mt-4 space-y-3">
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#features"
+                  >
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#pricing"
+                  >
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#case-studies"
+                  >
+                    Case Studies
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    Security
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="lg:col-span-2">
+              <h3 class="font-semibold text-text-primary">Company</h3>
+              <ul class="mt-4 space-y-3">
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#about"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="lg:col-span-2">
+              <h3 class="font-semibold text-text-primary">Resources</h3>
+              <ul class="mt-4 space-y-3">
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    Documentation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    Support Center
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    API Status
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="lg:col-span-2">
+              <h3 class="font-semibold text-text-primary">Legal</h3>
+              <ul class="mt-4 space-y-3">
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-text-secondary hover:text-primary transition-colors"
+                    href="#"
+                  >
+                    Cookie Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="
+              mt-12 pt-8 
+              border-t border-medium-gray 
+              text-center text-sm text-text-secondary
+            "
+          >
+            <p>© 2024 Acme Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
