@@ -107,7 +107,8 @@
                 </span>
               </button>
 
-              <button
+              <a
+                href="#support"
                 class="
                   rounded-lg h-10 px-4 
                   flex items-center justify-center 
@@ -116,7 +117,7 @@
                 "
               >
                 Get Help
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -208,9 +209,8 @@
                 SaaS Landing Page Template Documentation
               </h1>
               <p class="text-lg text-gray-600 dark:text-gray-400">
-                Welcome to the documentation for our SaaS Landing Page Template.
-                This guide will help you understand the structure, setup, and
-                customization options available.
+                This documentation provides setup instructions, folder structure details, 
+                and customization guidelines for the SaaS Landing Page Template.
               </p>
             </div>
 
@@ -238,83 +238,116 @@
                     text-gray-600 dark:text-gray-400
                   "
                 >
-                  Explore the different demo previews available with this
-                  template. Each demo is designed for a specific purpose to get
-                  you started quickly. We offer both animated and static
-                  versions for each demo.
+                  Explore the different demo previews available with this template. 
+                  Each demo is designed for a specific purpose to get you started 
+                  quickly. We offer both animated and static versions for each demo.
                 </p>
 
                 <div class="space-y-16">
+
+                  <!-- Demo 1 -->
                   <div class="space-y-8">
-                    <h3
-                      class="
-                        text-2xl font-bold 
-                        text-gray-900 dark:text-white
-                      "
-                    >
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
                       Demo 1: Core SaaS Landing Page (Standard / Starter)
                     </h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                      <!-- Static -->
                       <div class="group">
-                        <h4
-                          class="
-                            mb-2 
-                            text-lg font-semibold 
-                            text-gray-800 dark:text-gray-200
-                          "
-                        >
+                        <h4 class="mb-2 text-lg font-semibold text-gray-800 dark:text-gray-200">
                           Static Version
                         </h4>
-
                         <div
                           class="
-                            aspect-[16/10] bg-gray-200 dark:bg-gray-700 rounded-xl 
-                            flex items-center justify-center overflow-hidden shadow-lg
+                            relative aspect-[16/10] 
+                            rounded-xl overflow-hidden shadow-lg
                           "
                         >
-                          <p class="text-gray-500 dark:text-gray-400 text-lg">
-                            Static Screenshot
-                          </p>
-                        </div>
+                          <img 
+                            src="../document/assets/thumbnails/template-demo-1.webp" 
+                            alt="Demo 1 Static Screenshot" 
+                            class="w-full h-full object-cover"
+                          />
 
+                          <!-- Overlay button -->
+                          <div
+                            class="
+                              absolute inset-0 flex items-center justify-center 
+                              bg-black/50 opacity-0 group-hover:opacity-100 
+                              transition-opacity duration-300
+                            "
+                          >
+                            <a 
+                              href="tech-startup-templates/sass-landing/template/demo-1/standard" 
+                              target="_blank" 
+                              class="
+                                px-4 py-2 bg-primary text-white rounded-md 
+                                text-sm font-medium hover:bg-primary-dark
+                              "
+                            >
+                              Preview
+                            </a>
+                          </div>
+                        </div>
                         <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                          A clean and straightforward version without
-                          animations, focusing on content.
+                          A clean and straightforward version without animations, 
+                          focusing on content.
                         </p>
                       </div>
 
+                      <!-- Animated -->
                       <div class="group">
-                        <h4
+                        <h4 
                           class="
-                            mb-2
-                            text-lg font-semibold 
+                            mb-2 text-lg font-semibold 
                             text-gray-800 dark:text-gray-200
                           "
                         >
                           Animated Version
                         </h4>
-
-                        <div
+                        <div 
                           class="
-                            aspect-[16/10] bg-gray-200 dark:bg-gray-700 rounded-xl 
-                            flex items-center justify-center overflow-hidden 
+                            relative
+                            aspect-[16/10] rounded-xl overflow-hidden 
                             shadow-lg transform group-hover:scale-105 
                             transition-transform duration-300 ease-in-out
                           "
                         >
-                          <p class="text-gray-500 dark:text-gray-400 text-lg">
-                            Animated Preview
-                          </p>
-                        </div>
+                          <img 
+                            src="../document/assets/thumbnails/template-demo-1.webp" 
+                            alt="Demo 1 Animated Screenshot" 
+                            class="w-full h-full object-cover"
+                          />
 
+                          <!-- Overlay button -->
+                          <div
+                            class="
+                              absolute inset-0 flex items-center justify-center 
+                              bg-black/50 opacity-0 group-hover:opacity-100 
+                              transition-opacity duration-300
+                            "
+                          >
+                            <a 
+                              href="tech-startup-templates/sass-landing/template/demo-1/animate" 
+                              target="_blank" 
+                              class="
+                                px-4 py-2 bg-primary text-white rounded-md 
+                                text-sm font-medium hover:bg-primary-dark
+                              "
+                            >
+                              Preview
+                            </a>
+                          </div>
+                        </div>
                         <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                          A versatile layout with smooth animations for a
+                          A versatile layout with smooth animations for a 
                           dynamic user experience.
                         </p>
                       </div>
                     </div>
                   </div>
 
+                  <!-- Demo 2 -->
                   <div class="space-y-8">
                     <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
                       Demo 2: Product / Dashboard Showcase
@@ -323,27 +356,46 @@
                       <div class="group">
                         <h4
                           class="
-                            mb-2 
-                            text-lg font-semibold
+                            mb-2 text-lg font-semibold 
                             text-gray-800 dark:text-gray-200
                           "
                         >
                           Static Version
                         </h4>
-
                         <div
                           class="
-                            aspect-[16/10] bg-gray-200 dark:bg-gray-700 rounded-xl 
-                            flex items-center justify-center overflow-hidden shadow-lg
+                            relative aspect-[16/10] 
+                            rounded-xl overflow-hidden shadow-lg
                           "
                         >
-                          <p class="text-gray-500 dark:text-gray-400 text-lg">
-                            Static Screenshot
-                          </p>
+                          <img 
+                            src="../document/assets/thumbnails/template-demo-2.webp" 
+                            alt="Demo 2 Static Screenshot" 
+                            class="w-full h-full object-cover"
+                          />
+                          
+                          <!-- Overlay button -->
+                          <div
+                            class="
+                              absolute inset-0 flex items-center justify-center 
+                              bg-black/50 opacity-0 group-hover:opacity-100 
+                              transition-opacity duration-300
+                            "
+                          >
+                            <a 
+                              href="tech-startup-templates/sass-landing/template/demo-2/standard" 
+                              target="_blank" 
+                              class="
+                                px-4 py-2 bg-primary text-white rounded-md 
+                                text-sm font-medium hover:bg-primary-dark
+                              "
+                            >
+                              Preview
+                            </a>
+                          </div>
                         </div>
-
                         <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                          A visually focused layout without animations, perfect
+                          A visually focused layout without animations, perfect 
                           for clear presentation.
                         </p>
                       </div>
@@ -351,95 +403,152 @@
                       <div class="group">
                         <h4
                           class="
-                            mb-2 
-                            text-lg font-semibold
+                            mb-2 text-lg font-semibold 
                             text-gray-800 dark:text-gray-200
                           "
                         >
                           Animated Version
                         </h4>
-
                         <div
                           class="
-                            aspect-[16/10] bg-gray-200 dark:bg-gray-700 rounded-xl 
-                            flex items-center justify-center overflow-hidden 
+                            relative
+                            aspect-[16/10] rounded-xl overflow-hidden 
                             shadow-lg transform group-hover:scale-105 
                             transition-transform duration-300 ease-in-out
                           "
                         >
-                          <p class="text-gray-500 dark:text-gray-400 text-lg">
-                            Animated Preview
-                          </p>
+                          <img 
+                            src="../document/assets/thumbnails/template-demo-2.webp" 
+                            alt="Demo 2 Animated Screenshot" 
+                            class="w-full h-full object-cover"
+                          />
+                          
+                          <!-- Overlay button -->
+                          <div
+                            class="
+                              absolute inset-0 flex items-center justify-center 
+                              bg-black/50 opacity-0 group-hover:opacity-100 
+                              transition-opacity duration-300
+                            "
+                          >
+                            <a 
+                              href="tech-startup-templates/sass-landing/template/demo-2/animate" 
+                              target="_blank" 
+                              class="
+                                px-4 py-2 bg-primary text-white rounded-md 
+                                text-sm font-medium hover:bg-primary-dark
+                              "
+                            >
+                              Preview
+                            </a>
+                          </div>
                         </div>
-
                         <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                          Engaging animations that highlight your app's features
-                          and visuals.
+                          Engaging animations that highlight your app's features and visuals.
                         </p>
                       </div>
+
                     </div>
                   </div>
 
+                  <!-- Demo 3 -->
                   <div class="space-y-8">
                     <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
                       Demo 3: Enterprise / Corporate SaaS
                     </h3>
-
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
                       <div class="group">
                         <h4
                           class="
-                            mb-2 
-                            text-lg font-semibold 
+                            mb-2 text-lg font-semibold 
                             text-gray-800 dark:text-gray-200
                           "
                         >
                           Static Version
                         </h4>
-
                         <div
                           class="
-                            aspect-[16/10] bg-gray-200 dark:bg-gray-700 rounded-xl 
-                            flex items-center justify-center overflow-hidden shadow-lg
+                            relative aspect-[16/10] 
+                            rounded-xl overflow-hidden shadow-lg
                           "
                         >
-                          <p class="text-gray-500 dark:text-gray-400 text-lg">
-                            Static Screenshot
-                          </p>
+                          <img 
+                            src="../document/assets/thumbnails/template-demo-3.webp" 
+                            alt="Demo 3 Static Screenshot" 
+                            class="w-full h-full object-cover"
+                          />
+                          
+                          <!-- Overlay button -->
+                          <div
+                            class="
+                              absolute inset-0 flex items-center justify-center 
+                              bg-black/50 opacity-0 group-hover:opacity-100 
+                              transition-opacity duration-300
+                            "
+                          >
+                            <a 
+                              href="tech-startup-templates/sass-landing/template/demo-3/standard" 
+                              target="_blank" 
+                              class="
+                                px-4 py-2 bg-primary text-white rounded-md 
+                                text-sm font-medium hover:bg-primary-dark
+                              "
+                            >
+                              Preview
+                            </a>
+                          </div>
                         </div>
                         <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                          A contemporary and clean layout for creative
-                          businesses, no animations.
+                          A contemporary and clean layout for creative businesses, no animations.
                         </p>
                       </div>
 
                       <div class="group">
                         <h4
                           class="
-                            mb-2 
-                            text-lg font-semibold 
+                            mb-2 text-lg font-semibold 
                             text-gray-800 dark:text-gray-200
                           "
                         >
                           Animated Version
                         </h4>
-
                         <div
                           class="
-                            aspect-[16/10] bg-gray-200 dark:bg-gray-700 rounded-xl 
-                            flex items-center justify-center overflow-hidden 
+                            relative
+                            aspect-[16/10] rounded-xl overflow-hidden 
                             shadow-lg transform group-hover:scale-105 
                             transition-transform duration-300 ease-in-out
                           "
                         >
-                          <p class="text-gray-500 dark:text-gray-400 text-lg">
-                            Animated Preview
-                          </p>
+                          <img 
+                            src="../document/assets/thumbnails/template-demo-3.webp" 
+                            alt="Demo 3 Animated Screenshot" 
+                            class="w-full h-full object-cover"
+                          />
+                          
+                          <!-- Overlay button -->
+                          <div
+                            class="
+                              absolute inset-0 flex items-center justify-center 
+                              bg-black/50 opacity-0 group-hover:opacity-100 
+                              transition-opacity duration-300
+                            "
+                          >
+                            <a 
+                              href="tech-startup-templates/sass-landing/template/demo-3/animate" 
+                              target="_blank" 
+                              class="
+                                px-4 py-2 bg-primary text-white rounded-md 
+                                text-sm font-medium hover:bg-primary-dark
+                              "
+                            >
+                              Preview
+                            </a>
+                          </div>
                         </div>
-
                         <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                          A modern design with bold animations to make a strong
-                          impression.
+                          A modern design with bold animations to make a strong impression.
                         </p>
                       </div>
                     </div>
@@ -461,15 +570,19 @@
                 <p
                   class="
                     text-base leading-relaxed 
-                    text-gray-600 dark:text-gray-400
+                    text-gray-600 dark:text-gray-400 mb-4
                   "
                 >
-                  Thank you for choosing our SaaS Landing Page Template. This
-                  template is designed to provide a professional and modern
-                  landing page for your SaaS product. It's built with
-                  flexibility and ease of use in mind, allowing you to quickly
-                  launch your product's online presence.
+                  Thank you for choosing our <strong>SaaS Landing Page Template</strong>. 
+                  This template is designed to create a professional and modern landing page 
+                  for your SaaS product. It's lightweight, flexible, and easy to customize, 
+                  helping you quickly launch your online presence.
                 </p>
+                <ul class="list-disc list-inside text-base text-gray-600 dark:text-gray-400">
+                  <li>Built with HTML5, CSS3, and Tailwind CSS</li>
+                  <li>Fully responsive and mobile-friendly</li>
+                  <li>Multiple demo variations included</li>
+                </ul>
               </section>
 
               <section id="folder-structure">
@@ -488,8 +601,7 @@
                     text-gray-600 dark:text-gray-400 
                   "
                 >
-                  The template follows a structured folder organization to keep
-                  your project files organized. Here's a brief overview:
+                  The template is organized in a simple structure to make it easy to navigate and customize:
                 </p>
                 <div class="space-y-4">
                   <div
@@ -498,11 +610,9 @@
                       border border-gray-200 dark:border-gray-800
                     "
                   >
-                    <p class="font-mono text-sm font-medium text-primary">
-                      index.html
-                    </p>
+                    <p class="font-mono text-sm font-medium text-primary">index.html</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Contains the main HTML file for the landing page.
+                      Main HTML file for the landing page.
                     </p>
                   </div>
 
@@ -512,11 +622,9 @@
                       border border-gray-200 dark:border-gray-800
                     "
                   >
-                    <p class="font-mono text-sm font-medium text-primary">
-                      css/
-                    </p>
+                    <p class="font-mono text-sm font-medium text-primary">style.css</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Holds all CSS files for styling the landing page.
+                      CSS file containing all styling for the template, including Tailwind classes.
                     </p>
                   </div>
 
@@ -526,11 +634,9 @@
                       border border-gray-200 dark:border-gray-800
                     "
                   >
-                    <p class="font-mono text-sm font-medium text-primary">
-                      js/
-                    </p>
+                    <p class="font-mono text-sm font-medium text-primary">script.js</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Contains JavaScript files for any interactive elements.
+                      JavaScript file for interactive elements such as animations or buttons.
                     </p>
                   </div>
 
@@ -540,11 +646,21 @@
                       border border-gray-200 dark:border-gray-800
                     "
                   >
-                    <p class="font-mono text-sm font-medium text-primary">
-                      img/
-                    </p>
+                    <p class="font-mono text-sm font-medium text-primary">tailwind-config.js</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Stores all image assets used in the landing page.
+                      Tailwind CSS configuration file for customizing colors, fonts, and utilities.
+                    </p>
+                  </div>
+
+                  <div
+                    class="
+                      bg-white dark:bg-background-dark p-4 rounded-lg 
+                      border border-gray-200 dark:border-gray-800
+                    "
+                  >
+                    <p class="font-mono text-sm font-medium text-primary">assets/</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                      Contains the favicon: <code>favicon.svg</code>.
                     </p>
                   </div>
                 </div>
@@ -566,7 +682,8 @@
                     text-gray-600 dark:text-gray-400 
                   "
                 >
-                  Follow these steps to get your landing page up and running:
+                  Follow these steps to get your landing page up and running. 
+                  No build tools are required; Tailwind CSS is included via CDN.
                 </p>
                 <ol class="list-decimal list-inside space-y-4">
                   <li class="text-gray-600 dark:text-gray-400">
@@ -579,8 +696,7 @@
                     <span class="font-semibold text-gray-800 dark:text-gray-200">
                       Extract the Package:
                     </span>
-                    Extract the contents of the downloaded package to your
-                    desired project directory.
+                    Extract the contents of the downloaded package to your desired project directory.
                   </li>
                   <li class="text-gray-600 dark:text-gray-400">
                     <span class="font-semibold text-gray-800 dark:text-gray-200">
@@ -595,7 +711,8 @@
                     >
                       index.html
                     </code>
-                    file in your web browser to view the landing page.
+                    file in your web browser. If your template has multiple demos, navigate 
+                    to the demo folder you want to view (Standard / Animate version).
                   </li>
                 </ol>
               </section>
@@ -627,15 +744,33 @@
                 >
                   <li>
                     <span class="font-semibold text-gray-800 dark:text-gray-200">
-                      Bootstrap:
+                      Tailwind CSS:
                     </span>
-                    A popular CSS framework for responsive design.
+                    Utility-first CSS framework used for building responsive layouts.
                   </li>
                   <li>
                     <span class="font-semibold text-gray-800 dark:text-gray-200">
-                      Font Awesome:
+                      Google Icons (Material Icons):
                     </span>
-                    A collection of free icons.
+                    Free icons for UI elements.
+                  </li>
+                  <li>
+                    <span class="font-semibold text-gray-800 dark:text-gray-200">
+                      Animate.css:
+                    </span>
+                    Library for CSS animations used in demo elements.
+                  </li>
+                  <li>
+                    <span class="font-semibold text-gray-800 dark:text-gray-200">
+                      Google Fonts:
+                    </span>
+                    Free fonts used for typography.
+                  </li>
+                  <li>
+                    <span class="font-semibold text-gray-800 dark:text-gray-200">
+                      Unsplash:
+                    </span>
+                    Free stock images used in demo previews.
                   </li>
                 </ul>
               </section>
@@ -662,17 +797,18 @@
                       text-gray-800 dark:text-gray-200
                     "
                   >
-                    If you encounter any issues or have questions, please
-                    contact our support team at
+                    If you encounter any issues or have questions, please contact our support 
+                    team at
                     <a
                       class="font-medium text-primary hover:underline"
                       href="mailto:support@example.com"
                     >
-                      support@example.com
-                    </a>. We're here to help!
+                      fardee.tat@gmail.com
+                    </a>. We typically respond within 24–48 hours and are happy to assist you!
                   </p>
                 </div>
               </section>
+
             </div>
           </div>
         </div>
@@ -687,7 +823,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div class="flex flex-col md:flex-row items-center justify-between">
             <p class="text-sm text-gray-500 dark:text-gray-400">
-              © 2023 Example Company. All rights reserved.
+              © 2023 Fardee Useng. All rights reserved.
             </p>
             <a
               class="
@@ -697,7 +833,7 @@
               "
               href="#"
             >
-              example.com
+              fardee.tat@gmail.com
             </a>
           </div>
         </div>
