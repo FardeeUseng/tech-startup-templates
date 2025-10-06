@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>App Landing Page Template (demo 3) - Standard</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./tailwind-config.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body
+    class="
+      font-display text-black dark:text-white
+      bg-background-light dark:bg-background-dark
+    "
+  >
+    <div
+      class="
+        relative h-auto min-h-screen 
+        flex w-full flex-col overflow-x-hidden
+      "
+    >
+      <div class="flex h-full grow flex-col">
+        <header
+          class="
+            sticky top-0 z-50 
+            flex items-center justify-between whitespace-nowrap 
+            border-b border-blue-500/20 dark:border-blue-900/20 
+            px-4 sm:px-6 lg:px-10 py-3 glassmorphism
+          "
+        >
+          <div class="flex items-center gap-4">
+            <div class="size-6 text-primary">
+              <svg
+                fill="none"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="
+                    M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 
+                    32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 
+                    19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 
+                    17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 
+                    35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 
+                    20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 
+                    32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z
+                  "
+                  fill="currentColor"
+                ></path>
+                <path
+                  clip-rule="evenodd"
+                  d="
+                    M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 
+                    14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 
+                    16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 
+                    16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 
+                    14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 
+                    13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 
+                    12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 
+                    10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 
+                    12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 
+                    13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 
+                    19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 
+                    21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 
+                    19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 
+                    10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 
+                    15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 
+                    37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 
+                    35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 
+                    34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 
+                    37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 
+                    40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 
+                    17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 
+                    9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 
+                    34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 
+                    10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 
+                    7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 
+                    35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 
+                    11.0454 41.5563 12.2684 41.5563 13.8546Z
+                  "
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-lg font-bold">DataWise</h2>
+          </div>
+
+          <nav class="hidden lg:flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-8">
+              <a
+                class="
+                  text-sm font-medium text-black/80 dark:text-white/80 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Product
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/80 dark:text-white/80 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Solutions
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/80 dark:text-white/80 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Pricing
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/80 dark:text-white/80 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Resources
+              </a>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="
+                  flex min-w-[84px] items-center justify-center 
+                  rounded-lg h-10 px-4 bg-primary hover:opacity-90
+                  text-white text-sm font-bold leading-normal transition-opacity 
+                "
+              >
+                Start Free Trial
+              </button>
+              <button
+                class="
+                  rounded-lg h-10 px-4 
+                  flex min-w-[84px] items-center justify-center 
+                  bg-black/10 dark:bg-white/10 hover:bg-black/20 dark:hover:bg-white/20
+                  text-sm font-bold leading-normal transition-colors "
+              >
+                Log In
+              </button>
+            </div>
+          </nav>
+          <button class="lg:hidden text-black dark:text-white">
+            <svg
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="3" x2="21" y1="12" y2="12"></line>
+              <line x1="3" x2="21" y1="6" y2="6"></line>
+              <line x1="3" x2="21" y1="18" y2="18"></line>
+            </svg>
+          </button>
+        </header>
+
+        <main class="flex-1">
+          <section class="relative px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div
+              class="
+                absolute inset-0 -z-10 
+                bg-gradient-to-br from-blue-300/30 via-transparent to-purple-500/20
+              "
+            ></div>
+            <div class="absolute inset-0 -z-20 hero-pattern"></div>
+            <div
+              class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto"
+            >
+              <div class="flex flex-col gap-6 text-center lg:text-left">
+                <h1
+                  class="text-4xl lg:text-6xl font-extrabold tracking-tighter"
+                >
+                  Unlock the Power of Your Data
+                </h1>
+                <p
+                  class="text-base lg:text-lg text-black/60 dark:text-white/60"
+                >
+                  DataWise is a comprehensive dashboard solution that empowers
+                  businesses to visualize, analyze, and act on their data in
+                  real-time. Gain actionable insights and make informed
+                  decisions with our intuitive and powerful platform.
+                </p>
+                <div
+                  class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
+                >
+                  <button
+                    class="
+                      flex items-center justify-center 
+                      rounded-lg h-12 px-6 bg-primary 
+                      text-white text-base font-bold leading-normal 
+                      transition-opacity hover:opacity-90
+                    "
+                  >
+                    Start Free Trial
+                  </button>
+                  <button
+                    class="
+                      flex items-center justify-center 
+                      rounded-lg h-12 px-6 bg-white dark:bg-gray-800 
+                      text-black dark:text-white text-base font-bold leading-normal 
+                      transition-colors hover:bg-gray-100 dark:hover:bg-gray-700 
+                      border border-gray-200 dark:border-gray-700 gap-2
+                    "
+                  >
+                    <svg
+                      class="text-primary"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="m15 12 -8.5 8.5v-17L15 12z"></path>
+                      <path d="M15 12v17"></path>
+                    </svg>
+                    Watch Demo Video
+                  </button>
+                </div>
+              </div>
+              <div
+                class="
+                  w-full aspect-[4/3] lg:aspect-video 
+                  bg-cover bg-center rounded-xl shadow-2xl
+                "
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6lGO4DNHuG36jgfJsOy_Ot38aE2zGVd1eywzFyjq2brFB8dtyWq4K63ZrFvRDQz8OPaBznsUSHXWKY_PFe_jwya_3-s4tIu7BUFrRgMwXIOcd4ubSf4bD_NEYlECSrrVVPz-qnFLHa7L4d8rVIrfAaJZkBRXOkI8ETU65_t3NuOKizFltbhd4NwjXVUwb-lI0y544eZT8Q-SIQlj8JfMzDL_QDhSjyJ9tm8uRzVMVTRAv2r8J61LWMghOtmVDJKgG3kIYCuXFXFs');
+                "
+              ></div>
+            </div>
+          </section>
+
+          <section class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto">
+              <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-extrabold">
+                  Key Features
+                </h2>
+                <p
+                  class="mt-4 text-base lg:text-lg text-black/60 dark:text-white/60"
+                >
+                  DataWise offers a range of powerful features designed to meet
+                  the needs of modern businesses.
+                </p>
+              </div>
+              <div
+                class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              >
+                <div
+                  class="
+                    flex flex-col gap-4 rounded-lg p-6
+                    bg-primary/5 dark:bg-primary/10
+                  "
+                >
+                  <div class="text-primary">
+                    <svg
+                      fill="currentColor"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="
+                          M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,
+                          1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,
+                          44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,
+                          1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z
+                        "
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-bold">
+                    Real-Time Data Visualization
+                  </h3>
+                  <p class="text-sm text-black/60 dark:text-white/60">
+                    Visualize your data in real-time with dynamic charts and
+                    graphs. Track key metrics and identify trends instantly.
+                  </p>
+                </div>
+                <div
+                  class="
+                    flex flex-col gap-4 rounded-lg p-6 
+                    bg-primary/5 dark:bg-primary/10
+                  "
+                >
+                  <div class="text-primary">
+                    <svg
+                      fill="currentColor"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="
+                          M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,
+                          24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,
+                          0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,
+                          12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,
+                          0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,
+                          8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,
+                          0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,
+                          0V88a8,8,0,0,1,16,0Z
+                        "
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-bold">Interactive Dashboards</h3>
+                  <p class="text-sm text-black/60 dark:text-white/60">
+                    Create interactive dashboards with drag-and-drop
+                    functionality. Customize layouts and widgets to focus on
+                    what matters most.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col gap-4 rounded-lg p-6 bg-primary/5 dark:bg-primary/10"
+                >
+                  <div class="text-primary">
+                    <svg
+                      fill="currentColor"
+                      height="32"
+                      viewBox="0 0 256 256"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-bold">Team Collaboration</h3>
+                  <p class="text-sm text-black/60 dark:text-white/60">
+                    Collaborate with your team on dashboards and share insights
+                    seamlessly. Assign roles and permissions for enhanced
+                    security.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="
+              px-4 sm:px-6 lg:px-8 py-16 lg:py-24 
+              bg-primary/5 dark:bg-primary/10
+            "
+          >
+            <div class="max-w-7xl mx-auto">
+              <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-extrabold">
+                  From the Blog
+                </h2>
+                <p
+                  class="
+                    mt-4 text-base lg:text-lg 
+                    text-black/60 dark:text-white/60
+                  "
+                >
+                  Stay updated with the latest news, trends, and best practices
+                  in data analytics and visualization.
+                </p>
+              </div>
+              <div
+                class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              >
+                <div
+                  class="
+                    flex flex-col gap-4 rounded-xl overflow-hidden glassmorphism 
+                    border border-blue-500/10 dark:border-blue-900/20 
+                    shadow-lg hover:shadow-primary/20 transition-shadow duration-300
+                  "
+                >
+                  <div
+                    class="w-full aspect-video bg-cover bg-center"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCctC-4EYw-K6HaCWXeW3mo1JMM8ziNEDPklnw6tzUd2IHeKZvntP26DdUfukLjqYP0D8YBQrDeEkI-mtKyXJv1_fk2eD0j3aCkttpP9y9Yx2uIMLYKhv7u7wxjg5KGaeV3WrdJcl7q3Uy53QF8s_OyZyQFCA_VierUj9ttWEiQTIqXm6r7liZvJU5fyFShAmwApv585nIaQ2SJXyvClYu2axe-PkE8tXd-avqZTfWMcGipbsdFXTO6bwSCy9xBguGLI7B7ansE-5M');
+                    "
+                  ></div>
+                  <div class="p-6 flex flex-col gap-3">
+                    <p class="text-sm text-primary font-semibold">
+                      Data Science
+                    </p>
+                    <h3 class="text-lg font-bold leading-snug">
+                      The Future of AI in Data Analytics
+                    </h3>
+                    <p class="text-sm text-black/60 dark:text-white/60">
+                      Explore how artificial intelligence is reshaping the
+                      landscape of data analytics and what it means for your
+                      business.
+                    </p>
+                    <a
+                      class="text-sm font-semibold text-primary hover:underline"
+                      href="#"
+                    >
+                      Read More →
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="
+                    flex flex-col gap-4 rounded-xl overflow-hidden glassmorphism 
+                    border border-blue-500/10 dark:border-blue-900/20 
+                    shadow-lg hover:shadow-primary/20 transition-shadow duration-300
+                  "
+                >
+                  <div
+                    class="w-full aspect-video bg-cover bg-center"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCctC-4EYw-K6HaCWXeW3mo1JMM8ziNEDPklnw6tzUd2IHeKZvntP26DdUfukLjqYP0D8YBQrDeEkI-mtKyXJv1_fk2eD0j3aCkttpP9y9Yx2uIMLYKhv7u7wxjg5KGaeV3WrdJcl7q3Uy53QF8s_OyZyQFCA_VierUj9ttWEiQTIqXm6r7liZvJU5fyFShAmwApv585nIaQ2SJXyvClYu2axe-PkE8tXd-avqZTfWMcGipbsdFXTO6bwSCy9xBguGLI7B7ansE-5M');
+                    "
+                  ></div>
+                  <div class="p-6 flex flex-col gap-3">
+                    <p class="text-sm text-primary font-semibold">
+                      Best Practices
+                    </p>
+                    <h3 class="text-lg font-bold leading-snug">
+                      5 Tips for Creating Effective Dashboards
+                    </h3>
+                    <p class="text-sm text-black/60 dark:text-white/60">
+                      Learn the key principles for designing dashboards that are
+                      not only beautiful but also highly effective and
+                      insightful.
+                    </p>
+                    <a
+                      class="text-sm font-semibold text-primary hover:underline"
+                      href="#"
+                    >
+                      Read More →
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="
+                    flex flex-col gap-4 rounded-xl overflow-hidden glassmorphism 
+                    border border-blue-500/10 dark:border-blue-900/20 
+                    shadow-lg hover:shadow-primary/20 transition-shadow duration-300
+                  "
+                >
+                  <div
+                    class="w-full aspect-video bg-cover bg-center"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCctC-4EYw-K6HaCWXeW3mo1JMM8ziNEDPklnw6tzUd2IHeKZvntP26DdUfukLjqYP0D8YBQrDeEkI-mtKyXJv1_fk2eD0j3aCkttpP9y9Yx2uIMLYKhv7u7wxjg5KGaeV3WrdJcl7q3Uy53QF8s_OyZyQFCA_VierUj9ttWEiQTIqXm6r7liZvJU5fyFShAmwApv585nIaQ2SJXyvClYu2axe-PkE8tXd-avqZTfWMcGipbsdFXTO6bwSCy9xBguGLI7B7ansE-5M');
+                    "
+                  ></div>
+                  <div class="p-6 flex flex-col gap-3">
+                    <p class="text-sm text-primary font-semibold">
+                      Company News
+                    </p>
+                    <h3 class="text-lg font-bold leading-snug">
+                      DataWise Recognized as a Leader in BI
+                    </h3>
+                    <p class="text-sm text-black/60 dark:text-white/60">
+                      We're thrilled to be named a leader in the latest industry
+                      report on Business Intelligence platforms.
+                    </p>
+                    <a
+                      class="text-sm font-semibold text-primary hover:underline"
+                      href="#"
+                    >
+                      Read More →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto">
+              <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-extrabold">
+                  Trusted by Innovative Companies
+                </h2>
+                <p
+                  class="mt-4 text-base lg:text-lg text-black/60 dark:text-white/60"
+                >
+                  We partner with leading companies to unlock the power of their
+                  data.
+                </p>
+              </div>
+              <div
+                class="
+                  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6
+                  mt-12 gap-x-8 gap-y-10 items-center 
+                "
+              >
+                <img
+                  alt="Client Logo 1"
+                  class="h-8 w-auto mx-auto opacity-60 dark:opacity-40"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoyusWDnDwI6xVWVoy2nKK51FPQLXlOcc6qU_jMsaYwxZq7OyDRZnWysKdDBZ7e_wrjBvAY_HHlSwMMN1JyQnjM-MlFzlDBa8tgezfFmmXHZsUQp1aTBvuLFCBA8MCKWbLdkfFzMv-mIkYU2okUNNnIM1M-qCSriYYRrfqwka_DejE0fAQqtULJLQsXrJaRFS2AxApnaQqTiuU0lL2_jIxM3BcX2JmT8iHiMohl9FpPS2SpufNreOW5pKx4zBVfvkW7_Fnimu3fzE"
+                />
+                <img
+                  alt="Client Logo 2"
+                  class="h-8 w-auto mx-auto opacity-60 dark:opacity-40"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnDvia-qa3-my_XEBo4H8bnhaOhliUKZKXi5UBiXkFu-MszbtRGIGlEdE6NalGScS5xfcc3peP_GMX3C5AA3L1bBXYwuetuPDXDVzuBW43s2C4VGAum2JmN8yuZfHAxlmshLZfHQCUALvxGyYxp0WXvrYdGYx2UkuqWIvx-0w3qiVoqu2dfPZT-k1hIRYr_zvPcu1FGPWxoW26tfishadVSs2CyGk-oqregvwQIeaVX7ZSb7vvITM6Kb1xmFKjHoO87E8OYIBwpDU"
+                />
+                <img
+                  alt="Client Logo 3"
+                  class="h-8 w-auto mx-auto opacity-60 dark:opacity-40"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHqYemxy-vzrA_mv8K9yM4gDUKOiePzw6E1mO_BcXB7DZzyvd0g_z40kL59_6GGLkfx3tilgaAn3qTi1BN0jDC5IzC9X2cMHRg9JTwzwX6tYKXiDHT7REqRwFlUI1e9niBmdrTQzsblCeKVcORAyFfahc43GyYA-SRuyFabgYxSQViI0Uqsw0H87p0kLK60nUNU609slYTWNTa8ckdInIzPGrzwK5cplJpABdYsvLxnW7kw9GmdK3ZTQtjyBKhAns1ODZYomxGk8s"
+                />
+                <img
+                  alt="Client Logo 4"
+                  class="h-8 w-auto mx-auto opacity-60 dark:opacity-40"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE1_ZYsAC3kjpopN1A7wWI8HeqVu25xOd6JyiB6ilY_GQfbKbt8OhvzdR9BvczZb8mVhcY_wu8TZEPGn-UFe_ZrH12PZt3OeKGLUMA64m-fVpxrzQbYeAoQ9mMmkiPPKF_0FogInuPEwzoNdL1ul77yjCMq_rjDvRu6ADpl_LgWafqdCmUYLzKY8siNBlT4gir63rwepQz_tZPXn-duwsE23a79TP5CpQrWtW3EZMTh8o5dG3JBUhQS2VRj1G47sBuNSM9DznGJZE"
+                />
+                <img
+                  alt="Client Logo 5"
+                  class="h-8 w-auto mx-auto opacity-60 dark:opacity-40"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUGTEHiwOClGVQ3iSczf4Iu89yqTg3Wd0XwT_tNglYqvL9dIFmRMChIrqJuZxVtqtPlIVcCG57SjyWboGwY2l8cUuixF4GiKRBW_5HONFLMK1keDUEva9DaYlpHW_V8-aBRWUk-uhJ15NqvicdJ0nbC5yLMo_7YX7ryiuz_XZt2QWautyootHibGaCtInaf886TzAUOqXZIhxP3oo5pr0CJXnxJbz_6mn0fkwTBW32g2_Lhk7xQDSWF5SgER31SLcVpbOmuc-dtFw"
+                />
+                <img
+                  alt="Client Logo 6"
+                  class="h-8 w-auto mx-auto opacity-60 dark:opacity-40"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7lfA-cyRg0vqNJdEfegp62KA7siEGE64-unIE3b-HEpex8ZpeSXF5ZcLS2tpy0rhwvop1U02FyEIdRveitDX_oSgxwqPNHNeQA34LNmk7_vvZD9iyoimvmiWkGrNVLGPXt-wOHi2J4dduKV5vTbx0UtwCUGMe6_HyAio7PoVPlHARZuTz3MxnBG-dzj903HZMSYT1eeRpmMskGcxtJ4HmX0DrzYv_iv4_iTnx6WlYw4v5MZpyfsTQCdkoikDunATJh_O0yJqLS34"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="
+              px-4 sm:px-6 lg:px-8 py-16 lg:py-24 
+              bg-primary/5 dark:bg-primary/10
+            "
+          >
+            <div class="max-w-7xl mx-auto">
+              <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-extrabold">
+                  Pricing Plans
+                </h2>
+              </div>
+              <div
+                class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              >
+                <div
+                  class="
+                    flex flex-col gap-6 rounded-lg p-6 
+                    bg-background-light dark:bg-background-dark 
+                    border border-primary/20
+                  "
+                >
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-lg font-bold">Basic</h3>
+                    <p class="flex items-baseline gap-1">
+                      <span class="text-4xl font-extrabold">$29</span>
+                      <span class="text-sm font-semibold">/month</span>
+                    </p>
+                  </div>
+                  <button
+                    class="
+                      w-full flex items-center justify-center 
+                      rounded-lg h-10 px-4 bg-black/10 dark:bg-white/10 
+                      text-sm font-bold leading-normal transition-colors 
+                      hover:bg-black/20 dark:hover:bg-white/20
+                    "
+                  >
+                    Choose Basic
+                  </button>
+                  <ul class="flex flex-col gap-3">
+                    <li class="flex items-center gap-3 text-sm">
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      5 Dashboards
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,
+                            0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,
+                            11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      10 Users
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,
+                            0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,
+                            11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      Basic Support
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="
+                    relative flex flex-col gap-6 rounded-lg p-6 
+                    bg-primary text-white border-2 border-primary
+                  "
+                >
+                  <p
+                    class="
+                      absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 
+                      text-xs font-bold uppercase tracking-wider bg-primary-dark 
+                      px-3 py-1 rounded-full
+                    "
+                  >
+                    Most Popular
+                  </p>
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-lg font-bold">Pro</h3>
+                    <p class="flex items-baseline gap-1">
+                      <span class="text-4xl font-extrabold">$99</span>
+                      <span class="text-sm font-semibold">/month</span>
+                    </p>
+                  </div>
+                  <button
+                    class="
+                      w-full h-10 px-4
+                      flex items-center justify-center rounded-lg
+                      bg-white text-primary text-sm font-bold leading-normal 
+                      transition-colors hover:bg-white/90
+                    "
+                  >
+                    Choose Pro
+                  </button>
+                  <ul class="flex flex-col gap-3 text-sm">
+                    <li class="flex items-center gap-3">
+                      <svg
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,
+                            1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      Unlimited Dashboards
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <svg
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,
+                            0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,
+                            11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      Unlimited Users
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <svg
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,
+                            0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,
+                            11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      Priority Support
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <svg
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      Custom Branding
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="
+                    flex flex-col gap-6 rounded-lg p-6 
+                    bg-background-light dark:bg-background-dark 
+                    border border-primary/20
+                  "
+                >
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-lg font-bold">Enterprise</h3>
+                    <p class="text-2xl font-extrabold">Contact Us</p>
+                  </div>
+                  <button
+                    class="
+                      w-full h-10 px-4
+                      flex items-center justify-center rounded-lg 
+                      bg-black/10 dark:bg-white/10 hover:bg-black/20 dark:hover:bg-white/20
+                      text-sm font-bold leading-normal transition-colors
+                    "
+                  >
+                    Contact Sales
+                  </button>
+                  <ul class="flex flex-col gap-3">
+                    <li class="flex items-center gap-3 text-sm">
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,
+                            0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,
+                            11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      Custom Solutions
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      Dedicated Support
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      Advanced Analytics
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,
+                            0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,
+                            11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                      On-Premise Option
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="max-w-3xl mx-auto">
+              <div class="text-center">
+                <h2 class="text-3xl lg:text-4xl font-extrabold">
+                  Frequently Asked Questions
+                </h2>
+              </div>
+              <div class="mt-8 flex flex-col gap-3">
+                <details
+                  class="rounded-lg bg-primary/5 dark:bg-primary/10 px-6 py-2 group"
+                  open=""
+                >
+                  <summary
+                    class="flex cursor-pointer items-center justify-between gap-4 py-2"
+                  >
+                    <p class="font-semibold">What is DataWise?</p>
+                    <div
+                      class="transform transition-transform duration-300 group-open:rotate-180"
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,
+                            8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                    </div>
+                  </summary>
+                  <p class="py-2 text-sm text-black/60 dark:text-white/60">
+                    DataWise is a cloud-based dashboard solution that helps
+                    businesses visualize and analyze their data. It offers a
+                    user-friendly interface, real-time data updates, and
+                    collaboration features to empower data-driven
+                    decision-making.
+                  </p>
+                </details>
+                <details
+                  class="rounded-lg bg-primary/5 dark:bg-primary/10 px-6 py-2 group"
+                >
+                  <summary
+                    class="flex cursor-pointer items-center justify-between gap-4 py-2"
+                  >
+                    <p class="font-semibold">How secure is my data?</p>
+                    <div
+                      class="
+                        transform transition-transform 
+                        duration-300 group-open:rotate-180
+                      "
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,
+                            8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,
+                            0,0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                    </div>
+                  </summary>
+                  <p class="py-2 text-sm text-black/60 dark:text-white/60">
+                    We take data security very seriously. DataWise employs
+                    industry-standard encryption protocols, regular security
+                    audits, and robust access controls to ensure your data is
+                    always protected.
+                  </p>
+                </details>
+                <details
+                  class="rounded-lg bg-primary/5 dark:bg-primary/10 px-6 py-2 group"
+                >
+                  <summary
+                    class="flex cursor-pointer items-center justify-between gap-4 py-2"
+                  >
+                    <p class="font-semibold">
+                      Can I try DataWise before subscribing?
+                    </p>
+                    <div
+                      class="
+                        transform transition-transform 
+                        duration-300 group-open:rotate-180
+                      "
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,
+                            0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,
+                            11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>
+                    </div>
+                  </summary>
+                  <p class="py-2 text-sm text-black/60 dark:text-white/60">
+                    Absolutely! We offer a 14-day free trial that gives you
+                    access to all our Pro features. No credit card required.
+                    Sign up and start exploring the power of DataWise today.
+                  </p>
+                </details>
+              </div>
+            </div>
+          </section>
+
+          <section class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="max-w-xl mx-auto text-center">
+              <h2 class="text-3xl lg:text-4xl font-extrabold">Contact Us</h2>
+              <p
+                class="mt-4 text-base lg:text-lg text-black/60 dark:text-white/60"
+              >
+                Have questions or need a custom solution? Get in touch with us.
+              </p>
+              <form class="mt-8 flex flex-col sm:flex-row gap-4">
+                <input
+                  class="
+                    form-input flex-1 w-full min-w-0 resize-none 
+                    rounded-lg h-12 px-4 bg-background-light dark:bg-background-dark 
+                    border border-primary/20 focus:ring-primary focus:border-primary
+                  "
+                  placeholder="Your Email"
+                  type="email"
+                />
+                <button
+                  class="
+                    flex items-center justify-center rounded-lg h-12 px-6 
+                    bg-primary text-white text-base font-bold leading-normal 
+                    transition-opacity hover:opacity-90
+                  "
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </section>
+        </main>
+
+        <footer
+          class="
+            bg-primary/5 dark:bg-primary/10 
+            px-4 sm:px-6 lg:px-8 py-12
+          "
+        >
+          <div
+            class="
+              max-w-7xl mx-auto 
+              grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8
+            "
+          >
+            <div class="lg:col-span-1">
+              <h3
+                class="
+                  text-sm font-semibold uppercase 
+                  tracking-wider text-black/80 dark:text-white/80
+                "
+              >
+                About Us
+              </h3>
+              <p class="mt-4 text-sm text-black/60 dark:text-white/60">
+                DataWise provides intuitive dashboard solutions to help
+                businesses harness the power of their data. Our mission is to
+                make data accessible and actionable for everyone.
+              </p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h3
+                class="
+                  text-sm font-semibold uppercase 
+                  tracking-wider text-black/80 dark:text-white/80
+                "
+              >
+                Product
+              </h3>
+              <a
+                class="
+                  text-sm text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Features
+              </a>
+              <a
+                class="
+                  text-sm text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Pricing
+              </a>
+              <a
+                class="
+                  text-sm text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary transition-colors"
+                href="#"
+              >
+                Integrations
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h3
+                class="
+                  text-sm font-semibold uppercase 
+                  tracking-wider text-black/80 dark:text-white/80
+                "
+              >
+                Resources
+              </h3>
+              <a
+                class="
+                  text-sm text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Blog
+              </a>
+              <a
+                class="
+                  text-sm text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Documentation
+              </a>
+              <a
+                class="
+                  text-sm text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Support
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h3
+                class="
+                  text-sm font-semibold uppercase 
+                  tracking-wider text-black/80 dark:text-white/80
+                "
+              >
+                Legal
+              </h3>
+              <a
+                class="
+                  text-sm text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Privacy Policy
+              </a>
+              <a
+                class="
+                  text-sm text-black/60 dark:text-white/60 hover:text-primary 
+                  dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                Terms of Service
+              </a>
+            </div>
+          </div>
+          <div
+            class="
+              max-w-7xl mx-auto mt-8 pt-8 
+              border-t border-primary/20 
+              flex flex-col md:flex-row items-center justify-between gap-4
+            "
+          >
+            <p
+              class="
+                text-sm text-black/60 dark:text-white/60 
+                text-center md:text-left
+              "
+            >
+              © 2023 DataWise. All rights reserved.
+            </p>
+            <div class="flex items-center gap-4">
+              <a
+                class="
+                  text-black/60 dark:text-white/60 hover:text-primary 
+                  dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="
+                      M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,
+                      0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,
+                      0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,
+                      50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,
+                      22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,
+                      26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,
+                      11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,
+                      135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,
+                      8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.
+                      4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.
+                      08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,
+                      8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.
+                      9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z
+                    "
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="
+                  text-black/60 dark:text-white/60 hover:text-primary 
+                  dark:hover:text-primary transition-colors
+                "
+                href="#"
+              >
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="
+                      M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,
+                      16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,
+                      112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,
+                      1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,
+                      15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,
+                      12,0,0,1,100,84Z
+                    "
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.neumorphism-card {
+  box-shadow: 6px 6px 12px var(--tw-shadow-color),
+    -6px -6px 12px rgb(255 255 255 / 0.5);
+}
+.dark .neumorphism-card {
+  box-shadow: 6px 6px 12px var(--tw-shadow-color),
+    -6px -6px 12px rgb(0 0 0 / 0.2);
+}
+input.neumorphism-card {
+  box-shadow: inset 2px 2px 5px var(--tw-shadow-color),
+    inset -2px -2px 5px rgb(255 255 255 / 0.5);
+}
+.dark input.neumorphism-card {
+  box-shadow: inset 2px 2px 5px var(--tw-shadow-color),
+    inset -2px -2px 5px rgb(0 0 0 / 0.2);
+}

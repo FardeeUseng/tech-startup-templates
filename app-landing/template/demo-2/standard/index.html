@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>App Landing Page Template (demo 2) - Standard</title>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet"
+    />
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./tailwind-config.js"></script>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display">
+    <div
+      class="
+        relative h-auto min-h-screen w-full 
+        flex flex-col group/design-root overflow-x-hidden
+      "
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="
+            flex items-center justify-between whitespace-nowrap 
+            border-b border-black/10 dark:border-white/10 px-10 py-3
+          "
+        >
+          <div class="flex items-center gap-4 text-black dark:text-white">
+            <div class="size-6 text-primary">
+              <svg
+                fill="none"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="
+                    M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 
+                    29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 
+                    30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 
+                    33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 
+                    6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 
+                    32.7669 11.0856 31.2278 13.8261 30.5736Z
+                  "
+                  fill="currentColor"
+                ></path>
+                <path
+                  clip-rule="evenodd"
+                  d="
+                    M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 
+                    35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 
+                    35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 
+                    35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 
+                    32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 
+                    31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 
+                    9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 
+                    35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 
+                    8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 
+                    35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 
+                    35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 
+                    10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 
+                    40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 
+                    37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 
+                    39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 
+                    6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 
+                    32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 
+                    33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 
+                    32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 
+                    32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 
+                    33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 
+                    33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 
+                    38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 
+                    42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 
+                    10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 
+                    39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 
+                    34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 
+                    33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 
+                    32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 
+                    32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 
+                    29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 
+                    27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 
+                    34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z
+                  "
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-xl font-bold text-black dark:text-white">
+              TaskFlow
+            </h2>
+          </div>
+
+          <div class="flex flex-1 justify-end gap-8">
+            <nav class="flex items-center gap-6">
+              <a
+                class="
+                  text-sm font-medium text-black/60 
+                  dark:text-white/60 hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                Product
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/60 
+                  dark:text-white/60 hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                Solutions
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/60 
+                  dark:text-white/60 hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                Resources
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/60 
+                  dark:text-white/60 hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                Pricing
+              </a>
+            </nav>
+            <button
+              class="
+                rounded-lg h-10 px-5 
+                flex items-center justify-center 
+                bg-primary text-white text-sm font-bold tracking-wide
+              "
+            >
+              <span>Get Started</span>
+            </button>
+          </div>
+        </header>
+
+        <main class="flex-1 px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-6xl">
+            <div class="@container">
+              <div
+                class="
+                  flex flex-col gap-12 py-16 
+                  @[864px]:flex-row @[864px]:items-center
+                "
+              >
+                <div class="flex flex-col gap-8 @[864px]:w-1/2">
+                  <div class="flex flex-col gap-4 text-left">
+                    <h1
+                      class="
+                        text-4xl font-extrabold tracking-tighter text-black 
+                        dark:text-white sm:text-5xl lg:text-6xl
+                      "
+                    >
+                      Organize your work and life, finally.
+                    </h1>
+                    <p
+                      class="text-base text-black/60 dark:text-white/60 sm:text-lg"
+                    >
+                      Become focused, organized, and calm with TaskFlow. The
+                      world's #1 task management app.
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-4">
+                    <button
+                      class="
+                        flex-shrink-0 rounded-lg h-12 px-6 bg-primary 
+                        text-white text-base font-bold tracking-wide
+                      "
+                    >
+                      <span>Get Started</span>
+                    </button>
+                    <button
+                      class="
+                        flex-shrink-0 rounded-lg h-12 px-6 bg-accent-green 
+                        text-white text-base font-bold tracking-wide
+                      "
+                    >
+                      <span>Request a Demo</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="w-full @[864px]:w-1/2">
+                  <div
+                    class="
+                      w-full bg-cover bg-center bg-no-repeat 
+                      aspect-video rounded-xl shadow-lg
+                    "
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4_dGqBvv1Zwa-Fa7g1Ju3FHByeVElI_8h0RD5zsmoqXMsA_Q7VMfB-6BgHvOmbmyKwpBZlwIVhZ8IbydtjczvwTJePxSkMnzfMxNNEP-UWYez2VNmsNmWs29lWSIidqHdSeCTNZMCD0Lq78t5_eFHlZWl9Qv8xcKlSu9mrNs5t0Bp-n3lMIrWTFMZooB8k2bdLZXlWJf9RZHAiyxGGXO5fMsyyK-canS5fTEdULIa3sTxMqvgDrYMrH9Ek1332_r2TUV0jR7UbPM');
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <section class="py-16">
+              <div class="flex flex-col gap-4 text-center">
+                <h2
+                  class="
+                    text-3xl font-bold tracking-tight 
+                    text-black dark:text-white sm:text-4xl
+                  "
+                >
+                  Everything you need in one place
+                </h2>
+                <p
+                  class="text-base text-black/60 dark:text-white/60 max-w-3xl mx-auto"
+                >
+                  TaskFlow is more than just a to-do list. It's a powerful tool
+                  that helps you manage your tasks, projects, and team in one
+                  place.
+                </p>
+              </div>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12"
+              >
+                <div
+                  class="
+                    flex flex-col gap-4 rounded-xl 
+                    border border-black/10 dark:border-white/10 
+                    bg-white/50 dark:bg-black/10 p-6
+                  "
+                >
+                  <div class="text-primary">
+                    <svg
+                      fill="currentColor"
+                      height="28"
+                      viewBox="0 0 256 256"
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="
+                          M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,
+                          11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z
+                        "
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="text-lg font-bold text-black dark:text-white">
+                      Tasks
+                    </h3>
+                    <p class="text-sm text-black/60 dark:text-white/60">
+                      Create tasks, set deadlines, and track your progress.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="
+                    flex flex-col gap-4 rounded-xl 
+                    border border-black/10 dark:border-white/10 
+                    bg-white/50 dark:bg-black/10 p-6
+                  "
+                >
+                  <div class="text-primary">
+                    <svg
+                      fill="currentColor"
+                      height="28"
+                      viewBox="0 0 256 256"
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="
+                          M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,
+                          0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,
+                          16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,
+                          0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,
+                          208H48V96H208V208Z
+                        "
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="text-lg font-bold text-black dark:text-white">
+                      Calendar
+                    </h3>
+                    <p class="text-sm text-black/60 dark:text-white/60">
+                      View your tasks and events in a calendar view.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="
+                    flex flex-col gap-4 rounded-xl 
+                    border border-black/10 dark:border-white/10 
+                    bg-white/50 dark:bg-black/10 p-6
+                  "
+                >
+                  <div class="text-primary">
+                    <svg
+                      fill="currentColor"
+                      height="28"
+                      viewBox="0 0 256 256"
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="
+                          M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,
+                          3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,
+                          8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,
+                          108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,
+                          98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,
+                          8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,
+                          60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,
+                          8,0,0,1,250.14,206.7Z
+                        "
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="text-lg font-bold text-black dark:text-white">
+                      Collaboration
+                    </h3>
+                    <p class="text-sm text-black/60 dark:text-white/60">
+                      Collaborate with your team on projects and tasks.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="
+                    flex flex-col gap-4 rounded-xl 
+                    border border-black/10 dark:border-white/10 
+                    bg-white/50 dark:bg-black/10 p-6
+                  "
+                >
+                  <div class="text-primary">
+                    <svg
+                      fill="currentColor"
+                      height="28"
+                      viewBox="0 0 256 256"
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="
+                          M221.8,175.94C216.25,166.38,208,139.33,208,104a80,
+                          80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,
+                          16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,
+                          0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,
+                          24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,
+                          64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z
+                        "
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="text-lg font-bold text-black dark:text-white">
+                      Notifications
+                    </h3>
+                    <p class="text-sm text-black/60 dark:text-white/60">
+                      Get notified about important updates and deadlines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-16">
+              <div class="flex flex-col gap-4 text-center">
+                <h2
+                  class="
+                    text-3xl font-bold tracking-tight 
+                    text-black dark:text-white sm:text-4xl
+                  "
+                >
+                  How It Works
+                </h2>
+                <p
+                  class="text-base text-black/60 dark:text-white/60 max-w-2xl mx-auto"
+                >
+                  Our simple, three-step process makes getting started with
+                  TaskFlow a breeze.
+                </p>
+              </div>
+              <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center gap-4">
+                  <div
+                    class="
+                      flex items-center justify-center size-24 
+                      rounded-full bg-primary/10 text-primary
+                    "
+                  >
+                    <svg
+                      class="lucide lucide-user-plus"
+                      fill="none"
+                      height="48"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <line x1="19" x2="19" y1="8" y2="14"></line>
+                      <line x1="22" x2="16" y1="11" y2="11"></line>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-xl font-bold text-black dark:text-white">
+                      1. Create Your Account
+                    </h3>
+                    <p class="text-black/60 dark:text-white/60">
+                      Sign up for free and create your TaskFlow account in
+                      seconds.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4">
+                  <div
+                    class="
+                      flex items-center justify-center size-24 
+                      rounded-full bg-accent-green/10 text-accent-green
+                    "
+                  >
+                    <svg
+                      class="lucide lucide-list-plus"
+                      fill="none"
+                      height="48"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M11 12H3"></path>
+                      <path d="M16 6H3"></path>
+                      <path d="M16 18H3"></path>
+                      <path d="M18 9v6"></path>
+                      <path d="M21 12h-6"></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-xl font-bold text-black dark:text-white">
+                      2. Add Your Tasks
+                    </h3>
+                    <p class="text-black/60 dark:text-white/60">
+                      Start adding your tasks and projects to stay organized.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4">
+                  <div
+                    class="
+                      flex items-center justify-center size-24 
+                      rounded-full bg-primary/10 text-primary
+                    "
+                  >
+                    <svg
+                      class="lucide lucide-check-check"
+                      fill="none"
+                      height="48"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M18 6 7 17l-5-5"></path>
+                      <path d="m22 10-7.5 7.5L13 16"></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-xl font-bold text-black dark:text-white">
+                      3. Get Things Done
+                    </h3>
+                    <p class="text-black/60 dark:text-white/60">
+                      Collaborate with your team and get your work done
+                      efficiently.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-16">
+              <div class="flex flex-col gap-4 text-center">
+                <h2
+                  class="
+                    text-3xl font-bold tracking-tight 
+                    text-black dark:text-white sm:text-4xl
+                  "
+                >
+                  Customer Success Stories
+                </h2>
+                <p
+                  class="text-base text-black/60 dark:text-white/60 max-w-2xl mx-auto"
+                >
+                  See how teams like yours are using TaskFlow to achieve their
+                  goals.
+                </p>
+              </div>
+
+              <div
+                class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              >
+                <div
+                  class="
+                    flex flex-col gap-6 rounded-xl 
+                    border border-black/10 dark:border-white/10 
+                    bg-white/50 dark:bg-black/10 p-6
+                  "
+                >
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-12 h-12 rounded-full bg-cover bg-center"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTtZGwwU5WOYibb2seHA_xp-940K4CxwSCblah6SHMlOroBe1iqKstWd1e7UgzWbGvyyhaz-iLnA090QC0s-9IAzqwHoE3PXeurJbvPk4J-YmbOn7hlHhmNQPqHdA5h6W-kEaoaOCJ42hHt7zqvX-DoWFefX7ljawuHq2WGB52e7Md6pU5SMh22VVMjeiIIHK95SAAc5QuXwWh8x31etEASqh8RmW39RfNj6e7NqHLSafk9tW2s0WW8HWp8Y2k4JOSSRFDTrVofkc');
+                      "
+                    ></div>
+                    <div>
+                      <h3 class="font-bold text-black dark:text-white">
+                        Innovate Solutions
+                      </h3>
+                      <p class="text-sm text-black/60 dark:text-white/60">
+                        Marketing Team
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-primary">
+                      "Transformed Our Workflow"
+                    </h4>
+                    <p class="mt-2 text-black/80 dark:text-white/80">
+                      "TaskFlow has transformed the way our team works. We're
+                      more organized and productive than ever before, which has
+                      led to a 25% increase in campaign output."
+                    </p>
+                  </div>
+                  <a
+                    class="text-primary font-bold text-sm hover:underline"
+                    href="#"
+                  >
+                    Read Case Study →
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    flex flex-col gap-6 rounded-xl 
+                    border border-black/10 dark:border-white/10 
+                    bg-white/50 dark:bg-black/10 p-6
+                  "
+                >
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-12 h-12 rounded-full bg-cover bg-center"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6A6oU7YCS7Q6MznnI9AO6wAXr4eEnW_V1IkWY_T0UwgwLRH_0Oyct3X3fllg-7ArSuBaw9Fth925bOoljGSObqMs2zfqA0AV-s5cyVIOAZ5g3hri0W6yjhRIpWo3hrgsqkBeFALHxfhtt4OYLmtQ1rf_Lj_Ssj9mogottkcEiqwvFnP9353v5Y9iKJ3RyL9M4Qs9eM_80-uEdpmJwgUxG5g7OtE6rYII1vO56CKjPxEah5jsmksW8Hpdbk-KZO8k7EqrAUq2WA3k');
+                      "
+                    ></div>
+                    <div>
+                      <h3 class="font-bold text-black dark:text-white">
+                        Global Tech
+                      </h3>
+                      <p class="text-sm text-black/60 dark:text-white/60">
+                        Project Management
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-accent-green">
+                      "Best Task Management App"
+                    </h4>
+                    <p class="mt-2 text-black/80 dark:text-white/80">
+                      "I've tried many task management apps, but TaskFlow is by
+                      far the best. It's intuitive, powerful, and helps me stay
+                      on top of everything, reducing project delays by 40%."
+                    </p>
+                  </div>
+                  <a
+                    class="text-accent-green font-bold text-sm hover:underline"
+                    href="#"
+                  >
+                    Read Case Study →
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    flex flex-col gap-6 rounded-xl 
+                    border border-black/10 dark:border-white/10 
+                    bg-white/50 dark:bg-black/10 p-6
+                  "
+                >
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-12 h-12 rounded-full bg-cover bg-center"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANokAE4-lV5VmV805FyTxMT0264TuqGITiL4WvrzhDoFlysoapjHvtyYCxWIlHD3JRHa49b5GJqHzZd7cyzxnlL9bGucmHDrITfNm_iwOrm3IFpxwtJFDK0SLWcdMtUzj4aWcA31ImFFH8Sg2icYxfTTNKre1K-Z0uL9S0l2rCnCY2IsACKIILOXuIsgagbS0jCuKl3V2ugquETDG2M6BkjWSzqDvWyyuPOXiiPaQln8q0u_qprtL9mK1vVLb4pjnc8Dn0bBEsdbc');
+                      "
+                    ></div>
+                    <div>
+                      <h3 class="font-bold text-black dark:text-white">
+                        Creative Minds
+                      </h3>
+                      <p class="text-sm text-black/60 dark:text-white/60">
+                        Creative Agency
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-primary">
+                      "A Game-Changer for Us"
+                    </h4>
+                    <p class="mt-2 text-black/80 dark:text-white/80">
+                      "TaskFlow is a game-changer. It's helped me streamline my
+                      workflow and achieve my goals, resulting in a 30%
+                      improvement in client satisfaction."
+                    </p>
+                  </div>
+                  <a
+                    class="text-primary font-bold text-sm hover:underline"
+                    href="#"
+                  >
+                    Read Case Study →
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-16">
+              <h2
+                class="
+                  text-3xl font-bold tracking-tight text-center 
+                  text-black dark:text-white sm:text-4xl
+                "
+              >
+                Trusted by teams worldwide
+              </h2>
+              <div
+                class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+              >
+                <div class="flex flex-col gap-4">
+                  <div
+                    class="w-full aspect-w-4 aspect-h-3 rounded-lg bg-cover bg-center"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTtZGwwU5WOYibb2seHA_xp-940K4CxwSCblah6SHMlOroBe1iqKstWd1e7UgzWbGvyyhaz-iLnA090QC0s-9IAzqwHoE3PXeurJbvPk4J-YmbOn7hlHhmNQPqHdA5h6W-kEaoaOCJ42hHt7zqvX-DoWFefX7ljawuHq2WGB52e7Md6pU5SMh22VVMjeiIIHK95SAAc5QuXwWh8x31etEASqh8RmW39RfNj6e7NqHLSafk9tW2s0WW8HWp8Y2k4JOSSRFDTrVofkc');
+                    "
+                  ></div>
+                  <div>
+                    <blockquote
+                      class="text-base font-medium text-black dark:text-white"
+                    >
+                      "TaskFlow has transformed the way our team works. We're
+                      more organized and productive than ever before."
+                    </blockquote>
+                    <p class="mt-2 text-sm text-black/60 dark:text-white/60">
+                      Sarah Chen, Marketing Manager at Innovate Solutions
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                  <div
+                    class="w-full aspect-w-4 aspect-h-3 rounded-lg bg-cover bg-center"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6A6oU7YCS7Q6MznnI9AO6wAXr4eEnW_V1IkWY_T0UwgwLRH_0Oyct3X3fllg-7ArSuBaw9Fth925bOoljGSObqMs2zfqA0AV-s5cyVIOAZ5g3hri0W6yjhRIpWo3hrgsqkBeFALHxfhtt4OYLmtQ1rf_Lj_Ssj9mogottkcEiqwvFnP9353v5Y9iKJ3RyL9M4Qs9eM_80-uEdpmJwgUxG5g7OtE6rYII1vO56CKjPxEah5jsmksW8Hpdbk-KZO8k7EqrAUq2WA3k');
+                    "
+                  ></div>
+                  <div>
+                    <blockquote
+                      class="text-base font-medium text-black dark:text-white"
+                    >
+                      "I've tried many task management apps, but TaskFlow is by
+                      far the best. It's intuitive, powerful, and helps me stay
+                      on top of everything."
+                    </blockquote>
+                    <p class="mt-2 text-sm text-black/60 dark:text-white/60">
+                      David Lee, Project Manager at Global Tech
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                  <div
+                    class="w-full aspect-w-4 aspect-h-3 rounded-lg bg-cover bg-center"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANokAE4-lV5VmV805FyTxMT0264TuqGITiL4WvrzhDoFlysoapjHvtyYCxWIlHD3JRHa49b5GJqHzZd7cyzxnlL9bGucmHDrITfNm_iwOrm3IFpxwtJFDK0SLWcdMtUzj4aWcA31ImFFH8Sg2icYxfTTNKre1K-Z0uL9S0l2rCnCY2IsACKIILOXuIsgagbS0jCuKl3V2ugquETDG2M6BkjWSzqDvWyyuPOXiiPaQln8q0u_qprtL9mK1vVLb4pjnc8Dn0bBEsdbc');
+                    "
+                  ></div>
+                  <div>
+                    <blockquote
+                      class="text-base font-medium text-black dark:text-white"
+                    >
+                      "TaskFlow is a game-changer. It's helped me streamline my
+                      workflow and achieve my goals."
+                    </blockquote>
+                    <p class="mt-2 text-sm text-black/60 dark:text-white/60">
+                      Emily Wong, CEO at Creative Minds
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-16">
+              <h2
+                class="
+                  text-3xl font-bold tracking-tight text-center 
+                  text-black dark:text-white sm:text-4xl
+                "
+              >
+                Integrations
+              </h2>
+              <div
+                class="
+                  mt-12 grid grid-cols-2 sm:grid-cols-3 gap-8 
+                  items-center justify-items-center
+                "
+              >
+                <div
+                  class="w-32 h-32 bg-cover bg-center rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXLB_JhiPg5WHb-p0S4gdx1386pzJwfaxggTcje1l5cujEEh-uco8oXtZcodALCkakWZoDacGQvRK0jrpgzbWGuS9RC3JC6FbIUlX3LZNars0nvM4JKbFx0C4IIW9PUXIEA-LLAplvkPbXD3vXxikbKab8sAX-_3j0TdCD61TIauIPxHJ8t67MZcnSL-QXq0XV0lEDMOUVKQi-1-m0MVq8gnFiH6JuPfxMcXaH7uT4lXcpyyRE9w9-w-uNIBxz-yp7-osIGilY8J4');
+                  "
+                ></div>
+                <div
+                  class="w-32 h-32 bg-cover bg-center rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBF4iMOR4h0NkZlugBbkG5l3Fj3GrU0ib6kiJfaHq95404FKT5SfVSMrofOxPIABgNHpjc5IbMN5_ozdLjLlYfRVKBPk-IFFs7Avgy4zet7KBelx0opFYYcdCX_dRPDPapExLyGGOEbqVX7Mjazn-oAS9uEA_CmKTW8GwKvXDEbXakUB4WTFD3EoSJbBSMXbrKlDIZMtJbD5Pc8og7yFzJxJb67EDiHs-m-ZLQ28qdrKG_aBgm3S7lesL4SGXbqhjpS9q-O0UT6iL0');
+                  "
+                ></div>
+                <div
+                  class="w-32 h-32 bg-cover bg-center rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAZCKbE0hVHCZ-XK_SvpN0xV5vpFmcSmcNPXUeVCySVR5jgLMA0R9AF5bnTinSDz5CDVsA-UF4y80GNDjXmRek2wiIwqmKEh8W88PkEBwOvFPNt-GIP_qrXqsBx4uBn4tcq8lob4JG1EadNNZMIy9RwLmdtRgNb8eOLWNf00jXaqNyrKBasc9tJNP3IsZBuprX-S7psfwRJdilxxSq7dKHXNX1P1buXVlX1DqwCnLmaVYIJxQKjht408yxtT9jCgGeXV9qx2WNlBM');
+                  "
+                ></div>
+              </div>
+            </section>
+
+            <section class="py-16">
+              <div class="flex flex-col gap-6 text-center">
+                <h2
+                  class="
+                    text-3xl font-bold tracking-tight 
+                    text-black dark:text-white sm:text-4xl
+                  "
+                >
+                  Frequently Asked Questions
+                </h2>
+                <p
+                  class="text-base text-black/60 dark:text-white/60 max-w-2xl mx-auto"
+                >
+                  Find answers to common questions about TaskFlow.
+                </p>
+              </div>
+              <div class="mt-12 max-w-3xl mx-auto space-y-4">
+                <div class="border-b border-black/10 dark:border-white/10 pb-4">
+                  <button
+                    class="w-full flex justify-between items-center text-left"
+                  >
+                    <h3 class="text-lg font-medium text-black dark:text-white">
+                      What is TaskFlow?
+                    </h3>
+                    <span class="text-primary">
+                      <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 9l-7 7-7-7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="mt-2 text-black/60 dark:text-white/60">
+                    <p>
+                      TaskFlow is a comprehensive task management application
+                      designed to help individuals and teams organize their
+                      work, track progress, and collaborate effectively. It
+                      combines task lists, calendars, and team collaboration
+                      tools into a single, intuitive platform.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="border-b border-black/10 dark:border-white/10 pb-4">
+                  <button
+                    class="w-full flex justify-between items-center text-left"
+                  >
+                    <h3 class="text-lg font-medium text-black dark:text-white">
+                      Is there a free version of TaskFlow?
+                    </h3>
+                    <span class="text-primary">
+                      <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 9l-7 7-7-7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="mt-2 text-black/60 dark:text-white/60 hidden">
+                    <p>
+                      Yes, TaskFlow offers a Basic plan that is free forever. It
+                      includes unlimited tasks, basic features, and is suitable
+                      for a single user. We also have Pro and Business plans
+                      with advanced features for teams.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="border-b border-black/10 dark:border-white/10 pb-4">
+                  <button
+                    class="w-full flex justify-between items-center text-left"
+                  >
+                    <h3 class="text-lg font-medium text-black dark:text-white">
+                      Can I collaborate with my team using TaskFlow?
+                    </h3>
+                    <span class="text-primary">
+                      <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 9l-7 7-7-7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="mt-2 text-black/60 dark:text-white/60 hidden">
+                    <p>
+                      Absolutely! Collaboration is a core feature of TaskFlow.
+                      You can assign tasks, share files, leave comments, and
+                      track team progress in real-time. Our Pro and Business
+                      plans are designed to enhance team collaboration.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="border-b border-black/10 dark:border-white/10 pb-4">
+                  <button
+                    class="w-full flex justify-between items-center text-left"
+                  >
+                    <h3 class="text-lg font-medium text-black dark:text-white">
+                      Does TaskFlow integrate with other apps?
+                    </h3>
+                    <span class="text-primary">
+                      <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 9l-7 7-7-7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="mt-2 text-black/60 dark:text-white/60 hidden">
+                    <p>
+                      Yes, TaskFlow integrates with popular tools like Slack,
+                      Google Calendar, and Dropbox to streamline your workflow
+                      and keep all your information in one place. We are
+                      continuously adding new integrations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-16">
+              <h2
+                class="
+                  text-3xl font-bold tracking-tight text-center 
+                  text-black dark:text-white sm:text-4xl
+                "
+              >
+                Pricing
+              </h2>
+              <div
+                class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto"
+              >
+                <div
+                  class="
+                    flex flex-col gap-6 rounded-xl 
+                    border border-black/10 dark:border-white/10 
+                    bg-white/50 dark:bg-black/10 p-8
+                  "
+                >
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-lg font-bold text-black dark:text-white">
+                      Basic
+                    </h3>
+                    <p
+                      class="flex items-baseline gap-1 text-black dark:text-white"
+                    >
+                      <span class="text-4xl font-extrabold tracking-tight"
+                        >Free</span
+                      >
+                    </p>
+                  </div>
+                  <button
+                    class="
+                      w-full rounded-lg h-10 px-4 
+                      bg-primary/20 dark:bg-primary/30 
+                      text-primary text-sm font-bold
+                    "
+                  >
+                    Get Started
+                  </button>
+                  <ul class="flex flex-col gap-3 text-sm">
+                    <li
+                      class="flex items-center gap-3 text-black/80 dark:text-white/80"
+                    >
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>Unlimited tasks
+                    </li>
+
+                    <li
+                      class="flex items-center gap-3 text-black/80 dark:text-white/80"
+                    >
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,
+                            0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,
+                            11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>Basic features
+                    </li>
+
+                    <li
+                      class="flex items-center gap-3 text-black/80 dark:text-white/80"
+                    >
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>1 user
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="
+                    flex flex-col gap-6 rounded-xl p-8
+                    border-2 border-primary bg-primary/5 dark:bg-primary/10
+                  "
+                >
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-lg font-bold text-primary">Pro</h3>
+                    <p
+                      class="flex items-baseline gap-1 text-black dark:text-white"
+                    >
+                      <span class="text-4xl font-extrabold tracking-tight">
+                        $10
+                      </span>
+                      <span
+                        class="text-sm font-semibold text-black/60 dark:text-white/60"
+                      >
+                        /month
+                      </span>
+                    </p>
+                  </div>
+                  <button
+                    class="
+                      w-full rounded-lg h-10 px-4 
+                      bg-primary text-white text-sm font-bold
+                    "
+                  >
+                    Get Started
+                  </button>
+                  <ul class="flex flex-col gap-3 text-sm">
+                    <li
+                      class="flex items-center gap-3 text-black/80 dark:text-white/80"
+                    >
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>Unlimited tasks
+                    </li>
+
+                    <li
+                      class="flex items-center gap-3 text-black/80 dark:text-white/80"
+                    >
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>Advanced features
+                    </li>
+
+                    <li
+                      class="flex items-center gap-3 text-black/80 dark:text-white/80"
+                    >
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>5 users
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="
+                    flex flex-col gap-6 rounded-xl 
+                    border border-black/10 dark:border-white/10 
+                    bg-white/50 dark:bg-black/10 p-8
+                  "
+                >
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-lg font-bold text-black dark:text-white">
+                      Business
+                    </h3>
+                    <p
+                      class="flex items-baseline gap-1 text-black dark:text-white"
+                    >
+                      <span class="text-4xl font-extrabold tracking-tight"
+                        >$20</span
+                      >
+                      <span
+                        class="text-sm font-semibold text-black/60 dark:text-white/60"
+                        >/month</span
+                      >
+                    </p>
+                  </div>
+                  <button
+                    class="
+                      w-full rounded-lg h-10 px-4 
+                      bg-primary/20 dark:bg-primary/30 
+                      text-primary text-sm font-bold
+                    "
+                  >
+                    Contact Us
+                  </button>
+                  <ul class="flex flex-col gap-3 text-sm">
+                    <li
+                      class="flex items-center gap-3 text-black/80 dark:text-white/80"
+                    >
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>Unlimited tasks
+                    </li>
+                    <li
+                      class="flex items-center gap-3 text-black/80 dark:text-white/80"
+                    >
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>All features
+                    </li>
+                    <li
+                      class="flex items-center gap-3 text-black/80 dark:text-white/80"
+                    >
+                      <svg
+                        class="text-primary"
+                        fill="currentColor"
+                        height="20"
+                        viewBox="0 0 256 256"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="
+                            M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,
+                            8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,
+                            0,1,11.32,11.32Z
+                          "
+                        ></path>
+                      </svg>Unlimited users
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-16">
+              <div class="mx-auto max-w-2xl text-center">
+                <h2
+                  class="
+                    text-3xl font-bold tracking-tight 
+                    text-black dark:text-white sm:text-4xl
+                  "
+                >
+                  Get in touch
+                </h2>
+                <p
+                  class="mt-4 text-base leading-7 text-black/60 dark:text-white/60"
+                >
+                  We'd love to hear from you. Please fill out this form.
+                </p>
+              </div>
+              <form class="mx-auto mt-12 max-w-xl">
+                <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                  <div>
+                    <label
+                      class="text-sm font-semibold leading-6 text-black dark:text-white"
+                      for="first-name"
+                      >First name</label
+                    >
+                    <div class="mt-2.5">
+                      <input
+                        id="first-name"
+                        autocomplete="given-name"
+                        class="
+                          w-full rounded-lg border-0 px-3.5 py-2 
+                          bg-white/50 dark:bg-black/20 
+                          text-black dark:text-white shadow-sm 
+                          ring-1 ring-inset ring-black/10 dark:ring-white/10 focus:ring-2 
+                          focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6
+                        "
+                        name="first-name"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      class="text-sm font-semibold leading-6 text-black dark:text-white"
+                      for="last-name"
+                    >
+                      Last name
+                    </label>
+                    <div class="mt-2.5">
+                      <input
+                        id="last-name"
+                        autocomplete="family-name"
+                        class="
+                          w-full rounded-lg px-3.5 py-2
+                          border-0 bg-white/50 dark:bg-black/20 
+                          text-black dark:text-white shadow-sm 
+                          ring-1 ring-inset ring-black/10 dark:ring-white/10 focus:ring-2 
+                          focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6
+                        "
+                        name="last-name"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label
+                      class="text-sm font-semibold leading-6 text-black dark:text-white"
+                      for="email"
+                    >
+                      Email
+                    </label>
+                    <div class="mt-2.5">
+                      <input
+                        id="email"
+                        autocomplete="email"
+                        class="
+                          w-full rounded-lg border-0 px-3.5 py-2 
+                          bg-white/50 dark:bg-black/20 text-black dark:text-white shadow-sm 
+                          ring-1 ring-inset ring-black/10 dark:ring-white/10 focus:ring-2 
+                          focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6
+                        "
+                        name="email"
+                        type="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label
+                      class="text-sm font-semibold leading-6 text-black dark:text-white"
+                      for="message"
+                    >
+                      Message
+                    </label>
+                    <div class="mt-2.5">
+                      <textarea
+                        id="message"
+                        class="
+                          w-full rounded-lg border-0 px-3.5 py-2 
+                          bg-white/50 dark:bg-black/20 text-black dark:text-white shadow-sm 
+                          ring-1 ring-inset ring-black/10 dark:ring-white/10 focus:ring-2 
+                          focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6
+                        "
+                        name="message"
+                        rows="4"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <button
+                    class="
+                      w-full rounded-lg px-3.5 py-2.5 
+                      bg-primary shadow-sm hover:bg-primary/80
+                      text-center text-sm font-semibold text-white 
+                      focus-visible:outline focus-visible:outline-2 
+                      focus-visible:outline-offset-2 focus-visible:outline-primary
+                    "
+                    type="submit"
+                  >
+                    Let's talk
+                  </button>
+                </div>
+              </form>
+            </section>
+
+            <section class="py-16 sm:py-24">
+              <div class="mx-auto max-w-2xl text-center">
+                <h2
+                  class="
+                    text-3xl font-bold tracking-tight 
+                    text-black dark:text-white sm:text-4xl
+                  "
+                >
+                  Stay up to date
+                </h2>
+                <p
+                  class="mt-4 text-base leading-7 text-black/60 dark:text-white/60"
+                >
+                  Get the latest news and updates from TaskFlow.
+                </p>
+                <div class="mt-10 flex items-center gap-x-2">
+                  <label class="sr-only" for="email-address">
+                    Email address
+                  </label>
+                  <input
+                    id="email-address"
+                    autocomplete="email"
+                    class="
+                      flex-auto rounded-lg border-0 bg-white/50 dark:bg-black/20 
+                      px-3.5 py-2 text-black dark:text-white shadow-sm 
+                      ring-1 ring-inset ring-black/10 dark:ring-white/10 focus:ring-2 
+                      focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6
+                    "
+                    name="email"
+                    placeholder="Enter your email"
+                    required=""
+                    type="email"
+                  />
+                  <button
+                    class="
+                      rounded-lg bg-accent-green px-3.5 py-2.5 
+                      text-sm font-semibold text-white shadow-sm 
+                      hover:bg-accent-green/80 focus-visible:outline 
+                      focus-visible:outline-2 focus-visible:outline-offset-2 
+                      focus-visible:outline-accent-green
+                    "
+                    type="submit"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+        
+        <footer class="border-t border-black/10 dark:border-white/10">
+          <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+            <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+              <a
+                class="
+                  text-sm font-medium text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                Product
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                Solutions
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                Resources
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                Pricing
+              </a>
+              <a
+                class="
+                  text-sm font-medium text-black/60 dark:text-white/60 
+                  hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                Contact Us
+              </a>
+            </nav>
+            <div class="mt-8 flex justify-center space-x-6">
+              <a
+                class="
+                  text-black/40 dark:text-white/40 
+                  hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                <span class="sr-only">Twitter</span>
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="
+                      M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 
+                      0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 
+                      01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 
+                      0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 
+                      0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 
+                      0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 
+                      4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 
+                      8.233 0 012 18.407a11.616 11.616 0 006.29 1.84
+                    "
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="
+                  text-black/40 dark:text-white/40 
+                  hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                <span class="sr-only">Facebook</span>
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="
+                      M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 
+                      3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 
+                      1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 
+                      0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 
+                      21.128 22 16.991 22 12z
+                    "
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="
+                  text-black/40 dark:text-white/40 
+                  hover:text-primary dark:hover:text-primary
+                "
+                href="#"
+              >
+                <span class="sr-only">Instagram</span>
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="
+                      M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 
+                      2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 
+                      1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 
+                      3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 
+                      2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 
+                      1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.
+                      808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-
+                      .465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.
+                      772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.
+                      06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.
+                      427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.485 
+                      2.525c.636-.247 1.363-.416 2.427-.465C9.941 2.013 10.295 
+                      2 12.315 2zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 
+                      5-5-2.24-5-5-5zm0 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 
+                      1.343 3 3-1.343 3-3 3zm6.536-7.81a1.25 1.25 0 11-2.5 0 
+                      1.25 1.25 0 012.5 0z
+                    "
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p
+              class="
+                mt-8 text-center text-sm 
+                text-black/40 dark:text-white/40
+              "
+            >
+              © 2023 TaskFlow. All rights reserved.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

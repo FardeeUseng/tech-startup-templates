@@ -1,0 +1,23 @@
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.dark .glassmorphism {
+  background: rgba(17, 24, 39, 0.1);
+}
+.hero-pattern {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(147, 197, 253, 0.2) 1px,
+    transparent 0
+  );
+  background-size: 1.5rem 1.5rem;
+}
+.dark .hero-pattern {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(30, 64, 175, 0.3) 1px,
+    transparent 0
+  );
+}
