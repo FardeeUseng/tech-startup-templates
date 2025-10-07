@@ -2,7 +2,7 @@
 <html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="utf-8" />
-    <title>App Landing Page Template (demo 1) - Standard</title>
+    <title>App Landing Page Template (demo 1) - Animate</title>
 
     <!-- ============ Favicon ============ -->
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
@@ -28,9 +28,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
 
     <!-- ============ Custom CSS ============ -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body
     class="
@@ -144,7 +148,6 @@
         </nav>
 
         <div class="flex items-center gap-4">
-
           <!-- ===== Theme Toggle ===== -->
           <button
             id="theme-toggle"
@@ -157,12 +160,24 @@
             "
           >
             <!-- ===== Light Mode ===== -->
-            <span class="material-symbols-outlined text-base block dark:hidden">
+            <span
+              class="
+                animate__animated material-symbols-outlined 
+                text-base block dark:hidden
+              "
+              data-animate="animate__rotateIn"
+            >
               light_mode
             </span>
     
             <!-- ===== Dark Mode ===== -->
-            <span class="material-symbols-outlined text-base hidden dark:block">
+            <span
+              class="
+                animate__animated material-symbols-outlined 
+                text-base hidden dark:block
+              "
+              data-animate="animate__rotateIn"
+            >
               dark_mode
             </span>
           </button>
@@ -176,14 +191,6 @@
           >
             Try the Demo
           </button>
-          <button
-            class="
-              lg:hidden p-2 rounded-full 
-              hover:bg-gray-200 dark:hover:bg-gray-800
-            "
-          >
-            <span class="material-symbols-outlined">menu</span>
-          </button>
         </div>
       </header>
 
@@ -193,7 +200,10 @@
           class="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
         >
           <div class="max-w-7xl mx-auto">
-            <div class="relative rounded-xl overflow-hidden">
+            <div
+              class="animate__animated relative rounded-xl overflow-hidden"
+              data-animate="animate__fadeInUp"
+            >
               <div class="absolute inset-0">
                 <img 
                   alt="Abstract background" 
@@ -243,7 +253,8 @@
 
         <section
           id="features"
-          class="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+          class="animate__animated py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+          data-animate="animate__fadeInUp"
         >
           <div class="max-w-4xl mx-auto text-center">
             <h2
@@ -272,7 +283,7 @@
                 class="
                   w-24 h-24 rounded-full 
                   bg-gradient-to-br from-purple-400 to-pink-500 
-                  flex items-center justify-center
+                  flex items-center justify-center animate-float
                 "
               >
                 <span class="material-symbols-outlined text-5xl text-white">
@@ -297,8 +308,8 @@
             >
               <div
                 class="
-                  w-24 h-24 flex items-center justify-center
-                  rounded-full bg-gradient-to-br from-pink-500 to-teal-400 
+                  w-24 h-24 rounded-full bg-gradient-to-br from-pink-500 to-teal-400 
+                  flex items-center justify-center animate-float [animation-delay:-1s]
                 "
               >
                 <span class="material-symbols-outlined text-5xl text-white">
@@ -323,8 +334,9 @@
             >
               <div
                 class="
-                  w-24 h-24 flex items-center justify-center
-                  rounded-full bg-gradient-to-br from-teal-400 to-purple-400 
+                  w-24 h-24 rounded-full 
+                  bg-gradient-to-br from-teal-400 to-purple-400 
+                  flex items-center justify-center animate-float [animation-delay:-2s]
                 "
               >
                 <span class="material-symbols-outlined text-5xl text-white">
@@ -344,7 +356,8 @@
 
         <section
           id="process"
-          class="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+          class="animate__animated py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+          data-animate="animate__fadeInUp"
         >
           <div class="max-w-4xl mx-auto text-center">
             <h2
@@ -422,9 +435,11 @@
 
         <section
           class="
+            animate__animated
             py-16 sm:py-24 lg:py-32 
             bg-background-light dark:bg-background-dark/50
           "
+          data-animate="animate__fadeInUp"
         >
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2
@@ -465,7 +480,8 @@
 
         <section
           id="testimonials"
-          class="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+          class="animate__animated py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+          data-animate="animate__fadeInUp"
         >
           <div class="max-w-4xl mx-auto text-center">
             <h2
@@ -574,9 +590,11 @@
         <section
           id="pricing" 
           class="
+            animate__animated
             py-16 sm:py-24 lg:py-32 
             bg-background-light dark:bg-background-dark/50
           "
+          data-animate="animate__fadeInUp"
         >
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center">
@@ -756,7 +774,10 @@
           </div>
         </section>
 
-        <section class="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+        <section
+          class="animate__animated py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+          data-animate="animate__fadeInUp"
+        >
           <div class="max-w-5xl mx-auto">
             <div
               class="

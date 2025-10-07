@@ -19,14 +19,20 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+
+    <!-- ============ Tailwind CSS ============ -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./tailwind-config.js"></script>
+
+    <!-- ============ Icons & Animations ============ -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    
-    <!-- ============ Tailwind CSS ============ -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="./tailwind-config.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
 
     <!-- ============ Custom CSS ============ -->
     <link rel="stylesheet" href="./style.css">
@@ -158,6 +164,7 @@
                 Faqs
               </a>
             </div>
+
             <div class="flex items-center gap-2">
               <button
                 id="theme-toggle"
@@ -170,12 +177,24 @@
                 "
               >
                 <!-- ===== Light Mode ===== -->
-                <span class="material-symbols-outlined text-base block dark:hidden">
+                <span
+                  class="
+                    animate__animated material-symbols-outlined 
+                    text-base block dark:hidden
+                  "
+                  data-animate="animate__rotateIn"
+                >
                   light_mode
                 </span>
         
                 <!-- ===== Dark Mode ===== -->
-                <span class="material-symbols-outlined text-base hidden dark:block">
+                <span
+                  class="
+                    animate__animated material-symbols-outlined 
+                    text-base hidden dark:block
+                  "
+                  data-animate="animate__rotateIn"
+                >
                   dark_mode
                 </span>
               </button>
@@ -236,20 +255,33 @@
             >
               <div class="flex flex-col gap-6 text-center lg:text-left">
                 <h1
-                  class="text-4xl lg:text-6xl font-extrabold tracking-tighter"
+                  class="
+                    animate__animated 
+                    text-4xl lg:text-6xl font-extrabold tracking-tighter
+                  "
+                  data-animate="animate__flash"
                 >
                   Unlock the Power of Your Data
                 </h1>
                 <p
-                  class="text-base lg:text-lg text-black/60 dark:text-white/60"
+                  class="
+                    animate__animated 
+                    text-base lg:text-lg text-black/60 dark:text-white/60
+                  "
+                  data-animate="animate__fadeInUp"
                 >
                   DataWise is a comprehensive dashboard solution that empowers
                   businesses to visualize, analyze, and act on their data in
                   real-time. Gain actionable insights and make informed
                   decisions with our intuitive and powerful platform.
                 </p>
+
                 <div
-                  class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
+                  class="
+                    animate__animated
+                    flex flex-col sm:flex-row justify-center lg:justify-start gap-4
+                  "
+                  data-animate="animate__fadeInUp"
                 >
                   <button
                     class="
@@ -289,14 +321,17 @@
                   </button>
                 </div>
               </div>
-              <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6lGO4DNHuG36jgfJsOy_Ot38aE2zGVd1eywzFyjq2brFB8dtyWq4K63ZrFvRDQz8OPaBznsUSHXWKY_PFe_jwya_3-s4tIu7BUFrRgMwXIOcd4ubSf4bD_NEYlECSrrVVPz-qnFLHa7L4d8rVIrfAaJZkBRXOkI8ETU65_t3NuOKizFltbhd4NwjXVUwb-lI0y544eZT8Q-SIQlj8JfMzDL_QDhSjyJ9tm8uRzVMVTRAv2r8J61LWMghOtmVDJKgG3kIYCuXFXFs" 
-                alt="Profile Picture" 
-                class="
-                  w-full aspect-[4/3] lg:aspect-video 
-                  object-cover object-center rounded-xl shadow-2xl
-                " 
-              />
+
+              <div class="animate__animated" data-animate="animate__jackInTheBox">
+                <img 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6lGO4DNHuG36jgfJsOy_Ot38aE2zGVd1eywzFyjq2brFB8dtyWq4K63ZrFvRDQz8OPaBznsUSHXWKY_PFe_jwya_3-s4tIu7BUFrRgMwXIOcd4ubSf4bD_NEYlECSrrVVPz-qnFLHa7L4d8rVIrfAaJZkBRXOkI8ETU65_t3NuOKizFltbhd4NwjXVUwb-lI0y544eZT8Q-SIQlj8JfMzDL_QDhSjyJ9tm8uRzVMVTRAv2r8J61LWMghOtmVDJKgG3kIYCuXFXFs" 
+                  alt="Profile Picture" 
+                  class="
+                    w-full aspect-[4/3] lg:aspect-video 
+                    object-cover object-center rounded-xl shadow-2xl
+                  " 
+                />
+              </div>
             </div>
           </section>
 
@@ -304,7 +339,10 @@
             id="features"
             class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24"
           >
-            <div class="max-w-7xl mx-auto">
+            <div
+              class="animate__animated max-w-7xl mx-auto"
+              data-animate="animate__fadeInUp"
+            >
               <div class="text-center max-w-3xl mx-auto">
                 <h2 class="text-3xl lg:text-4xl font-extrabold">
                   Key Features
@@ -420,7 +458,10 @@
               bg-primary/5 dark:bg-primary/10
             "
           >
-            <div class="max-w-7xl mx-auto">
+            <div
+              class="animate__animated max-w-7xl mx-auto"
+              data-animate="animate__fadeInUp"
+            >
               <div class="text-center max-w-3xl mx-auto">
                 <h2 class="text-3xl lg:text-4xl font-extrabold">
                   From the Blog
@@ -550,7 +591,10 @@
           </section>
 
           <section class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-            <div class="max-w-7xl mx-auto">
+            <div
+              class="animate__animated max-w-7xl mx-auto"
+              data-animate="animate__fadeInUp"
+            >
               <div class="text-center max-w-3xl mx-auto">
                 <h2 class="text-3xl lg:text-4xl font-extrabold">
                   Trusted by Innovative Companies
@@ -609,7 +653,10 @@
               bg-primary/5 dark:bg-primary/10
             "
           >
-            <div class="max-w-7xl mx-auto">
+            <div
+              class="animate__animated max-w-7xl mx-auto"
+              data-animate="animate__fadeInUp"
+            >
               <div class="text-center max-w-3xl mx-auto">
                 <h2 class="text-3xl lg:text-4xl font-extrabold">
                   Pricing Plans
@@ -914,7 +961,10 @@
           </section>
 
           <section id="faqs" class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-            <div class="max-w-3xl mx-auto">
+            <div
+              class="animate__animated max-w-3xl mx-auto"
+              data-animate="animate__fadeInUp"
+            >
               <div class="text-center">
                 <h2 class="text-3xl lg:text-4xl font-extrabold">
                   Frequently Asked Questions
@@ -1037,7 +1087,10 @@
           </section>
 
           <section class="px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-            <div class="max-w-xl mx-auto text-center">
+            <div
+              class="animate__animated max-w-xl mx-auto text-center"
+              data-animate="animate__fadeInUp"
+            >
               <h2 class="text-3xl lg:text-4xl font-extrabold">Contact Us</h2>
               <p
                 class="mt-4 text-base lg:text-lg text-black/60 dark:text-white/60"

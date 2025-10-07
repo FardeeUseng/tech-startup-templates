@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
-    <title>App Landing Page Template (demo 2) - Standard</title>
+    <title>App Landing Page Template (demo 2) - Animate</title>
 
     <!-- ============ Favicon ============ -->
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
@@ -23,6 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+
+    <!-- ============ Icons & Animations ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
 
     <!-- ============ Custom CSS ============ -->
     <link rel="stylesheet" href="./style.css">
@@ -170,12 +176,24 @@
                 "
               >
                 <!-- ===== Light Mode ===== -->
-                <span class="material-symbols-outlined text-base block dark:hidden">
+                <span
+                  class="
+                    animate__animated material-symbols-outlined 
+                    text-base block dark:hidden
+                  "
+                  data-animate="animate__rotateIn"
+                >
                   light_mode
                 </span>
         
                 <!-- ===== Dark Mode ===== -->
-                <span class="material-symbols-outlined text-base hidden dark:block">
+                <span
+                  class="
+                    animate__animated material-symbols-outlined 
+                    text-base hidden dark:block
+                  "
+                  data-animate="animate__rotateIn"
+                >
                   dark_mode
                 </span>
               </button>
@@ -206,20 +224,29 @@
                   <div class="flex flex-col gap-4 text-left">
                     <h1
                       class="
+                        animate__animated
                         text-4xl font-extrabold tracking-tighter text-black 
                         dark:text-white sm:text-5xl lg:text-6xl
                       "
+                      data-animate="animate__flash"
                     >
                       Organize your work and life, finally.
                     </h1>
                     <p
-                      class="text-base text-black/60 dark:text-white/60 sm:text-lg"
+                      class="
+                        animate__animated 
+                        text-base text-black/60 dark:text-white/60 sm:text-lg
+                      "
+                      data-animate="animate__fadeInUp"
                     >
                       Become focused, organized, and calm with TaskFlow. The
                       world's #1 task management app.
                     </p>
                   </div>
-                  <div class="flex flex-wrap gap-4">
+                  <div
+                    class="animate__animated flex flex-wrap gap-4"
+                    data-animate="animate__fadeInUp"
+                  >
                     <button
                       class="
                         flex-shrink-0 rounded-lg h-12 px-6 bg-primary 
@@ -238,21 +265,28 @@
                     </button>
                   </div>
                 </div>
-                <div class="w-full @[864px]:w-1/2">
-                  <div
+                
+                <div
+                  class="animate__animated w-full @[864px]:w-1/2"
+                  data-animate="animate__jackInTheBox"
+                >
+                  <img 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4_dGqBvv1Zwa-Fa7g1Ju3FHByeVElI_8h0RD5zsmoqXMsA_Q7VMfB-6BgHvOmbmyKwpBZlwIVhZ8IbydtjczvwTJePxSkMnzfMxNNEP-UWYez2VNmsNmWs29lWSIidqHdSeCTNZMCD0Lq78t5_eFHlZWl9Qv8xcKlSu9mrNs5t0Bp-n3lMIrWTFMZooB8k2bdLZXlWJf9RZHAiyxGGXO5fMsyyK-canS5fTEdULIa3sTxMqvgDrYMrH9Ek1332_r2TUV0jR7UbPM" 
+                    alt="Video Thumbnail" 
                     class="
-                      w-full bg-cover bg-center bg-no-repeat 
+                      w-full object-cover object-center 
                       aspect-video rounded-xl shadow-lg
-                    "
-                    style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4_dGqBvv1Zwa-Fa7g1Ju3FHByeVElI_8h0RD5zsmoqXMsA_Q7VMfB-6BgHvOmbmyKwpBZlwIVhZ8IbydtjczvwTJePxSkMnzfMxNNEP-UWYez2VNmsNmWs29lWSIidqHdSeCTNZMCD0Lq78t5_eFHlZWl9Qv8xcKlSu9mrNs5t0Bp-n3lMIrWTFMZooB8k2bdLZXlWJf9RZHAiyxGGXO5fMsyyK-canS5fTEdULIa3sTxMqvgDrYMrH9Ek1332_r2TUV0jR7UbPM');
-                    "
-                  ></div>
+                    " 
+                  />
                 </div>
               </div>
             </section>
 
-            <section id="features" class="py-16">
+            <section
+              id="features" 
+              class="animate__animated py-16" 
+              data-animate="animate__fadeInUp"
+            >
               <div class="flex flex-col gap-4 text-center">
                 <h2
                   class="
@@ -417,7 +451,10 @@
               </div>
             </section>
 
-            <section class="py-16">
+            <section
+              class="animate__animated py-16" 
+              data-animate="animate__fadeInUp"
+            >
               <div class="flex flex-col gap-4 text-center">
                 <h2
                   class="
@@ -543,7 +580,11 @@
               </div>
             </section>
 
-            <section id="testimonials" class="py-16">
+            <section
+              id="testimonials"
+              class="animate__animated py-16"
+              data-animate="animate__fadeInUp"
+            >
               <div class="flex flex-col gap-4 text-center">
                 <h2
                   class="
@@ -702,7 +743,7 @@
               </div>
             </section>
 
-            <section class="py-16">
+            <section class="animate__animated py-16" data-animate="animate__fadeInUp">
               <h2
                 class="
                   text-3xl font-bold tracking-tight text-center 
@@ -774,7 +815,7 @@
               </div>
             </section>
 
-            <section class="py-16">
+            <section class="animate__animated py-16" data-animate="animate__fadeInUp">
               <h2
                 class="
                   text-3xl font-bold tracking-tight text-center 
@@ -812,7 +853,11 @@
               </div>
             </section>
 
-            <section id="faqs" class="py-16">
+            <section
+              id="faqs" 
+              class="animate__animated py-16" 
+              data-animate="animate__fadeInUp"
+            >
               <div class="flex flex-col gap-6 text-center">
                 <h2
                   class="
@@ -968,7 +1013,11 @@
               </div>
             </section>
 
-            <section id="pricing" class="py-16">
+            <section
+              id="pricing" 
+              class="animate__animated py-16" 
+              data-animate="animate__fadeInUp"
+            >
               <h2
                 class="
                   text-3xl font-bold tracking-tight text-center 
@@ -1267,7 +1316,7 @@
               </div>
             </section>
 
-            <section class="py-16">
+            <section class="animate__animated py-16" data-animate="animate__fadeInUp">
               <div class="mx-auto max-w-2xl text-center">
                 <h2
                   class="
@@ -1391,7 +1440,10 @@
               </form>
             </section>
 
-            <section class="py-16 sm:py-24">
+            <section
+              class="animate__animated py-16 sm:py-24"
+              data-animate="animate__fadeInUp"
+            >
               <div class="mx-auto max-w-2xl text-center">
                 <h2
                   class="
