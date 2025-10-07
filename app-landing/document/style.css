@@ -1,7 +1,11 @@
+:root {
+  --wavy-color: #ff6b6b;
+}
+
 .wavy-underline {
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: var(--wavy-color, #ff6b6b);
+  text-decoration-color: var(--wavy-color);
   text-underline-offset: 8px;
 }
 

@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>App Landing Document</title>
-    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <title>App Landing Template Document</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Balsamiq+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
     <script src="./tailwind-config.js"></script>
@@ -66,7 +70,7 @@
               </svg>
             </div>
             <h1 class="text-xl font-display text-text-light dark:text-white">
-              WebApp FunKit
+              WebApp Template Docs
             </h1>
           </div>
 
@@ -109,16 +113,39 @@
             </a>
           </nav>
 
-          <button
-            class="
-              min-w-[120px] rounded-full bg-primary px-5 py-3
-              hidden md:flex items-center justify-center 
-              text-lg font-display text-white transition-all 
-              hover:bg-opacity-90 hover:scale-105 hover:shadow-playful 
-              dark:hover:shadow-playful-dark "
-          >
-            Purchase
-          </button>
+          <div class="flex items-center gap-4">
+            <!-- ===== Theme Toggle ===== -->
+            <button
+              id="theme-toggle"
+              class="
+                h-8 w-8
+                flex items-center justify-center
+                rounded-lg bg-gray-200/50 dark:bg-gray-700/50 
+                text-gray-800 dark:text-gray-200 
+                hover:bg-gray-200 dark:hover:bg-gray-700
+              "
+            >
+              <!-- ===== Light Mode ===== -->
+              <span class="material-symbols-outlined text-base block dark:hidden">
+                light_mode
+              </span>
+      
+              <!-- ===== Dark Mode ===== -->
+              <span class="material-symbols-outlined text-base hidden dark:block">
+                dark_mode
+              </span>
+            </button>
+            <button
+              class="
+                min-w-[120px] rounded-full bg-primary px-5 py-3
+                hidden md:flex items-center justify-center 
+                text-lg font-display text-white transition-all 
+                hover:bg-opacity-90 hover:scale-105 hover:shadow-playful 
+                dark:hover:shadow-playful-dark "
+            >
+              Purchase
+            </button>
+          </div>
         </div>
       </header>
 
@@ -145,7 +172,14 @@
               >
                 Documentation &amp; Overview
               </p>
+              <p class="mt-4 text-lg text-gray-500 dark:text-gray-400"> 
+                Includes <strong>3 demos</strong> — each available in both 
+                <span class="font-semibold text-primary">Standard</span> 
+                and <span class="font-semibold text-emerald-400">Animate</span> 
+                versions. 
+              </p>
             </section>
+
             <div class="space-y-24">
               <section id="overview">
                 <div
@@ -165,16 +199,23 @@
                     Overview
                   </h2>
                   <p class="mt-6 text-lg leading-relaxed text-text-light">
-                    This template provides a robust foundation for building
-                    modern web applications and landing pages. It includes three
-                    distinct demo variations, each with a unique design and
-                    layout to cater to different project needs. The template is
-                    built with a focus on clean code, responsive design, and
-                    easy customization, allowing developers to quickly adapt it
-                    to their specific requirements.
+                    This template provides a robust foundation for building modern web
+                    applications and landing pages. It includes three distinct demo variations,
+                    each with a unique design and layout to cater to different project needs.
+                  </p>
+
+                  <ul class="list-disc list-inside mt-6 text-lg leading-relaxed text-text-light">
+                    <li>Fully responsive and mobile-friendly design</li>
+                    <li>Easy customization and quick setup</li>
+                  </ul>
+
+                  <p class="mt-6 text-lg leading-relaxed text-text-light">
+                    Designed with flexibility in mind, developers can quickly adapt and scale
+                    this template to meet their specific project requirements.
                   </p>
                 </div>
               </section>
+
               <section id="demos">
                 <h2
                   class="
@@ -186,107 +227,258 @@
                   Demos
                 </h2>
                 <div class="space-y-16">
-                  <div
-                    class="
-                      group transform transition-transform 
-                      duration-300 hover:scale-105 hover:-rotate-1
-                    "
-                  >
-                    <div
+                  <!-- Demo 1 -->
+                  <div>
+                    <h3 
                       class="
-                        rounded-xl border-4 border-text-light dark:border-text-dark 
-                        bg-white shadow-playful dark:shadow-playful-dark overflow-hidden
+                        text-2xl font-display text-text-light 
+                        mb-8 text-center dark:text-white
                       "
-                    >
-                      <div
-                        class="bg-cover bg-center"
-                        style="
-                          background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpQSDCMs0ilo9XCbscP1X_gk5YewLt8QNQ1lw6lj3zgS0nH9A4fhJVYwKjnV0bKlFPSwq-15piCTkB5THOuKVGCC_YQFL-he9DNQUs0BBs7QgOce48Jo_eTwDhNenz1dY77Lp1oS5L7K2xnk6O9MllJCwkMRWPIkm62kA3BQwCzLeTrRP1MNUMZJDAAIMSEsW5_rM-EnEAgdINMmSW7qC2BAlSLAA7byp2XzANrbnPewyhRTh0Av9VLFBBVkiSTpzpX398CE5Firc');
-                          aspect-ratio: 16 / 9;
+                    > 
+                      Demo 1 — Modern Dashboard Landing Page 
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                      <!-- Standard -->
+                      <a
+                        href="#"
+                        class="
+                          cursor-pointer
+                          group transform transition-transform 
+                          duration-300 hover:scale-105 hover:-rotate-1
                         "
-                      ></div>
-                      <div class="p-8 bg-accent/20">
-                        <h3 class="font-display text-2xl text-text-light">
-                          Demo 1: Modern Dashboard Landing Page
-                        </h3>
-                        <p class="mt-2 text-base text-text-light/80">
-                          A sleek and modern dashboard landing page with a focus
-                          on data visualization and user engagement. Explore the
-                          features and layout of this dynamic dashboard
-                          template.
-                        </p>
-                      </div>
+                      >
+                        <div
+                          class="
+                            rounded-xl border-4 border-text-light dark:border-text-dark 
+                            bg-white shadow-playful dark:shadow-playful-dark overflow-hidden
+                          "
+                        >
+                          <div
+                            class="bg-cover bg-center"
+                            style="
+                              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpQSDCMs0ilo9XCbscP1X_gk5YewLt8QNQ1lw6lj3zgS0nH9A4fhJVYwKjnV0bKlFPSwq-15piCTkB5THOuKVGCC_YQFL-he9DNQUs0BBs7QgOce48Jo_eTwDhNenz1dY77Lp1oS5L7K2xnk6O9MllJCwkMRWPIkm62kA3BQwCzLeTrRP1MNUMZJDAAIMSEsW5_rM-EnEAgdINMmSW7qC2BAlSLAA7byp2XzANrbnPewyhRTh0Av9VLFBBVkiSTpzpX398CE5Firc');
+                              aspect-ratio: 16 / 9;
+                            "
+                          ></div>
+                          <div class="p-8 bg-accent/20">
+                            <h3 class="font-display text-2xl text-text-light">
+                              Standard Version
+                            </h3>
+                            <p class="mt-2 text-base text-text-light/80">
+                              A sleek and modern dashboard with a focus on analytics and visualization.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+  
+                      <!-- Animate -->
+                      <a
+                        href="#"
+                        class="
+                          cursor-pointer
+                          group transform transition-transform 
+                          duration-300 hover:scale-105 hover:-rotate-1
+                        "
+                      >
+                        <div
+                          class="
+                            rounded-xl border-4 border-text-light dark:border-text-dark 
+                            bg-white shadow-playful dark:shadow-playful-dark overflow-hidden
+                          "
+                        >
+                          <div
+                            class="bg-cover bg-center"
+                            style="
+                              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpQSDCMs0ilo9XCbscP1X_gk5YewLt8QNQ1lw6lj3zgS0nH9A4fhJVYwKjnV0bKlFPSwq-15piCTkB5THOuKVGCC_YQFL-he9DNQUs0BBs7QgOce48Jo_eTwDhNenz1dY77Lp1oS5L7K2xnk6O9MllJCwkMRWPIkm62kA3BQwCzLeTrRP1MNUMZJDAAIMSEsW5_rM-EnEAgdINMmSW7qC2BAlSLAA7byp2XzANrbnPewyhRTh0Av9VLFBBVkiSTpzpX398CE5Firc');
+                              aspect-ratio: 16 / 9;
+                            "
+                          ></div>
+                          <div class="p-8 bg-accent/20">
+                            <h3 class="font-display text-2xl text-text-light">
+                              Animate Version
+                            </h3>
+                            <p class="mt-2 text-base text-text-light/80">
+                              Adds playful motion and transitions to enhance engagement.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
-                  <div
-                    class="
-                      group transform transition-transform 
-                      duration-300 hover:scale-105 hover:rotate-1
-                    "
-                  >
-                    <div
+
+                  <!-- Demo 2 -->
+                  <div>
+                    <h3 
                       class="
-                        rounded-xl border-4 border-text-light 
-                        dark:border-text-dark bg-white shadow-playful 
-                        dark:shadow-playful-dark overflow-hidden
+                        text-2xl font-display text-text-light 
+                        mb-8 text-center dark:text-white
                       "
-                    >
-                      <div
-                        class="bg-cover bg-center"
-                        style="
-                          background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBx0dYsK9odawHNME56AaGgSTz30AWI-LCfNfkkmGTN_KGmliYprVd-ZOKNqkrpMvVTm0SwFgIAallqGSvTit8_B-oeaxFj7tKX_OKYVoUJdJplb3ONAFhMdNk6rgVHZ9taKUL4hSUMHaMtLFsyf2AOneM46IixEkcIY_LCWI8KAlUOf7zsxJF4CT8eL3HLatWp7FYkeGeP82NeF02F2BpcnnzUxwsjLcTyVnDfWkvn50tdofJHARE17l9TddpFmcfCyUOEyyZgrZU');
-                          aspect-ratio: 16 / 9;
+                    > 
+                      Demo 2: Minimal SaaS Web App Landing Page
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                      <!-- Standard -->
+                      <a
+                        href="#"
+                        class="
+                          cursor-pointer
+                          group transform transition-transform 
+                          duration-300 hover:scale-105 hover:rotate-1
                         "
-                      ></div>
-                      <div class="p-8 bg-primary/20">
-                        <h3 class="font-display text-2xl text-text-light">
-                          Demo 2: Minimal SaaS Web App Landing Page
-                        </h3>
-                        <p class="mt-2 text-base text-text-light/80">
-                          A minimalist SaaS web app landing page with a clean
-                          and focused design, ideal for showcasing key features
-                          and benefits. Discover the simplicity and elegance of
-                          this SaaS landing page template.
-                        </p>
-                      </div>
+                      >
+                        <div
+                          class="
+                            rounded-xl border-4 border-text-light 
+                            dark:border-text-dark bg-white shadow-playful 
+                            dark:shadow-playful-dark overflow-hidden
+                          "
+                        >
+                          <div
+                            class="bg-cover bg-center"
+                            style="
+                              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBx0dYsK9odawHNME56AaGgSTz30AWI-LCfNfkkmGTN_KGmliYprVd-ZOKNqkrpMvVTm0SwFgIAallqGSvTit8_B-oeaxFj7tKX_OKYVoUJdJplb3ONAFhMdNk6rgVHZ9taKUL4hSUMHaMtLFsyf2AOneM46IixEkcIY_LCWI8KAlUOf7zsxJF4CT8eL3HLatWp7FYkeGeP82NeF02F2BpcnnzUxwsjLcTyVnDfWkvn50tdofJHARE17l9TddpFmcfCyUOEyyZgrZU');
+                              aspect-ratio: 16 / 9;
+                            "
+                          ></div>
+                          <div class="p-8 bg-primary/20">
+                            <h3 class="font-display text-2xl text-text-light">
+                              Standard Version
+                            </h3>
+                            <p class="mt-2 text-base text-text-light/80">
+                              A minimalist SaaS web app landing page with a clean 
+                              and focused design, ideal for showcasing key features 
+                              and benefits. Discover the simplicity and elegance of 
+                              this SaaS landing page template.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+  
+                      <!-- Animate -->
+                      <a
+                        href="#"
+                        class="
+                          cursor-pointer
+                          group transform transition-transform 
+                          duration-300 hover:scale-105 hover:rotate-1
+                        "
+                      >
+                        <div
+                          class="
+                            rounded-xl border-4 border-text-light 
+                            dark:border-text-dark bg-white shadow-playful 
+                            dark:shadow-playful-dark overflow-hidden
+                          "
+                        >
+                          <div
+                            class="bg-cover bg-center"
+                            style="
+                              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBx0dYsK9odawHNME56AaGgSTz30AWI-LCfNfkkmGTN_KGmliYprVd-ZOKNqkrpMvVTm0SwFgIAallqGSvTit8_B-oeaxFj7tKX_OKYVoUJdJplb3ONAFhMdNk6rgVHZ9taKUL4hSUMHaMtLFsyf2AOneM46IixEkcIY_LCWI8KAlUOf7zsxJF4CT8eL3HLatWp7FYkeGeP82NeF02F2BpcnnzUxwsjLcTyVnDfWkvn50tdofJHARE17l9TddpFmcfCyUOEyyZgrZU');
+                              aspect-ratio: 16 / 9;
+                            "
+                          ></div>
+                          <div class="p-8 bg-primary/20">
+                            <h3 class="font-display text-2xl text-text-light">
+                              Animate Version
+                            </h3>
+                            <p class="mt-2 text-base text-text-light/80">
+                              The animated version adds smooth transitions and motion 
+                              effects, creating a dynamic and engaging experience for 
+                              your SaaS product showcase.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
-                  <div
-                    class="
-                      group transform transition-transform 
-                      duration-300 hover:scale-105 hover:-rotate-1
-                    "
-                  >
-                    <div
+
+                  <!-- Demo 3 -->
+                  <div>
+                    <h3 
                       class="
-                        rounded-xl border-4 border-text-light 
-                        dark:border-text-dark bg-white shadow-playful 
-                        dark:shadow-playful-dark overflow-hidden
+                        text-2xl font-display text-text-light 
+                        mb-8 text-center dark:text-white
                       "
-                    >
-                      <div
-                        class="bg-cover bg-center"
-                        style="
-                          background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPEzcPW53L9snGz6aey5j7qy5yNEiyyQXLZjse_BJziu0jbHthY5Wvnip3wB0_D3kSAP5H6luuPhTs5Cq0SGgoWCFexvwKts0VjpjZhC5f5p8Rcsd8KgJ9o6wQN0Zq_Qap_Q5LMPsIxLjNpnqS6u9T-vv1fmVqAD28iFX_PBsd1Q3B479gvcDlm3-FlfteJ1yQO3WUd_DkE9LTiMb2EWA7_h5Jn2AmN2k_lAzsZLUXS-7saPv25aFOWwPtTnxyb9W2F3QZHDVwSOE');
-                          aspect-ratio: 16 / 9;
+                    > 
+                      Demo 3: Creative Web App Landing Page
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-6">
+
+                      <!-- Standard -->
+                      <a
+                        href="#"
+                        class="
+                          group transform transition-transform 
+                          duration-300 hover:scale-105 hover:-rotate-1
                         "
-                      ></div>
-                      <div class="p-8 bg-secondary/30">
-                        <h3 class="font-display text-2xl text-text-light">
-                          Demo 3: Creative Web App Landing Page
-                        </h3>
-                        <p class="mt-2 text-base text-text-light/80">
-                          A creative web app landing page with unique design
-                          elements and a visually appealing layout to capture
-                          user attention. Experience the innovative design and
-                          interactive elements of this creative landing page
-                          template.
-                        </p>
-                      </div>
+                      >
+                        <div
+                          class="
+                            rounded-xl border-4 border-text-light 
+                            dark:border-text-dark bg-white shadow-playful 
+                            dark:shadow-playful-dark overflow-hidden
+                          "
+                        >
+                          <div
+                            class="bg-cover bg-center"
+                            style="
+                              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPEzcPW53L9snGz6aey5j7qy5yNEiyyQXLZjse_BJziu0jbHthY5Wvnip3wB0_D3kSAP5H6luuPhTs5Cq0SGgoWCFexvwKts0VjpjZhC5f5p8Rcsd8KgJ9o6wQN0Zq_Qap_Q5LMPsIxLjNpnqS6u9T-vv1fmVqAD28iFX_PBsd1Q3B479gvcDlm3-FlfteJ1yQO3WUd_DkE9LTiMb2EWA7_h5Jn2AmN2k_lAzsZLUXS-7saPv25aFOWwPtTnxyb9W2F3QZHDVwSOE');
+                              aspect-ratio: 16 / 9;
+                            "
+                          ></div>
+                          <div class="p-8 bg-secondary/30">
+                            <h3 class="font-display text-2xl text-text-light">
+                              Standard Version
+                            </h3>
+                            <p class="mt-2 text-base text-text-light/80">
+                              A creative landing page focused on elegant design 
+                              and usability. Ideal for modern startups or portfolios 
+                              that value aesthetics and simplicity.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+  
+                      <!-- Animate -->
+                      <a
+                        href="#"
+                        class="
+                          group transform transition-transform 
+                          duration-300 hover:scale-105 hover:-rotate-1
+                        "
+                      >
+                        <div
+                          class="
+                            rounded-xl border-4 border-text-light 
+                            dark:border-text-dark bg-white shadow-playful 
+                            dark:shadow-playful-dark overflow-hidden
+                          "
+                        >
+                          <div
+                            class="bg-cover bg-center"
+                            style="
+                              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPEzcPW53L9snGz6aey5j7qy5yNEiyyQXLZjse_BJziu0jbHthY5Wvnip3wB0_D3kSAP5H6luuPhTs5Cq0SGgoWCFexvwKts0VjpjZhC5f5p8Rcsd8KgJ9o6wQN0Zq_Qap_Q5LMPsIxLjNpnqS6u9T-vv1fmVqAD28iFX_PBsd1Q3B479gvcDlm3-FlfteJ1yQO3WUd_DkE9LTiMb2EWA7_h5Jn2AmN2k_lAzsZLUXS-7saPv25aFOWwPtTnxyb9W2F3QZHDVwSOE');
+                              aspect-ratio: 16 / 9;
+                            "
+                          ></div>
+                          <div class="p-8 bg-secondary/30">
+                            <h3 class="font-display text-2xl text-text-light">
+                              Animate Version
+                            </h3>
+                            <p class="mt-2 text-base text-text-light/80">
+                              This animated version adds motion and interactivity 
+                              for a dynamic presentation. Perfect for showcasing 
+                              creative apps or digital products with smooth transitions 
+                              and animated visuals.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </section>
+
               <section id="file-structure">
                 <div
                   class="
@@ -305,11 +497,13 @@
                     File Structure
                   </h2>
                   <p class="mt-6 text-lg leading-relaxed text-text-light">
-                    The template follows a well-organized file structure to
-                    ensure easy navigation and modification. Key directories
-                    include components, layouts, styles, and pages, each
-                    containing relevant files for customization.
+                    The template follows a clean and modular file structure, 
+                    making it easy to navigate, customize, and maintain. Each 
+                    demo is organized with two variations — <strong>standard</strong> 
+                    and <strong>animate</strong> — so developers can easily 
+                    choose between static or motion-enhanced layouts.
                   </p>
+
                   <div
                     class="
                       mt-6 rounded-lg bg-background-light/50 
@@ -320,16 +514,22 @@
                   >
                     <pre>
                       <code>
-                        ├── 📁 components/
-                        ├── 📁 layouts/
-                        ├── 📁 pages/
-                        ├── 🎨 styles/
-                        └── 🖼️ public/ 
+                        📦 project-root/ 
+                        ├── 📁 demo-1/ 
+                        │    ├── 📁 standard/ 
+                        │    └── 📁 animate/ 
+                        ├── 📁 demo-2/ 
+                        │    ├── 📁 standard/ 
+                        │    └── 📁 animate/ 
+                        └── 📁 demo-3/ 
+                             ├── 📁 standard/ 
+                             └── 📁 animate/ 
                       </code>
                     </pre>
                   </div>
                 </div>
               </section>
+
               <section id="credits">
                 <div
                   class="
@@ -348,18 +548,48 @@
                     Credits
                   </h2>
                   <p class="mt-6 text-lg leading-relaxed text-white/90">
-                    This template utilizes various open-source libraries and
-                    resources. We would like to acknowledge the contributions of
-                    the following:
+                    This template uses the following open-source libraries and resources. 
+                    We gratefully acknowledge their contributions:
                   </p>
                   <ul
                     class="mt-4 list-disc space-y-2 pl-6 text-white/90 font-medium"
                   >
-                    <li>React ✨</li>
-                    <li>Next.js 🚀</li>
-                    <li>Tailwind CSS 🎨</li>
-                    <li>Font Awesome 🦸</li>
-                    <li>Unsplash 📸</li>
+                    <li>Tailwind CSS 🎨 — 
+                      <a 
+                        href="https://tailwindcss.com" 
+                        target="_blank"
+                        class="underline"
+                      >
+                        tailwindcss.com
+                      </a>
+                    </li>
+                    <li>Google Fonts 🔤 — 
+                      <a 
+                        href="https://fonts.google.com" 
+                        target="_blank" 
+                        class="underline"
+                      >
+                        fonts.google.com
+                      </a>
+                    </li>
+                    <li>Animate.css 🎬 — 
+                        <a 
+                          href="https://animate.style" 
+                          target="_blank" 
+                          class="underline"
+                        >
+                          animate.style
+                      </a>
+                    </li>
+                    <li>Unsplash 📸 — 
+                      <a 
+                        href="https://unsplash.com" 
+                        target="_blank" 
+                        class="underline"
+                      >
+                        unsplash.com
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </section>
@@ -367,6 +597,7 @@
           </div>
         </div>
       </main>
+
       <footer
         class="
           border-t-4 border-text-light dark:border-text-dark 
@@ -380,10 +611,12 @@
               text-gray-600 dark:text-gray-300
             "
           >
-            © 2024 WebApp FunKit. Made with ❤️ and lots of coffee.
+            © 2024 App Landing Page Template. Made with ❤️ and lots of coffee.
           </p>
         </div>
       </footer>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
